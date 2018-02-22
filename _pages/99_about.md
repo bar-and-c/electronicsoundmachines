@@ -6,7 +6,7 @@ permalink: /about/
 
 #### About the project 
 
-The project called Electronic Sound Machines is at its grandest an attempt to combine the joy of creating stuff and music, with sharing knowledge about electronics. The backup plan is to at least have fun while trying. And bring fun. 
+The project called Electronic Sound Machines is at its grandest an attempt to combine the joy of creating stuff and music, with sharing knowledge about electronics. The backup plan is to at least have fun while trying. 
 
 It is about DIY electronics, and finding out how things work. 
 
