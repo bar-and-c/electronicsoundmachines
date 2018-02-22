@@ -14,7 +14,7 @@ For beginners, I would suggest building a distortion pedal – since that is not
 
 All their kits come with suggestions for modifications and explanation of how the modifications work – it is good material for learning. If experimentation is your kind of creativity, I encourage you to read the documentation for these pedals, to get an idea of what kind of modifications you can do. In the workshop there will be breadboards available, for easier experimentation. A breadboard is an experimentation board where you simply plug in the components; no need for soldering, which makes it ideal for experimenting with different values and components.
 
-The staff at [Moodysounds](https://moodysounds.com)  recommended one of these for beginners (and I agree, these are all simple enough to be easy to build as well as learn from): 
+The staff at [Moodysounds](https://moodysounds.com) recommended one of these for beginners, these are all simple enough to be easy to build as well as learn from: 
 
 * [Boost](https://moodysounds.com/produkt/moody-boost-kit/)
 This is a pre-amplifier that can function as a slight overdrive. It is a simple circuit, with only one transistor. Probably the easiset kit to build.
@@ -36,12 +36,13 @@ Note that many of the kits are available without box, at a lower price, if you w
 
 If you want to participate in these workshops, this is what you will have to do: 
 1. Select a pedal kit to build. If you decide to buy one from [Moodysounds](https://moodysounds.com), start by checking them out, decide what you want. Listen to clips on YouTube. 
-2. Sign up for the event. The event itself is free, but you need to have a pedal kit to build. There is a rather limited amount of seats, and signing up is binding.
-3. In order to order a pedal kit, please [fill out this form](https://goo.gl/forms/xLp5W4ZByfZLMssz1)! The deadline for ordering kits is **March 18**. Note that ordering a kit is binding – I will order the kit for you, and when you get to the event you will get the kit in exchange for money, just like if you were in the store.
+2. Sign up for the event. The event itself is free, but you need to have a pedal kit to build. There is a rather limited amount of seats, and signing up is binding. Signing up is done [by filling out this form](https://goo.gl/forms/xLp5W4ZByfZLMssz1), after which I will email you to confirm. The deadline for ordering kits is **March 18**. 
+
+Note that ordering a kit is binding – I will order the kit for you, and when you get to the event you will get the kit in exchange for money, just like if you were in the store.
 
 Answering [the form](https://goo.gl/forms/xLp5W4ZByfZLMssz1) will also let me know a little about your previous knowledge (so that I know what to buy, and what to talk about).
 
-There will be a really limited amount of guitars and amps and cables for testing, probably just one set, so if you want, feel free to bring your own stuff. That goes for soldering stations, breadboards, et cetera – please let me know if you do bring anything, it will help me plan.
+There will be a really limited amount of guitars and amps and cables for testing, probably just one set, so if you want, feel free to bring your own stuff. That goes for soldering stations, breadboards, et cetera, as well – please let me know if you do bring anything, it will help me plan.
 
 
 The deadline for ordering kits is **Sunday, March 18**. 
