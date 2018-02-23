@@ -1,10 +1,28 @@
 ---
 layout: page
-title: progression
-permalink: /progression/
+title: inspiration
+permalink: /inspiration/
 ---
 
 On this page I will gather links and other sources of inspiration for interesting hacks and/or possible topics for future workshops and/or links to information about electronics and stuff.
+
+
+### General resources
+
+The Logic Noise tag on Hackaday is a near infinite source of interesting music/sound related electronic hacks.
+<https://hackaday.com/tag/logic-noise/>
+
+
+If you are really into guitar pedals, and how they work, this is a site that is full with guitar pedal schematics. 
+<http://www.generalguitargadgets.com/how-to-build-it/technical-help/schematics/>
+
+
+Here is a site that has veroboard/stripboard layouts for pedals. Unfortunately not that much schematics (which are easier to read and learn from).
+This is one that I built:
+<http://tagboardeffects.blogspot.se/2017/01/wren-and-cuff-phat-phuk-b.html>
+
+
+
 
 
 ### Ideas for future workshops, or maybe just something you could work with at home. 
@@ -70,27 +88,8 @@ A least I _think_ that is an OK formal name for good old guitar pickups. These d
 If you want to use scrap parts, you’ll need a coil of some sort, and some powerful magnet(s) (see the two links for inspiration). It is also possible to wind insulated copper thread to make your own coil, like in this link: 
 <http://www.instructables.com/id/Make-A-Guitar-Pickup/>
 
-Far more work, though. :-) 
+Far more work, though.
 
 ---
 
-
-### Resources for learning more
-
-The Logic Noise tag on Hackaday is a near infinite source of interesting music/sound related electronic hacks.
-<https://hackaday.com/tag/logic-noise/>
-
-
-If you are really into guitar pedals, and how they work, this is a site that is full with guitar pedal schematics. 
-<http://www.generalguitargadgets.com/how-to-build-it/technical-help/schematics/>
-
-
-Here is a site that has veroboard/stripboard layouts for pedals. Unfortunately not that much schematics (which are easier to read and learn from).
-This is one that I built:
-<http://tagboardeffects.blogspot.se/2017/01/wren-and-cuff-phat-phuk-b.html>
-
-
-
-Here is a link to a few pages with a _lot_ of info about transistor circuits. It’s a massive amount of text to read, and not always very well structured, but there is a lot of good examples of practical electronics, and explanations. 
-<http://www.talkingelectronics.com/projects/TheTransistorAmplifier/TheTransistorAmplifier-P1.html>
 

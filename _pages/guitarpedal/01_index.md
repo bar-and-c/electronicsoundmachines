@@ -1,6 +1,6 @@
 ---
 layout: page
-title: guitar pedal workshop
+title: guitar pedal
 permalink: /guitarpedal/
 ---
 
