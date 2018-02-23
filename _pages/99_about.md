@@ -4,6 +4,7 @@ title: about
 permalink: /about/
 ---
 
+
 #### About the project 
 
 The project called Electronic Sound Machines is at its grandest an attempt to combine the joy of creating stuff and music, with sharing knowledge about electronics. The backup plan is to at least have fun while trying. 
@@ -24,3 +25,13 @@ I am no expert on electronics, I would not be surprised if there are participant
 I have worked with repairing music electronics, a long time ago, and I _do_ have a degree in Electrical Engineering, but I have not practiced my knowledge for many years, hence my humble attitude. I have picked it up lately, though, and rediscovered how much fun it can be. The last year I built one distortion pedal from a schematic I found on the net, and one I kind of made up myself, as a mixture of own ideas and snippets from the net.
 
 So, I may not be an expert, but I am confident that it will be fine anyway, basically because a) to just get a little idea of how these things work can make a huge difference, and b) I am sure we can help each other. 
+
+
+#### About contact
+
+The workshops will take place at [STPLN](https://stpln.org) in Malmö. Not all dates are set, keep an eye on their website and Facebook events to see if anything is happening. 
+
+Or contact me! About this project, or pretty much anything else (except spam).
+My email is at the bottom of this page. 
+
+
