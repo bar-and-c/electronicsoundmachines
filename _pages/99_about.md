@@ -15,7 +15,7 @@ It is also about finding sound and music in unexpected materials.
 
 It will be about building things out of electronics and other things, and make sound. It is not the sole purpose, it is not just about putting a kit together; there will also be time for discussion about the circuits, to talk about what the components do, time for experimentation. You will learn how to solder, and gain at least a rudimentary understanding of analogue electronics. 
 
-No previous knowledge is required, but if you DO have knowledge about electronics, soldering, etc., I would appreciate if you are willing to assist those in the group that need help. I have worked a bit with analogue audio electronics in the past, and have built a couple of guitar pedals, but I am by no means any electronics wizard. I truly believe that we can learn from each other. 
+No previous knowledge is required, but if you _do_ have knowledge about electronics, soldering, etc., I would appreciate if you are willing to assist those in the group that need help. I have worked a bit with analogue audio electronics in the past, and have built a couple of guitar pedals, but I am by no means any electronics wizard. I believe that we can learn from each other. 
 
 
 #### About language
@@ -27,7 +27,7 @@ This information is written in English, simply because I didn't want to exclude 
 
 I am no expert on electronics, I would not be surprised if there are participants in the workshop that knows more than I do. But I do know some, enough to, for instance, build a guitar pedal and – given the basic pedals we are talking about here – most likely figure out what is wrong if it doesn't work. 
 
-I have worked with repairing music electronics, a long time ago, and I _do_ have a degree in Electrical Engineering, but I have not practiced my knowledge for many years, hence my humble attitude. I have picked it up lately, though, and rediscovered how much fun it can be. The last year I built one distortion pedal from a schematic I found on the net, and one I kind of made up myself, as a mixture of own ideas and snippets from the net.
+I have worked with repairing music electronics, a long time ago, and I _do_ have a degree in Electrical Engineering, but I have not practiced my knowledge for many years, hence my humble attitude. I have picked it up lately, though, and rediscovered how much fun it can be. The last year I built one distortion pedal from a [schematic](http://guitar-fx-layouts.42897.x6.nabble.com/Wren-and-Cuff-Phat-Phuk-B-td35480.html) I found on the net, and one I kind of made up myself, as a mixture of own ideas and snippets from the net.
 
 So, I may not be an expert, but I am confident that it will be fine anyway, basically because a) to just get a little idea of how these things work can make a huge difference, and b) I am sure we can help each other. 
 
@@ -38,5 +38,7 @@ The workshops will take place at [STPLN](https://stpln.org) in Malmö. Not all d
 
 Or contact me! About this project, or pretty much anything else (except spam).
 My email is at the bottom of this page. 
+Oh, and there is a Facebook page as well:
+<https://www.facebook.com/electronicsoundmachines/>
 
 

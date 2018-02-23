@@ -46,8 +46,8 @@ Answering [the form](https://goo.gl/forms/xLp5W4ZByfZLMssz1) will also let me kn
 There will be a really limited amount of guitars and amps and cables for testing, probably just one set, so if you want, feel free to bring your own stuff. That goes for soldering stations, breadboards, et cetera, as well – please let me know if you do bring anything, it will help me plan.
 
 
-The deadline for ordering kits is **Sunday, March 18**. 
-Obviously, it is also OK to get a pedal kit yourself, or – if you are expereinced – find a schematic to build [somewhere](http://tagboardeffects.blogspot.se/2017/01/wren-and-cuff-phat-phuk-b.html) on the [net](http://www.generalguitargadgets.com/how-to-build-it/technical-help/schematics/), and get the [components](https://www.electrokit.com). 
+The deadline for ordering kits is **Sunday, March 18**. You can still sign up for the event, if you can find a pedal kit yourself in time for the first event (March 28).
+Naturally it is OK to get a pedal kit yourself for whatever reason, or – if you are expereinced – find a schematic to build [somewhere](http://tagboardeffects.blogspot.se) on the [net](http://www.generalguitargadgets.com/how-to-build-it/technical-help/schematics/), and get the [components](https://www.electrokit.com). 
 
 If this goes well, the plan is to continue with similar workshops in the future, but nothing is definite yet (and I am sure those plans will be influenced by what happens in this group). 
 
