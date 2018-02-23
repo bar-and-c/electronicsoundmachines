@@ -7,7 +7,8 @@ permalink: /guitarpedal/
 
 In this series of workshops we will build our own guitar pedal. You will also learn how to solder, experiment with the circuit, and gain at least a rudimentary understanding of analogue electronics. Because of this wide scope, it will most likely take more than one workshop to finish the pedal, so be prepared to come two or three times (the workshops take place every other week). 
 
-No previous knowledge is required, if you have never soldered, you will just have to learn. 
+No previous knowledge is required, if you have never soldered, you will just have to learn. When it comes to electronics, if you are interested in understanding how the pedal works, prepare by googling some information on basic electronics, or [start here](../learning).
+
 
 I have been in contact with a pedal kit dealer called [Moodysounds](https://moodysounds.com); we will get 20% discount when buying their brand of pedals, so I advice you to check out their kits. 
 For beginners, I would suggest building a distortion pedal – since that is not only a cool effect, but also a rather simple circuit, making it easier to understand – or if you would rather have a modulating effect, possibly a tremolo. 
