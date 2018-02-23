@@ -18,6 +18,11 @@ It will be about building things out of electronics and other things, and make s
 No previous knowledge is required, but if you DO have knowledge about electronics, soldering, etc., I would appreciate if you are willing to assist those in the group that need help. I have worked a bit with analogue audio electronics in the past, and have built a couple of guitar pedals, but I am by no means any electronics wizard. I truly believe that we can learn from each other. 
 
 
+#### About language
+
+This information is written in English, simply because I didn't want to exclude people that don't speak Swedish, and I don't have the patience, time, nor web skills, to maintain a site with multiple languages. 
+
+
 #### About me
 
 I am no expert on electronics, I would not be surprised if there are participants in the workshop that knows more than I do. But I do know some, enough to, for instance, build a guitar pedal and – given the basic pedals we are talking about here – most likely figure out what is wrong if it doesn't work. 
