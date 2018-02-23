@@ -15,7 +15,7 @@ The idea is to build stuff that makes sound, learn electronics, be creative, and
 
 ### [Build your own guitar pedal](guitarpedal)
 
-The first series of workshops is about building a guitar pedal, talk about what makes a fuzz fuzz, and things like that. Expect to spend two or three workshops on this (every other Wednesday). 
+The first series of workshops is about building a guitar pedal, talk about what makes a fuzz fuzz, and things like that. Expect to spend two or possibly three workshops on this (every other Wednesday), depending on how much you would want to experiment. It could probably be built on one occasion, but I wouldn't count on it.
 Read more [on this page](guitarpedal), where you will find information about the event, where to get kits, and how to sign up. 
 
 Basically, the important facts are:

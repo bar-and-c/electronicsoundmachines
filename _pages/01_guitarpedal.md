@@ -5,7 +5,7 @@ permalink: /guitarpedal/
 ---
 
 
-In this series of workshops we will build our own guitar pedal. You will also learn how to solder, experiment with the circuit, and gain at least a rudimentary understanding of analogue electronics. Because of this wide scope, it will most likely take more than one workshop to finish the pedal, so be prepared to come two or three times (the workshops take place every other week). 
+In this series of workshops we will build our own guitar pedal. You will also learn how to solder, experiment with the circuit, and gain at least a rudimentary understanding of analogue electronics. Because of this wide scope, it will most likely take more than one workshop to finish the pedal, so be prepared to come two or three times (the workshops take place every other week). Obviously this depends on how much time we spend on experimenting with modifications and learning electronics, it _could_ be built on one occasion.
 
 No previous knowledge is required, if you have never soldered, you will just have to learn. When it comes to electronics, if you are interested in understanding how the pedal works, prepare by googling some information on basic electronics, or [start here](../learning).
 
