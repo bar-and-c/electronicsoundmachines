@@ -18,10 +18,11 @@ If you are really into guitar pedals, and how they work, this is a site that is 
 
 
 Here is a site that has veroboard/stripboard layouts for pedals. Unfortunately not that much schematics (which are easier to read and learn from).
-This is one that I built:
+This is one that I have built:
 <http://tagboardeffects.blogspot.se/2017/01/wren-and-cuff-phat-phuk-b.html>
 
-
+Another place with a lot of pedal schematics:
+<http://guitar-fx-layouts.42897.x6.nabble.com/Verified-Layouts-f23984.html>
 
 
 
