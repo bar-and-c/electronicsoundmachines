@@ -20,7 +20,7 @@ No previous knowledge is required, but if you DO have knowledge about electronic
 
 #### About language
 
-This information is written in English, simply because I didn't want to exclude people that don't speak Swedish, and I don't have the patience, time, nor web skills, to maintain a site with multiple languages. 
+This information is written in English, simply because I didn't want to exclude people that don't speak Swedish, and I lack the patience, time, and web skills, to maintain a site with multiple languages.
 
 
 #### About me
