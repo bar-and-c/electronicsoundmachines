@@ -1,11 +1,11 @@
 ---
 layout: page
-title: guitar pedal
-permalink: /guitarpedal/
+title: effect pedal
+permalink: /effectpedal/
 ---
 
 
-In this series of workshops we will build our own guitar pedal. You will also learn how to solder, experiment with the circuit, and gain at least a rudimentary understanding of analogue electronics. Because of this wide scope, it will most likely take more than one workshop to finish the pedal, so be prepared to come two or three times (the workshops take place every other week). Obviously this depends on how much time we spend on experimenting with modifications and learning electronics, it _could_ be built on one occasion.
+In this series of workshops we will build our own effect pedal, for guitar or any other electric instrument. You will also learn how to solder, experiment with the circuit, and probably gain at least a rudimentary understanding of analogue electronics. Because of this potentially wide scope, it might take more than one workshop to finish the pedal, so be prepared to come two or even three times (the workshops take place every other week). Obviously this depends on how interested you are in learning electronics and experimenting with circuit modifications, it _could_ be built on one occasion.
 
 No previous knowledge is required, if you have never soldered, you will just have to learn. When it comes to electronics, if you are interested in understanding how the pedal works, prepare by googling some information on basic electronics, or [start here](../learning).
 
@@ -37,7 +37,7 @@ Note that many of the kits are available without box, at a lower price, if you w
 
 If you want to participate in these workshops, this is what you will have to do: 
 1. Select a pedal kit to build. If you decide to buy one from [Moodysounds](https://moodysounds.com), start by checking them out, decide what you want. Listen to clips on YouTube. 
-2. Sign up for the event. The event itself is free, but you need to have a pedal kit to build. There is a rather limited amount of seats, and signing up is binding. Signing up is done [by filling out this form](https://goo.gl/forms/xLp5W4ZByfZLMssz1), after which I will email you to confirm. The deadline for ordering kits is **March 18**. 
+2. Sign up for the event. The event itself is free, but you need to have a pedal kit to build. There is a rather limited amount of seats, and signing up is binding. Signing up, as well as ordering a kit, is done [by filling out this form](https://goo.gl/forms/xLp5W4ZByfZLMssz1), after which I will email you to confirm. The deadline for ordering kits is **March 18**. 
 
 Note that ordering a kit is binding – I will order the kit for you, and when you get to the event you will get the kit in exchange for money, just like if you were in the store.
 
