@@ -25,5 +25,5 @@ Basically, the important facts are:
 * The first meeting is on **March 28, 18:00 -  21:00**. 
 * After that there will be a workshop every other Wednesday (maybe 2-3 times, depending on how fast we work vs. how much time we spend on learning/discussing/experimenting). 
 * The workshop will take place in the basement at [STPLN](http://stpln.org) in [Västra Hamnen, Malmö](https://goo.gl/maps/Bw6hPB8zsJt).
-* Signing up for the workshop is done through a Google Forms thing, where you also choose which (if any) Moodysound pedal kit you want to buy. **[Here is the form for signing up](https://goo.gl/forms/xLp5W4ZByfZLMssz1)**, and note that signing up (as well as ordering kits) is **binding**. There is a limited amount of seats, so I will confirm your booking by emailing you after you filled out the form. You do not have a seat until you receive my confirmation email.
+* Signing up for the workshop is done by sending me a message, either on Facebook or by email (see bottom of page). The remaining few seats are reserved for women/non-dudes, hence this process. I will confirm your booking by emailing you back (you do not have a seat until you receive my confirmation email).
 * **IMPORTANT:** If you want to order a pedal kit through me, the last date for that is **March 18**. It is OK to sign up later than that, but then you will have to get a kit on your own.
