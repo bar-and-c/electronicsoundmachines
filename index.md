@@ -15,6 +15,9 @@ The idea is to build stuff that makes sound, learn electronics, be creative, and
 
 ### [Build your own effect pedal](effectpedal)
 
+**[UPDATE]**
+Since this workshop is starting to get fully booked, with a majority of dudes in the group, the remaining seats are reserved for those that are underrepresented in music and tech, e.g. women. 
+
 The first series of workshops is about building an effect pedal, talk about what makes a fuzz fuzz, and things like that. Expect to spend one to three workshops on this (every other Wednesday), depending on how much you would want to experiment. It could probably be built on one occasion, but if we talk a lot about _how_ it works, it will take more than one occasion. Fear not, there are three Wednesdays booked.
 Read more [on this page](guitarpedal), where you will find information about the event, where to get kits, and how to sign up. 
 
