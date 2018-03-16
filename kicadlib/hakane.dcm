@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 4017-pwr
+D Johnson Counter ( 10 outputs )
+K CNT CNT10
+$ENDCMP
+#
+#End Doc Library
