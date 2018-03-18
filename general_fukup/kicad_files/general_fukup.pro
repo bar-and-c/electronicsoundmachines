@@ -1,4 +1,4 @@
-update=Lördag 17 Mars 2018 12:18:59
+update=Lördag 17 Mars 2018 19:07:34
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=switches
+LibName31=/Users/hakan/kod/electronics/kicadlib/hakane
