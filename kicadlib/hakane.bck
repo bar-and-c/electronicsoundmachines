@@ -5,4 +5,10 @@ D Johnson Counter ( 10 outputs )
 K CNT CNT10
 $ENDCMP
 #
+$CMP SW_Rotary2x5
+D 2 rotary switch with 5 positions
+K rotary switch
+F http://cdn-reichelt.de/documents/datenblatt/C200/DS-Serie%23LOR.pdf
+$ENDCMP
+#
 #End Doc Library

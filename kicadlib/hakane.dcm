@@ -5,6 +5,21 @@ D Johnson Counter ( 10 outputs )
 K CNT CNT10
 $ENDCMP
 #
+$CMP 74HC04
+D Hex Inverseur
+K HCMOS not inv
+$ENDCMP
+#
+$CMP 74HCT04-pwr
+D Hex Inverseur
+K HCTMOS not inv
+$ENDCMP
+#
+$CMP 74LS14
+D Hex inverseur schmitt trigger
+K TTL not inv
+$ENDCMP
+#
 $CMP SW_Rotary2x5
 D 2 rotary switch with 5 positions
 K rotary switch
