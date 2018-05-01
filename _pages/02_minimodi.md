@@ -61,6 +61,13 @@ The ever present Thomas Henry has a [VCF-1](http://www.birthofasynth.com/Thomas_
 ### VCA
 As mentioned above, for the absolutely most simple configuration, maybe just a Vactrol low pass filter. Or two – they can be connected in series for a sharper cutoff. 
 
+### Envelope
+Again, there is a lot to find by just googling for simple envelope generator. E.g. this AR envelope: <https://synthnerd.wordpress.com/2016/04/06/envelope-circuits-a-simple-ar-design-using-op-amps/>
+
+Or this, from Thomas Henry as well: <http://web.archive.org/web/20031211115742/www.midwest-analog.com/adsr1.html>
+
+One idea I had was to use a slew limiter (portamento), with possibility to control slew rate separately for up/down. That would be useful for portamento (obviously), but probably also usable as a simple AR envelope if a gate is applied, no?
+
 ### Sequencer
 Not a necessity, but I think it might be nice to have a simple analogue sequencer above the keyboard. One or two rows of eight or sixteen potentiometers to be used both for melody and modulation. 
 
@@ -77,6 +84,17 @@ Maybe add a delay (PT2399, or maybe even an analog, like V3205 or some other buc
 ## Enclosure
 
 I keep seeing an enclosure made of laser cut plywood (or is it MDF they use?). I have a plan to talk to someone at Malmö Makerspace to verify if it is possible at all, if it can get sturdy enough, but no action there yet. 
+
+### Keyboard
+Yes, I thought it would be nice with a really simple keyboard, like a touch keyboard or so, but maybe not so simple... 
+
+I first thought one could be built using one of these for each key (but smaller, of course): 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DT6nZsixP0M?rel=0&amp;start=310" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+But then I realized that the pressure sensitivity would be super annoying, really hard to get a clean note. 
+
+There is something called "softpot" which could be used as a ribbon controller, but probably hard to approximate a keyboard with it (not least because the black and white keys would be aligned).
+
+I read somewhere that capacitive touch is harder than resistive, but I have not investigated further. I stopped reading at "hard". :-) 
 
 ### Panel
 As hinted earlier, I do not think it is a good idea to make the panels Eurorack style. Putting everything in vertical lines like that is not necessarily the best layout on a regular synth (nor on a Eurorack, but there you have no choice). That would be like turning this synth into a kind of Eurorack container, and I fail to see the point. Come to think of it, maybe that is one of the most important things to consider – what exactly is the value of this synthesizer? 
