@@ -1,6 +1,6 @@
 ---
 layout: page
-title: effect pedal
+title: pedal
 permalink: /effectpedal/
 ---
 
