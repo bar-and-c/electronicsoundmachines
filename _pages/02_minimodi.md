@@ -88,13 +88,15 @@ I keep seeing an enclosure made of laser cut plywood (or is it MDF they use?). I
 ### Keyboard
 Yes, I thought it would be nice with a really simple keyboard, like a touch keyboard or so, but maybe not so simple... 
 
-I first thought one could be built using one of these for each key (but smaller, of course): 
+I first thought one could be built using something like this for each key (but smaller, of course): 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DT6nZsixP0M?rel=0&amp;start=310" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-But then I realized that the pressure sensitivity would be super annoying, really hard to get a clean note. 
+Without pressure sensitivity, could possibly work if using a comparator (or something with hysteresis, like a Schmitt trigger) to get an on/off response, instead of the video clip's continuously changing voltage. 
+
+Light sensors might be a cool option, but that would require light. Maybe if light could be supplied by the keyboard itself, in some elaborate way so that the finger blocks it... Maybe not. Or something similar but with IR LEDs and IR sensors?
 
 There is something called "softpot" which could be used as a ribbon controller, but probably hard to approximate a keyboard with it (not least because the black and white keys would be aligned).
 
-I read somewhere that capacitive touch is harder than resistive, but I have not investigated further. I stopped reading at "hard". :-) 
+I read somewhere that capacitive touch is more difficult to implement than resistive, but I have not investigated further. I stopped reading at "difficult". :-) 
 
 ### Panel
 As hinted earlier, I do not think it is a good idea to make the panels Eurorack style. Putting everything in vertical lines like that is not necessarily the best layout on a regular synth (nor on a Eurorack, but there you have no choice). That would be like turning this synth into a kind of Eurorack container, and I fail to see the point. Come to think of it, maybe that is one of the most important things to consider – what exactly is the value of this synthesizer? 
