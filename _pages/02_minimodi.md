@@ -42,7 +42,7 @@ Not sure how, but it would be nice with some kind of basic keyboard. Maybe touch
 The modules I have considered so far are the conventional, more or less, albeit chosen with a focus on simplicity (it has to be easy to build, few components and easy to understand). 
 
 ### VCO
-I haven’t done a lot of research here, just did a quick googling on ”simple VCO”, and got a hit on a Thomas Henry design. I recently built a Thomas Henry VCO, and that as well as other info on the internet has given me a lot of respect for him. So, I just picked that one, a VCO-1. I made a schematic in KiCad, and yesterday I ordered my first PCB of my own design – it is not pretty at all, but with a little luck it could at least work. 
+I haven’t done a lot of research here, just did a quick googling on ”simple VCO”, and got a hit on a Thomas Henry design. I recently built a Thomas Henry VCO, and that experience as well as other info on the internet has given me a lot of respect for him when it comes to designing solid synthesizer circuits. So, I just picked that one, a [VCO-1](http://www.birthofasynth.com/Thomas_Henry/Pages/VCO-1.html). I made a schematic in KiCad, and yesterday I ordered my first PCB of my own design – it is not pretty at all, but with a little luck it could at least work. 
 There are other simple VCOs, I’m sure this topic will be re-visited. I just wanted to get the ball rolling as fast as possible (and if nothing else, I could use the 10 VCO-1 PCBs in my anemic modular!). 
 
 Other contenders are based on a 555, and there are some designs on CD4046 (I think Tomas Henry has designs on both those), and many more. 
@@ -55,7 +55,8 @@ So, at the moment I think that’s a pretty good candidate for a super simple sy
 
 But there are lots of others. 
 Synthotrek has one called DIRT, which seems simple – and it also seems pretty wild, which is a plus in my book. 
-The ever present Thomas Henry has a VCF-1, with the same kind of simplicity as the VCO-1 (there is also a VCA-1). 
+
+The ever present Thomas Henry has a [VCF-1](http://www.birthofasynth.com/Thomas_Henry/Pages/VCF-1.html), with the same kind of simplicity as the VCO-1 (there is also a VCA-1). 
 
 ### VCA
 As mentioned above, for the absolutely most simple configuration, maybe just a Vactrol low pass filter. Or two – they can be connected in series for a sharper cutoff. 
@@ -65,7 +66,8 @@ Not a necessity, but I think it might be nice to have a simple analogue sequence
 
 ### Modulation matrix
 Speaking of modulation, even though it’s supposed to be simple, I think it should have good and ideally unexpected modulation possibilities. Still, I have no concrete ideas of how. The best modulation matrix I’ve seen in an old school synth is the ProOne’s, but that’s still rather limited. So I guess it’s not very easy, otherwise I suspect that every synth should have lots of capabilities there. 
-Jacks is a possibility, but harder to use. Entering modular territory. 
+
+Jacks are a possibility, but harder to use. Entering modular territory. 
 
 ### FX
 Maybe add a delay (PT2399, or maybe even an analog, like V3205 or some other bucket brigade chip – but that probably requires a bit more circuitry around it), a delay that is an integral part of the synth, with modulation ins and outs? 
