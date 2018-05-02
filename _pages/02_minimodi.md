@@ -64,7 +64,9 @@ As mentioned above, for the absolutely most simple configuration, maybe just a V
 ### Envelope
 Again, there is a lot to find by just googling for simple envelope generator. E.g. this AR envelope: <https://synthnerd.wordpress.com/2016/04/06/envelope-circuits-a-simple-ar-design-using-op-amps/>
 
-Or this, from Thomas Henry as well: <http://web.archive.org/web/20031211115742/www.midwest-analog.com/adsr1.html>
+Or this ADSR, from Thomas Henry as well: <http://web.archive.org/web/20050309092230/http://www.midwest-analog.com:80/adsr1.html>
+
+Or the AD/AR Thomas Henry posts in this thread: <http://electro-music.com/forum/topic-61297.html>
 
 One idea I had was to use a slew limiter (portamento), with possibility to control slew rate separately for up/down. That would be useful for portamento (obviously), but probably also usable as a simple AR envelope if a gate is applied, no?
 
