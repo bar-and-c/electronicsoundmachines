@@ -86,17 +86,23 @@ Maybe add a delay (PT2399, or maybe even an analog, like V3205 or some other buc
 I keep seeing an enclosure made of laser cut plywood (or is it MDF they use?). I have a plan to talk to someone at Malmö Makerspace to verify if it is possible at all, if it can get sturdy enough, but no action there yet. 
 
 ### Keyboard
-Yes, I thought it would be nice with a really simple keyboard, like a touch keyboard or so, but maybe not so simple... 
+A proper keyboard is a bit over the top, and no keyboard – i.e. a desktop module – is not as much fun, but something simple like a touch keyboard or so could be good enough. 
 
-I first thought one could be built using something like this for each key (but smaller, of course): 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DT6nZsixP0M?rel=0&amp;start=310" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-Without pressure sensitivity, could possibly work if using a comparator (or something with hysteresis, like a Schmitt trigger) to get an on/off response, instead of the video clip's continuously changing voltage. 
+I think resistive touch could work, something like this for each key (but smaller, of course): 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DT6nZsixP0M?rel=0&amp;start=312" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+This one has pressure sensitivity, which would not be useful for a keyboard application, but an untested idea is to amplify that voltage and use a comparator (or a Schmitt trigger) to get a definite on/off response. 
+Maybe the touch circuit's voltage could be split into two paths: one with a comparator for on/off, and one that could be used for modulation, with pressure sensitivity. 
+It is possible that copper isn't optimal for direct touch, and the response would probably deteriorate when the surface gets covered with oxide and/or dirt. I have seen some kind of aluminium tape that might work better. 
 
 Light sensors might be a cool option, but that would require light. Maybe if light could be supplied by the keyboard itself, in some elaborate way so that the finger blocks it... Maybe not. Or something similar but with IR LEDs and IR sensors?
 
-There is something called "softpot" which could be used as a ribbon controller, but probably hard to approximate a keyboard with it (not least because the black and white keys would be aligned).
 
-I read somewhere that capacitive touch is more difficult to implement than resistive, but I have not investigated further. I stopped reading at "difficult". :-) 
+### Modulators
+Light sensors? 
+
+I have seen something called "softpot" which could be used as a ribbon controller (never tried it, though).
+
+
 
 ### Panel
 As hinted earlier, I do not think it is a good idea to make the panels Eurorack style. Putting everything in vertical lines like that is not necessarily the best layout on a regular synth (nor on a Eurorack, but there you have no choice). That would be like turning this synth into a kind of Eurorack container, and I fail to see the point. Come to think of it, maybe that is one of the most important things to consider – what exactly is the value of this synthesizer? 
