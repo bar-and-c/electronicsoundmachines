@@ -448,7 +448,7 @@ L R R8
 U 1 1 5AE3BDC0
 P 2600 1750
 F 0 "R8" V 2680 1750 50  0000 C CNN
-F 1 "2k" V 2600 1750 50  0000 C CNN
+F 1 "2k +3500ppm/C thermistor" V 2500 1750 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 2530 1750 50  0001 C CNN
 F 3 "" H 2600 1750 50  0001 C CNN
 	1    2600 1750
@@ -697,7 +697,7 @@ L R R6
 U 1 1 5AE4A275
 P 2350 4200
 F 0 "R6" V 2430 4200 50  0000 C CNN
-F 1 "1.5M" V 2350 4200 50  0000 C CNN
+F 1 "1.2M" V 2350 4200 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 2280 4200 50  0001 C CNN
 F 3 "" H 2350 4200 50  0001 C CNN
 	1    2350 4200
@@ -954,7 +954,7 @@ L R R20
 U 1 1 5AE5F2B8
 P 7150 4800
 F 0 "R20" V 7230 4800 50  0000 C CNN
-F 1 "20k" V 7150 4800 50  0000 C CNN
+F 1 "24k" V 7150 4800 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7080 4800 50  0001 C CNN
 F 3 "" H 7150 4800 50  0001 C CNN
 	1    7150 4800
@@ -965,7 +965,7 @@ L R R28
 U 1 1 5AE5F36B
 P 7950 4800
 F 0 "R28" V 8030 4800 50  0000 C CNN
-F 1 "5.1k" V 7950 4800 50  0000 C CNN
+F 1 "3.9k" V 7950 4800 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7880 4800 50  0001 C CNN
 F 3 "" H 7950 4800 50  0001 C CNN
 	1    7950 4800
@@ -987,7 +987,7 @@ L R R26
 U 1 1 5AE5F4E8
 P 7650 6000
 F 0 "R26" V 7730 6000 50  0000 C CNN
-F 1 "100k" V 7650 6000 50  0000 C CNN
+F 1 "110k" V 7650 6000 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7580 6000 50  0001 C CNN
 F 3 "" H 7650 6000 50  0001 C CNN
 	1    7650 6000
@@ -1285,7 +1285,7 @@ L R R30
 U 1 1 5AE67617
 P 8350 2250
 F 0 "R30" V 8430 2250 50  0000 C CNN
-F 1 "12k" V 8350 2250 50  0000 C CNN
+F 1 "14k" V 8350 2250 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8280 2250 50  0001 C CNN
 F 3 "" H 8350 2250 50  0001 C CNN
 	1    8350 2250
@@ -1338,7 +1338,7 @@ L R R33
 U 1 1 5AE67D6A
 P 8850 3100
 F 0 "R33" V 8930 3100 50  0000 C CNN
-F 1 "12k" V 8850 3100 50  0000 C CNN
+F 1 "14k" V 8850 3100 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8780 3100 50  0001 C CNN
 F 3 "" H 8850 3100 50  0001 C CNN
 	1    8850 3100
@@ -1603,7 +1603,7 @@ L R R35
 U 1 1 5AE6D3AB
 P 9500 1150
 F 0 "R35" V 9580 1150 50  0000 C CNN
-F 1 "3k" V 9500 1150 50  0000 C CNN
+F 1 "2k" V 9500 1150 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 9430 1150 50  0001 C CNN
 F 3 "" H 9500 1150 50  0001 C CNN
 	1    9500 1150
@@ -1614,7 +1614,7 @@ L R R36
 U 1 1 5AE6D4A6
 P 9800 1350
 F 0 "R36" V 9880 1350 50  0000 C CNN
-F 1 "1.8k" V 9800 1350 50  0000 C CNN
+F 1 "2k" V 9800 1350 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 9730 1350 50  0001 C CNN
 F 3 "" H 9800 1350 50  0001 C CNN
 	1    9800 1350
@@ -1704,6 +1704,8 @@ Text Notes 5900 2000 0    60   ~ 0
 PULSE\nWIDTH
 Wire Wire Line
 	7150 5750 8350 5750
-Text Notes 900  7050 0    60   ~ 0
-NOTE: R8 should ideally be a +3500ppm/Co 2K thermistor (tempco), \nand Q1/Q2 should be mechanically bonded (e.g. by epoxy).\nFor best result, R8 should also be physically bonded to Q1/Q2.
+Text Notes 600  6700 0    60   ~ 0
+NOTE: R8 should ideally be a +3500ppm/C 2K thermistor (tempco), \nand Q1/Q2 should be mechanically bonded (e.g. by epoxy).\nFor best result, R8 should also be physically bonded to Q1/Q2.
+Text Notes 600  7650 0    60   ~ 0
+NOTE: Forgot to change values for 12V before making PCB rev A. \nHave not tested yet, but the changed resistors are: \nR6, R20, R28, R26, R30, R33, R35, R36.\nPossibly also R11 should be changed, to 18k.\nFor pulse width adj., maybe change R15 (to 256k).\nSee http://www.electro-music.com/forum/topic-54360.html and\nhttp://electro-music.com/forum/topic-36820.html
 $EndSCHEMATC
