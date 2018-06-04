@@ -1,4 +1,6 @@
 
+# Super Simple Sequencer
+
 Much of the inspiration comes from this sequencer, especially the 555 clock:
 https://learn.sparkfun.com/tutorials/sparkpunk-sequencer-theory-and-applications-guide
 
@@ -18,6 +20,3 @@ Improvement areas:
 * Continue button.
 * Reset button.
 * Start/stop?
-
-TODO: 
-* Move KiCAD files here, obviously.

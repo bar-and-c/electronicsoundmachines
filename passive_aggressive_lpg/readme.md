@@ -1,3 +1,5 @@
+# Passive Aggressive LPG
+
 Maybe "LPG" is the wrong word for this circuit, I am not sure what that word contains, but it uses a vactrol 
 to control the cutoff of a low pass filter – at least a little bit similar to an LPG, I'd say. 
 
@@ -14,6 +16,9 @@ I made several tweaks to the simplest kind of circuit.
 * The point of the zener diode is to avoid giving the LED too high current through it. Normally I would use 0-5 volts on the input, but it should be made to at least survive +/- 12 volts.
 
 Inspiration found in various forum threads and other resources, like e.g.: 
+
 <http://electro-music.com/forum/topic-26643-25.html>
+
 <https://www.muffwiggler.com/forum/viewtopic.php?t=107006>
+
 <https://www.youtube.com/watch?v=8BOnvSQpoGY>

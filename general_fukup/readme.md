@@ -1,3 +1,5 @@
+# General Fukup
+
 When I first learned analogue electronics, way back, I learned about distortion, and its harmonic content, that it could be perceived as warmth, and "crossover distortion" in class B amplifiers was very briefly mentioned as something really unpleasant – which made me immensely curious. I experimented in an ancient music software called Turbosynth, from Digidesign, which had a module where one could plot a transfer function. I liked the sound, but a) it was only a software simulation, and b) Turbosynth is long gone, so I wanted to try to build something like that in a box. 
 
 A class B, or AB, amplifier stage normally requires positive and negative voltage supply, and in a box I only have 9V (and did not want to use two batteries). I found some inspiration online, and got something working. 
