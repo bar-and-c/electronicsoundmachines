@@ -904,8 +904,8 @@ Wire Wire Line
 	6700 4900 6700 5000
 Connection ~ 6700 5000
 Connection ~ 3700 4500
-Text Notes 2000 7100 0    60   ~ 0
-R12/C4 are there to shape the input gate into a trigger\nenvelope (since it's not a real CR-78, I have no control\nover the trig pulse). It's not ideal though, and could be\nreplaced with something smarter.
+Text Notes 2000 7200 0    60   ~ 0
+NOTE:\nR12/C4 are there to shape the input gate into a trigger\nenvelope (since it's not a real CR-78, I have no control\nover the trig pulse). It's not ideal though, and could be\nreplaced with something smarter (maybe a monostable\nmultivibrator up front?).
 Text Notes 8150 7650 0    60   ~ 0
 March 21, 2018\n
 Text Notes 7400 7500 0    60   ~ 0
@@ -918,4 +918,6 @@ NoConn ~ 10900 950
 NoConn ~ 10900 1050
 Connection ~ 10400 1150
 Connection ~ 10400 1250
+Text Notes 7850 5300 0    60   ~ 0
+NOTE:\nThere's one more transistor stage after Q3, \nfor amplification, will add later.
 $EndSCHEMATC
