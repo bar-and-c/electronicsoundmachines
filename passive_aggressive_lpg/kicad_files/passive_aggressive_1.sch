@@ -50,8 +50,8 @@ L Audio-Jack-2 J1
 U 1 1 5B125828
 P 3150 1950
 F 0 "J1" H 3125 2025 50  0000 C CNN
-F 1 "Audio-Jack-2" H 3125 1775 50  0000 C CNN
-F 2 "Wire_Pads:SolderWirePad_3x_2mmDrill" H 3400 1950 50  0001 C CNN
+F 1 "AUDIO_IN" H 3125 1775 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3400 1950 50  0001 C CNN
 F 3 "" H 3400 1950 50  0001 C CNN
 	1    3150 1950
 	1    0    0    -1  
@@ -61,8 +61,8 @@ L Audio-Jack-2 J2
 U 1 1 5B12586C
 P 3200 4550
 F 0 "J2" H 3175 4625 50  0000 C CNN
-F 1 "Audio-Jack-2" H 3175 4375 50  0000 C CNN
-F 2 "" H 3450 4550 50  0001 C CNN
+F 1 "CV_IN" H 3175 4375 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3450 4550 50  0001 C CNN
 F 3 "" H 3450 4550 50  0001 C CNN
 	1    3200 4550
 	1    0    0    -1  
@@ -72,8 +72,8 @@ L Audio-Jack-2 J3
 U 1 1 5B1258B2
 P 7950 1950
 F 0 "J3" H 7925 2025 50  0000 C CNN
-F 1 "Audio-Jack-2" H 7925 1775 50  0000 C CNN
-F 2 "" H 8200 1950 50  0001 C CNN
+F 1 "AUDIO_OUT" H 7925 1775 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8200 1950 50  0001 C CNN
 F 3 "" H 8200 1950 50  0001 C CNN
 	1    7950 1950
 	-1   0    0    -1  
@@ -125,7 +125,7 @@ U 1 1 5B125AC9
 P 3900 4550
 F 0 "R1" V 3980 4550 50  0000 C CNN
 F 1 "100" V 3900 4550 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3830 4550 50  0001 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3830 4550 50  0001 C CNN
 F 3 "" H 3900 4550 50  0001 C CNN
 	1    3900 4550
 	0    1    1    0   
@@ -133,23 +133,23 @@ $EndComp
 $Comp
 L C C3
 U 1 1 5B125B40
-P 5400 2100
-F 0 "C3" H 5425 2200 50  0000 L CNN
-F 1 "100n" H 5425 2000 50  0000 L CNN
-F 2 "Capacitors_THT:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 5438 1950 50  0001 C CNN
-F 3 "" H 5400 2100 50  0001 C CNN
-	1    5400 2100
+P 5400 2150
+F 0 "C3" H 5425 2250 50  0000 L CNN
+F 1 "100nF" H 5425 2050 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 5438 2000 50  0001 C CNN
+F 3 "" H 5400 2150 50  0001 C CNN
+	1    5400 2150
 	-1   0    0    1   
 $EndComp
 $Comp
 L C C4
 U 1 1 5B125BD9
-P 6550 2100
-F 0 "C4" H 6575 2200 50  0000 L CNN
-F 1 "470n" H 6575 2000 50  0000 L CNN
-F 2 "Capacitors_THT:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 6588 1950 50  0001 C CNN
-F 3 "" H 6550 2100 50  0001 C CNN
-	1    6550 2100
+P 6550 2150
+F 0 "C4" H 6575 2250 50  0000 L CNN
+F 1 "470nF" H 6575 2050 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 6588 2000 50  0001 C CNN
+F 3 "" H 6550 2150 50  0001 C CNN
+	1    6550 2150
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -166,12 +166,12 @@ $EndComp
 $Comp
 L R R3
 U 1 1 5B125C84
-P 5250 4700
-F 0 "R3" V 5330 4700 50  0000 C CNN
-F 1 "100" V 5250 4700 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5180 4700 50  0001 C CNN
-F 3 "" H 5250 4700 50  0001 C CNN
-	1    5250 4700
+P 5250 5100
+F 0 "R3" V 5330 5100 50  0000 C CNN
+F 1 "1.5k" V 5250 5100 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5180 5100 50  0001 C CNN
+F 3 "" H 5250 5100 50  0001 C CNN
+	1    5250 5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -180,7 +180,7 @@ U 1 1 5B125D4D
 P 5950 4250
 F 0 "R4" V 6030 4250 50  0000 C CNN
 F 1 "100" V 5950 4250 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5880 4250 50  0001 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5880 4250 50  0001 C CNN
 F 3 "" H 5950 4250 50  0001 C CNN
 	1    5950 4250
 	1    0    0    -1  
@@ -232,12 +232,12 @@ $EndComp
 $Comp
 L GND #PWR06
 U 1 1 5B125EC1
-P 6650 3300
-F 0 "#PWR06" H 6650 3050 50  0001 C CNN
-F 1 "GND" H 6650 3150 50  0000 C CNN
-F 2 "" H 6650 3300 50  0001 C CNN
-F 3 "" H 6650 3300 50  0001 C CNN
-	1    6650 3300
+P 6650 3350
+F 0 "#PWR06" H 6650 3100 50  0001 C CNN
+F 1 "GND" H 6650 3200 50  0000 C CNN
+F 2 "" H 6650 3350 50  0001 C CNN
+F 3 "" H 6650 3350 50  0001 C CNN
+	1    6650 3350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -264,13 +264,12 @@ Wire Wire Line
 Wire Wire Line
 	5000 5550 5000 5700
 Wire Wire Line
-	5150 4950 5250 4950
+	5250 4950 5150 4950
 Wire Wire Line
-	5250 4950 5250 4850
+	5250 4750 5250 4950
 Connection ~ 5000 4550
 Wire Wire Line
 	5950 4400 5950 4850
-Connection ~ 5250 4550
 Connection ~ 5950 4550
 Wire Wire Line
 	5950 5150 5950 5300
@@ -291,34 +290,34 @@ Wire Wire Line
 $Comp
 L POT RV2
 U 1 1 5B12614E
-P 6650 3000
-F 0 "RV2" V 6475 3000 50  0000 C CNN
-F 1 "10k log" V 6550 3000 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Alps_RK097_Single_Vertical" H 6650 3000 50  0001 C CNN
-F 3 "" H 6650 3000 50  0001 C CNN
-	1    6650 3000
+P 6650 3050
+F 0 "RV2" V 6475 3050 50  0000 C CNN
+F 1 "10k log" V 6550 3050 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Alps_RK097_Single_Vertical" H 6650 3050 50  0001 C CNN
+F 3 "" H 6650 3050 50  0001 C CNN
+	1    6650 3050
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_SPDT SW2
+L SW_SPDT_MSM SW2
 U 1 1 5B1261C3
-P 5500 2450
-F 0 "SW2" H 5500 2620 50  0000 C CNN
-F 1 "HIGH" H 5500 2250 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5500 2450 50  0001 C CNN
-F 3 "" H 5500 2450 50  0001 C CNN
-	1    5500 2450
+P 5500 2500
+F 0 "SW2" H 5500 2670 50  0000 C CNN
+F 1 "FILTER1" H 5500 2300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5500 2500 50  0001 C CNN
+F 3 "" H 5500 2500 50  0001 C CNN
+	1    5500 2500
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SW_SPDT SW3
+L SW_SPDT_MSM SW3
 U 1 1 5B1262EF
-P 6650 2450
-F 0 "SW3" H 6650 2620 50  0000 C CNN
-F 1 "LOW" H 6650 2250 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6650 2450 50  0001 C CNN
-F 3 "" H 6650 2450 50  0001 C CNN
-	1    6650 2450
+P 6650 2500
+F 0 "SW3" H 6650 2670 50  0000 C CNN
+F 1 "FILTER2" H 6650 2300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 6650 2500 50  0001 C CNN
+F 3 "" H 6650 2500 50  0001 C CNN
+	1    6650 2500
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -333,27 +332,22 @@ F 3 "" H 4400 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6650 2650 6650 2850
+	6650 2700 6650 2900
 Wire Wire Line
-	5500 2650 5500 2750
+	5500 2700 5500 2800
 Wire Wire Line
-	5500 2750 6800 2750
-Connection ~ 6650 2750
+	5500 2800 6800 2800
+Connection ~ 6650 2800
 Wire Wire Line
-	6800 2750 6800 3000
+	6800 2800 6800 3050
 Wire Wire Line
-	6650 3150 6650 3300
-Wire Wire Line
-	4600 4150 4600 4550
-Connection ~ 4600 4550
+	6650 3200 6650 3350
 Connection ~ 4150 4550
 Wire Wire Line
 	3400 4650 3550 4650
 Wire Wire Line
 	3550 4650 3550 4750
-NoConn ~ 5600 2250
-NoConn ~ 4600 3950
-NoConn ~ 6750 2250
+NoConn ~ 4600 4150
 Text Notes 7400 7500 0    60   ~ 0
 Passive Aggressive Low Pass Gate
 Text Notes 8250 7650 0    60   ~ 0
@@ -361,13 +355,13 @@ Text Notes 8250 7650 0    60   ~ 0
 Text Notes 10600 7650 0    60   ~ 0
 A
 Text Notes 1350 7250 0    60   ~ 0
-NOTE:\n- Filter caps and slew cap(s) can be chosen according to taste.\n- The slew caps C1 and C2 can be replaced with one bipolar 470uF capacitor.\n- With both filters off it becomes more of a VCA, no filtering.\n- R3 is there basically because RV1 is way too big (no effect on upper half of pot sweep).\n- R2 is there because of a dead spot at the lower end of the sweep. Could use a resistor of 100-150 ohm instead.\n- Using another optocoupler ("Vactrol") could change the characteristics of the circuit (try!).\n- It is also possible to make your own optocoupler with an LDR, a LED, and shrink tube.  
+NOTE:\n- Filter caps and slew cap(s) can be chosen according to taste.\n- The slew caps C1 and C2 can be replaced with one bipolar, e.g. 470uF capacitor.\n- With both filters off it becomes more of a VCA, no filtering.\n- RV1 is way too big for this application, feel free to try a smaller value.\n- R3 is there because RV1 is too big (no effect on upper half of pot sweep).\n- R2 is there because of a dead spot at the lower end of the sweep. Try out other values (or a trim pot).\n- Using another optocoupler ("Vactrol") could change the characteristics of the circuit (try!).\n- It is also possible to make your own optocoupler with an LDR, a LED, and shrink tube.  
 $Comp
 L CP_Small C2
 U 1 1 5B13A60C
 P 4500 4550
-F 0 "C2" H 4510 4620 50  0000 L CNN
-F 1 "1000u" V 4650 4550 50  0000 L CNN
+F 0 "C2" V 4400 4500 50  0000 L CNN
+F 1 "1000uF" V 4650 4550 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D10.0mm_P5.00mm" H 4500 4550 50  0001 C CNN
 F 3 "" H 4500 4550 50  0001 C CNN
 	1    4500 4550
@@ -377,8 +371,8 @@ $Comp
 L CP_Small C1
 U 1 1 5B13A689
 P 4300 4550
-F 0 "C1" H 4310 4620 50  0000 L CNN
-F 1 "1000u" V 4150 4550 50  0000 L CNN
+F 0 "C1" V 4400 4500 50  0000 L CNN
+F 1 "1000uF" V 4150 4550 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D10.0mm_P5.00mm" H 4300 4550 50  0001 C CNN
 F 3 "" H 4300 4550 50  0001 C CNN
 	1    4300 4550
@@ -388,15 +382,59 @@ Wire Wire Line
 	4150 4050 4150 4550
 Wire Wire Line
 	4150 4050 4200 4050
+Wire Wire Line
+	5250 4750 5000 4750
+Connection ~ 5000 4750
+Wire Wire Line
+	5000 5250 5250 5250
 $Comp
-L RTRIM R2
-U 1 1 5B13ADA4
+L R R2
+U 1 1 5B479D4C
 P 5000 5400
-F 0 "R2" V 5100 5300 50  0000 L CNN
-F 1 "200" V 4900 5375 50  0000 L CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_ACP_CA9h2.5_Vertical_Px2.5mm_Py5.0mm" V 4930 5400 50  0001 C CNN
+F 0 "R2" V 5080 5400 50  0000 C CNN
+F 1 "180" V 5000 5400 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4930 5400 50  0001 C CNN
 F 3 "" H 5000 5400 50  0001 C CNN
 	1    5000 5400
 	1    0    0    -1  
 $EndComp
+$Comp
+L C C5
+U 1 1 5B47A454
+P 5600 2150
+F 0 "C5" H 5625 2250 50  0000 L CNN
+F 1 "470nF" H 5400 2050 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 5638 2000 50  0001 C CNN
+F 3 "" H 5600 2150 50  0001 C CNN
+	1    5600 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C6
+U 1 1 5B47A4AA
+P 6750 2150
+F 0 "C6" H 6775 2250 50  0000 L CNN
+F 1 "68nF" H 6550 2050 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 6788 2000 50  0001 C CNN
+F 3 "" H 6750 2150 50  0001 C CNN
+	1    6750 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 2000 5400 1950
+Wire Wire Line
+	5600 2000 5600 1950
+Connection ~ 5600 1950
+Wire Wire Line
+	6550 2000 6550 1950
+Wire Wire Line
+	6750 2000 6750 1950
+Connection ~ 6750 1950
+Text Notes 7200 7050 0    60   ~ 0
+A primitive low pass filter that is voltage controlled using a Vactrol.\nVery low cost device, but note that it draws a bit more current than CV\ninputs normally do. Running several in parallell probably requires a \nseparate splitter/mult.
+Wire Wire Line
+	4600 3950 4700 3950
+Wire Wire Line
+	4700 3950 4700 4550
+Connection ~ 4700 4550
 $EndSCHEMATC
