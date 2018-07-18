@@ -20,6 +20,10 @@ D Hex inverseur schmitt trigger
 K TTL not inv
 $ENDCMP
 #
+$CMP CEM3340
+D CEM3340 VCO IC
+$ENDCMP
+#
 $CMP SW_Rotary2x5
 D 2 rotary switch with 5 positions
 K rotary switch
