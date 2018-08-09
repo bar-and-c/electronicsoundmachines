@@ -1,4 +1,4 @@
-update=Fredag 16 Mars 2018 21:53:54
+update=Söndag 05 Augusti 2018 12:52:24
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,4 @@ LibName30=Oscillators
 LibName31=switches
 LibName32=cmos_ieee
 LibName33=/Users/hakan/kod/electronics/kicadlib/hakane
+LibName34=diode
