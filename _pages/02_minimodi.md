@@ -99,6 +99,15 @@ It is possible that copper isn't optimal for direct touch, and the response woul
 Light sensors might be a cool option, but that would require light. Maybe if light could be supplied by the keyboard itself, in some elaborate way so that the finger blocks it... Maybe not. Or something similar but with IR LEDs and IR sensors?
 
 
+So, some sort of touch sensor, split in two paths as mentioned above; the comparator on/off paths could somehow be handled in a "digital" manner, with an encoder and maybe a simple DAC to convert a digital number to a voltage? 
+
+Encoder: 
+http://www.onsemi.com/pub/Collateral/MC14532B-D.PDF
+
+DAC: 
+https://www.mechaterrain.com/images/dac.gif
+
+
 ### Modulators
 Light sensors? 
 
@@ -116,3 +125,10 @@ Shallow as it may be, for me it is also about "beauty", lacking a better word. E
 
 I think the Minimodi will be easier to like than a rack system. A Minimodi is something you can bring along on a vacation, perhaps, sitting in a shabby café in Italy, waiting for the train, you pull up the old Minimodi and plug in your headphones. (A pity about the +/- 12V, though.)
 
+
+
+
+## Misc
+
+Maybe something here? 
+https://janostman.wordpress.com/build-the-minimo-synth/
