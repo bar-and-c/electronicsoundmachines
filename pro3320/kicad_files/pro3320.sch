@@ -1,0 +1,1118 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:hakane
+LIBS:switches
+LIBS:pro3320-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L AS3320 U?
+U 1 1 5B68A90F
+P 5600 2750
+F 0 "U?" H 6250 2850 60  0000 C CNN
+F 1 "AS3320" H 6300 1050 60  0000 C CNN
+F 2 "" H 5600 2750 60  0001 C CNN
+F 3 "" H 5600 2750 60  0001 C CNN
+	1    5600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Audio-Jack-2 J?
+U 1 1 5B68A95A
+P 1000 1900
+F 0 "J?" H 975 1975 50  0000 C CNN
+F 1 "AUDIO_IN2" H 975 1725 50  0000 C CNN
+F 2 "" H 1250 1900 50  0001 C CNN
+F 3 "" H 1250 1900 50  0001 C CNN
+	1    1000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Audio-Jack-2 J?
+U 1 1 5B68A98D
+P 950 6000
+F 0 "J?" H 925 6075 50  0000 C CNN
+F 1 "FREQ_CV_IN" H 925 5825 50  0000 C CNN
+F 2 "" H 1200 6000 50  0001 C CNN
+F 3 "" H 1200 6000 50  0001 C CNN
+	1    950  6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Audio-Jack-2 J?
+U 1 1 5B68A9BC
+P 3550 900
+F 0 "J?" H 3525 975 50  0000 C CNN
+F 1 "RES_CV_IN" H 3525 725 50  0000 C CNN
+F 2 "" H 3800 900 50  0001 C CNN
+F 3 "" H 3800 900 50  0001 C CNN
+	1    3550 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL074 U?
+U 1 1 5B68ADB1
+P 2300 1750
+F 0 "U?" H 2300 1950 50  0000 L CNN
+F 1 "TL074" H 2300 1550 50  0000 L CNN
+F 2 "" H 2250 1850 50  0001 C CNN
+F 3 "" H 2350 1950 50  0001 C CNN
+	1    2300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL074 U?
+U 1 1 5B68AE16
+P 2300 5900
+F 0 "U?" H 2300 6100 50  0000 L CNN
+F 1 "TL074" H 2300 5700 50  0000 L CNN
+F 2 "" H 2250 6000 50  0001 C CNN
+F 3 "" H 2350 6100 50  0001 C CNN
+	1    2300 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL074 U?
+U 1 1 5B68AE4D
+P 6000 1050
+F 0 "U?" H 6000 1250 50  0000 L CNN
+F 1 "TL074" H 6000 850 50  0000 L CNN
+F 2 "" H 5950 1150 50  0001 C CNN
+F 3 "" H 6050 1250 50  0001 C CNN
+	1    6000 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL074 U?
+U 1 1 5B68AE81
+P 9250 2350
+F 0 "U?" H 9250 2550 50  0000 L CNN
+F 1 "TL074" H 9250 2150 50  0000 L CNN
+F 2 "" H 9200 2450 50  0001 C CNN
+F 3 "" H 9300 2550 50  0001 C CNN
+	1    9250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Audio-Jack-2 J?
+U 1 1 5B68AEF2
+P 1000 1450
+F 0 "J?" H 975 1525 50  0000 C CNN
+F 1 "AUDIO_IN1" H 975 1275 50  0000 C CNN
+F 2 "" H 1250 1450 50  0001 C CNN
+F 3 "" H 1250 1450 50  0001 C CNN
+	1    1000 1450
+	1    0    0    -1  
+$EndComp
+Text Notes 500  2700 0    60   ~ 0
+NOTE: Not sure about this one: would be cool to offer a basic mixer,\nto spare modules, but then I'll have to add two pots as well, really. \nStill, that would only add up to six pots. On the other hand, could\nit not be argued that there should be CV mix as well?\nTHINK IT THROUGH.
+$Comp
+L C C?
+U 1 1 5B68B05F
+P 5300 2600
+F 0 "C?" H 5325 2700 50  0000 L CNN
+F 1 "300p" H 5325 2500 50  0000 L CNN
+F 2 "" H 5338 2450 50  0001 C CNN
+F 3 "" H 5300 2600 50  0001 C CNN
+	1    5300 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C?
+U 1 1 5B68B0EC
+P 5200 3450
+F 0 "C?" H 5225 3550 50  0000 L CNN
+F 1 "300p" H 5225 3350 50  0000 L CNN
+F 2 "" H 5238 3300 50  0001 C CNN
+F 3 "" H 5200 3450 50  0001 C CNN
+	1    5200 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5B68B124
+P 7600 3650
+F 0 "C?" H 7625 3750 50  0000 L CNN
+F 1 "300p" V 7650 3400 50  0000 L CNN
+F 2 "" H 7638 3500 50  0001 C CNN
+F 3 "" H 7600 3650 50  0001 C CNN
+	1    7600 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5B68B180
+P 7400 4650
+F 0 "C?" H 7425 4750 50  0000 L CNN
+F 1 "300p" H 7425 4550 50  0000 L CNN
+F 2 "" H 7438 4500 50  0001 C CNN
+F 3 "" H 7400 4650 50  0001 C CNN
+	1    7400 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5B68B1B5
+P 5050 3050
+F 0 "R?" V 5130 3050 50  0000 C CNN
+F 1 "100k" V 5050 3050 50  0000 C CNN
+F 2 "" V 4980 3050 50  0001 C CNN
+F 3 "" H 5050 3050 50  0001 C CNN
+	1    5050 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L SW_DPDT_x2 SW?
+U 1 1 5B68B91D
+P 4650 2200
+F 0 "SW?" H 4650 2370 50  0000 C CNN
+F 1 "LP_HP_1" H 4650 2000 50  0000 C CNN
+F 2 "" H 4650 2200 50  0001 C CNN
+F 3 "" H 4650 2200 50  0001 C CNN
+	1    4650 2200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SW_DPDT_x2 SW?
+U 2 1 5B68B96F
+P 4350 2900
+F 0 "SW?" H 4350 3070 50  0000 C CNN
+F 1 "LP_HP_1" H 4350 2700 50  0000 C CNN
+F 2 "" H 4350 2900 50  0001 C CNN
+F 3 "" H 4350 2900 50  0001 C CNN
+	2    4350 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B68BA82
+P 4450 2100
+F 0 "#PWR?" H 4450 1850 50  0001 C CNN
+F 1 "GND" H 4450 1950 50  0000 C CNN
+F 2 "" H 4450 2100 50  0001 C CNN
+F 3 "" H 4450 2100 50  0001 C CNN
+	1    4450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B68BBD5
+P 3750 2600
+F 0 "R?" V 3830 2600 50  0000 C CNN
+F 1 "91k" V 3750 2600 50  0000 C CNN
+F 2 "" V 3680 2600 50  0001 C CNN
+F 3 "" H 3750 2600 50  0001 C CNN
+	1    3750 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP C?
+U 1 1 5B68C01D
+P 1600 1650
+F 0 "C?" H 1625 1750 50  0000 L CNN
+F 1 "CP" H 1625 1550 50  0000 L CNN
+F 2 "" H 1638 1500 50  0001 C CNN
+F 3 "" H 1600 1650 50  0001 C CNN
+	1    1600 1650
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4550 3000
+$Comp
+L GND #PWR?
+U 1 1 5B68C42D
+P 4050 3350
+F 0 "#PWR?" H 4050 3100 50  0001 C CNN
+F 1 "GND" H 4050 3200 50  0000 C CNN
+F 2 "" H 4050 3350 50  0001 C CNN
+F 3 "" H 4050 3350 50  0001 C CNN
+	1    4050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B68C506
+P 3800 3750
+F 0 "R?" V 3880 3750 50  0000 C CNN
+F 1 "91k" V 3800 3750 50  0000 C CNN
+F 2 "" V 3730 3750 50  0001 C CNN
+F 3 "" H 3800 3750 50  0001 C CNN
+	1    3800 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5B68C61D
+P 4950 3850
+F 0 "R?" V 5030 3850 50  0000 C CNN
+F 1 "100k" V 4950 3850 50  0000 C CNN
+F 2 "" V 4880 3850 50  0001 C CNN
+F 3 "" H 4950 3850 50  0001 C CNN
+	1    4950 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L -12V #PWR?
+U 1 1 5B68C865
+P 6000 4550
+F 0 "#PWR?" H 6000 4650 50  0001 C CNN
+F 1 "-12V" H 6000 4700 50  0000 C CNN
+F 2 "" H 6000 4550 50  0001 C CNN
+F 3 "" H 6000 4550 50  0001 C CNN
+	1    6000 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B68C8A5
+P 6600 4550
+F 0 "#PWR?" H 6600 4300 50  0001 C CNN
+F 1 "GND" H 6600 4400 50  0000 C CNN
+F 2 "" H 6600 4550 50  0001 C CNN
+F 3 "" H 6600 4550 50  0001 C CNN
+	1    6600 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5B68C931
+P 6000 2550
+F 0 "#PWR?" H 6000 2400 50  0001 C CNN
+F 1 "+12V" H 6000 2690 50  0000 C CNN
+F 2 "" H 6000 2550 50  0001 C CNN
+F 3 "" H 6000 2550 50  0001 C CNN
+	1    6000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B68CAD3
+P 6800 4850
+F 0 "#PWR?" H 6800 4600 50  0001 C CNN
+F 1 "GND" H 6800 4700 50  0000 C CNN
+F 2 "" H 6800 4850 50  0001 C CNN
+F 3 "" H 6800 4850 50  0001 C CNN
+	1    6800 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B68CBD7
+P 7050 5400
+F 0 "R?" V 7130 5400 50  0000 C CNN
+F 1 "91k" V 7050 5400 50  0000 C CNN
+F 2 "" V 6980 5400 50  0001 C CNN
+F 3 "" H 7050 5400 50  0001 C CNN
+	1    7050 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5B68D72E
+P 7700 4100
+F 0 "R?" V 7780 4100 50  0000 C CNN
+F 1 "100k" V 7700 4100 50  0000 C CNN
+F 2 "" V 7630 4100 50  0001 C CNN
+F 3 "" H 7700 4100 50  0001 C CNN
+	1    7700 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B68D9E4
+P 8300 3500
+F 0 "#PWR?" H 8300 3250 50  0001 C CNN
+F 1 "GND" H 8300 3350 50  0000 C CNN
+F 2 "" H 8300 3500 50  0001 C CNN
+F 3 "" H 8300 3500 50  0001 C CNN
+	1    8300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B68DCD1
+P 8800 3850
+F 0 "R?" V 8880 3850 50  0000 C CNN
+F 1 "91k" V 8800 3850 50  0000 C CNN
+F 2 "" V 8730 3850 50  0001 C CNN
+F 3 "" H 8800 3850 50  0001 C CNN
+	1    8800 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5B68DEB5
+P 7650 3250
+F 0 "R?" V 7730 3250 50  0000 C CNN
+F 1 "100k" V 7650 3250 50  0000 C CNN
+F 2 "" V 7580 3250 50  0001 C CNN
+F 3 "" H 7650 3250 50  0001 C CNN
+	1    7650 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP C?
+U 1 1 5B68E16F
+P 8000 2900
+F 0 "C?" H 8025 3000 50  0000 L CNN
+F 1 "2.2uF" H 8025 2800 50  0000 L CNN
+F 2 "" H 8038 2750 50  0001 C CNN
+F 3 "" H 8000 2900 50  0001 C CNN
+	1    8000 2900
+	0    -1   -1   0   
+$EndComp
+Text Notes 7800 6450 0    60   ~ 0
+It would be really nice to at least sniff the stages' outputs to jacks on \nthe panel, maybe?, and possibly also have insert jacks. But why, really? \nI think there is a slight risk that the inputs may disturb (destroy?) the IC,\nand also it is designed to work like a chain... \nOn the other hand, it would be interesting to know what that would \nsound like. :-) 
+$Comp
+L SW_3PDT SW?
+U 1 1 5B69343C
+P 4250 3450
+F 0 "SW?" H 4250 3620 50  0000 C CNN
+F 1 "LP_HP_2" H 4250 3250 50  0000 C CNN
+F 2 "" H 4250 3450 50  0001 C CNN
+F 3 "" H 4250 3450 50  0001 C CNN
+	1    4250 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SW_3PDT SW?
+U 2 1 5B6934E7
+P 4250 3950
+F 0 "SW?" H 4250 4120 50  0000 C CNN
+F 1 "LP_HP_2" H 4250 3750 50  0000 C CNN
+F 2 "" H 4250 3950 50  0001 C CNN
+F 3 "" H 4250 3950 50  0001 C CNN
+	2    4250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_3PDT SW?
+U 3 1 5B693560
+P 4300 4500
+F 0 "SW?" H 4300 4670 50  0000 C CNN
+F 1 "LP_HP_2" H 4300 4300 50  0000 C CNN
+F 2 "" H 4300 4500 50  0001 C CNN
+F 3 "" H 4300 4500 50  0001 C CNN
+	3    4300 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B6939F0
+P 3900 4400
+F 0 "R?" V 3980 4400 50  0000 C CNN
+F 1 "220k" V 3900 4400 50  0000 C CNN
+F 2 "" V 3830 4400 50  0001 C CNN
+F 3 "" H 3900 4400 50  0001 C CNN
+	1    3900 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L -12V #PWR?
+U 1 1 5B693A8B
+P 3700 4450
+F 0 "#PWR?" H 3700 4550 50  0001 C CNN
+F 1 "-12V" H 3700 4600 50  0000 C CNN
+F 2 "" H 3700 4450 50  0001 C CNN
+F 3 "" H 3700 4450 50  0001 C CNN
+	1    3700 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L SW_3PDT SW?
+U 1 1 5B693BB4
+P 7000 4950
+F 0 "SW?" H 7000 5120 50  0000 C CNN
+F 1 "LP_HP_3" H 7000 4750 50  0000 C CNN
+F 2 "" H 7000 4950 50  0001 C CNN
+F 3 "" H 7000 4950 50  0001 C CNN
+	1    7000 4950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SW_3PDT SW?
+U 2 1 5B693C69
+P 7450 5400
+F 0 "SW?" H 7450 5570 50  0000 C CNN
+F 1 "LP_HP_3" H 7450 5200 50  0000 C CNN
+F 2 "" H 7450 5400 50  0001 C CNN
+F 3 "" H 7450 5400 50  0001 C CNN
+	2    7450 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_3PDT SW?
+U 3 1 5B693D0B
+P 7450 5850
+F 0 "SW?" H 7450 6020 50  0000 C CNN
+F 1 "LP_HP_3" H 7450 5650 50  0000 C CNN
+F 2 "" H 7450 5850 50  0001 C CNN
+F 3 "" H 7450 5850 50  0001 C CNN
+	3    7450 5850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B693E71
+P 7050 5750
+F 0 "R?" V 7130 5750 50  0000 C CNN
+F 1 "220k" V 7050 5750 50  0000 C CNN
+F 2 "" V 6980 5750 50  0001 C CNN
+F 3 "" H 7050 5750 50  0001 C CNN
+	1    7050 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L -12V #PWR?
+U 1 1 5B693E77
+P 6850 5800
+F 0 "#PWR?" H 6850 5900 50  0001 C CNN
+F 1 "-12V" H 6850 5950 50  0000 C CNN
+F 2 "" H 6850 5800 50  0001 C CNN
+F 3 "" H 6850 5800 50  0001 C CNN
+	1    6850 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L SW_3PDT SW?
+U 1 1 5B694668
+P 8100 3600
+F 0 "SW?" H 8100 3770 50  0000 C CNN
+F 1 "LP_HP_4" H 8100 3400 50  0000 C CNN
+F 2 "" H 8100 3600 50  0001 C CNN
+F 3 "" H 8100 3600 50  0001 C CNN
+	1    8100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_3PDT SW?
+U 2 1 5B694949
+P 8750 3450
+F 0 "SW?" H 8750 3620 50  0000 C CNN
+F 1 "LP_HP_4" H 8750 3250 50  0000 C CNN
+F 2 "" H 8750 3450 50  0001 C CNN
+F 3 "" H 8750 3450 50  0001 C CNN
+	2    8750 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SW_3PDT SW?
+U 3 1 5B694ADF
+P 9050 3150
+F 0 "SW?" H 9050 3320 50  0000 C CNN
+F 1 "LP_HP_4" H 9050 2950 50  0000 C CNN
+F 2 "" H 9050 3150 50  0001 C CNN
+F 3 "" H 9050 3150 50  0001 C CNN
+	3    9050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B694C74
+P 9450 3050
+F 0 "R?" V 9530 3050 50  0000 C CNN
+F 1 "220k" V 9450 3050 50  0000 C CNN
+F 2 "" V 9380 3050 50  0001 C CNN
+F 3 "" H 9450 3050 50  0001 C CNN
+	1    9450 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L -12V #PWR?
+U 1 1 5B694D13
+P 9650 3100
+F 0 "#PWR?" H 9650 3200 50  0001 C CNN
+F 1 "-12V" H 9650 3250 50  0000 C CNN
+F 2 "" H 9650 3100 50  0001 C CNN
+F 3 "" H 9650 3100 50  0001 C CNN
+	1    9650 3100
+	-1   0    0    1   
+$EndComp
+NoConn ~ 9250 3250
+NoConn ~ 8650 3550
+NoConn ~ 7350 5950
+NoConn ~ 7650 5500
+NoConn ~ 4100 4600
+NoConn ~ 4450 4050
+$Comp
+L -12V #PWR?
+U 1 1 5B69553D
+P 5900 1350
+F 0 "#PWR?" H 5900 1450 50  0001 C CNN
+F 1 "-12V" H 5900 1500 50  0000 C CNN
+F 2 "" H 5900 1350 50  0001 C CNN
+F 3 "" H 5900 1350 50  0001 C CNN
+	1    5900 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5B6955EB
+P 5900 750
+F 0 "#PWR?" H 5900 600 50  0001 C CNN
+F 1 "+12V" H 5900 890 50  0000 C CNN
+F 2 "" H 5900 750 50  0001 C CNN
+F 3 "" H 5900 750 50  0001 C CNN
+	1    5900 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5B695665
+P 9150 2050
+F 0 "#PWR?" H 9150 1900 50  0001 C CNN
+F 1 "+12V" H 9150 2190 50  0000 C CNN
+F 2 "" H 9150 2050 50  0001 C CNN
+F 3 "" H 9150 2050 50  0001 C CNN
+	1    9150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5B6956DF
+P 2200 1450
+F 0 "#PWR?" H 2200 1300 50  0001 C CNN
+F 1 "+12V" H 2200 1590 50  0000 C CNN
+F 2 "" H 2200 1450 50  0001 C CNN
+F 3 "" H 2200 1450 50  0001 C CNN
+	1    2200 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5B695759
+P 2200 5600
+F 0 "#PWR?" H 2200 5450 50  0001 C CNN
+F 1 "+12V" H 2200 5740 50  0000 C CNN
+F 2 "" H 2200 5600 50  0001 C CNN
+F 3 "" H 2200 5600 50  0001 C CNN
+	1    2200 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L -12V #PWR?
+U 1 1 5B6957D3
+P 2200 2050
+F 0 "#PWR?" H 2200 2150 50  0001 C CNN
+F 1 "-12V" H 2200 2200 50  0000 C CNN
+F 2 "" H 2200 2050 50  0001 C CNN
+F 3 "" H 2200 2050 50  0001 C CNN
+	1    2200 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L -12V #PWR?
+U 1 1 5B69584D
+P 2200 6200
+F 0 "#PWR?" H 2200 6300 50  0001 C CNN
+F 1 "-12V" H 2200 6350 50  0000 C CNN
+F 2 "" H 2200 6200 50  0001 C CNN
+F 3 "" H 2200 6200 50  0001 C CNN
+	1    2200 6200
+	-1   0    0    1   
+$EndComp
+$Comp
+L -12V #PWR?
+U 1 1 5B6958C7
+P 9150 2650
+F 0 "#PWR?" H 9150 2750 50  0001 C CNN
+F 1 "-12V" H 9150 2800 50  0000 C CNN
+F 2 "" H 9150 2650 50  0001 C CNN
+F 3 "" H 9150 2650 50  0001 C CNN
+	1    9150 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5B695968
+P 6650 1050
+F 0 "R?" V 6730 1050 50  0000 C CNN
+F 1 "200k" V 6650 1050 50  0000 C CNN
+F 2 "" V 6580 1050 50  0001 C CNN
+F 3 "" H 6650 1050 50  0001 C CNN
+	1    6650 1050
+	0    1    1    0   
+$EndComp
+Text Notes 7550 1350 0    60   ~ 0
+NOTE: P1 uses 200k to pin 9, and 240k as pull down for LP, \nand also 150pF for caps. Experiment with those values? \nUPDATE: I just saw that the data sheet says that the R on pin 9\nshall be selected so that the max resonance CV gives the desired \nmax current (and resonance?).\n\nAlso, the resonance feedback is different: the OP amplifies the output \n2.4 times, and then the feedback seems to be voltage divided a LOT. \nEITHER just do as the data sheet says, OR try both setups. 
+Wire Wire Line
+	5400 2850 5300 2850
+Wire Wire Line
+	5300 2850 5300 2750
+Wire Wire Line
+	2600 1750 3750 1750
+Wire Wire Line
+	3750 1750 3750 2450
+Wire Wire Line
+	3750 2300 4450 2300
+Wire Wire Line
+	4850 2200 5300 2200
+Wire Wire Line
+	5300 2200 5300 2450
+Wire Wire Line
+	3750 2900 4150 2900
+Connection ~ 3750 2300
+Wire Wire Line
+	4550 2800 5200 2800
+Wire Wire Line
+	3800 3250 5400 3250
+Wire Wire Line
+	5050 3250 5050 3200
+Wire Wire Line
+	5050 2800 5050 2900
+Wire Wire Line
+	5400 3050 5200 3050
+Wire Wire Line
+	5200 3050 5200 2800
+Connection ~ 5050 2800
+Connection ~ 5050 3250
+Wire Wire Line
+	5400 3450 5350 3450
+Wire Wire Line
+	4450 3450 5050 3450
+Wire Wire Line
+	3800 3550 4050 3550
+Wire Wire Line
+	4550 3650 5400 3650
+Wire Wire Line
+	4550 3650 4550 4500
+Wire Wire Line
+	4550 3850 4450 3850
+Wire Wire Line
+	4950 3700 4950 3650
+Connection ~ 4950 3650
+Wire Wire Line
+	4950 4000 4950 5050
+Wire Wire Line
+	4950 4050 5100 4050
+Wire Wire Line
+	5100 4050 5100 3850
+Wire Wire Line
+	5100 3850 5400 3850
+Wire Wire Line
+	5400 4050 5300 4050
+Wire Wire Line
+	5300 4050 5300 5900
+Wire Wire Line
+	5300 5900 2600 5900
+Wire Wire Line
+	7200 4950 7400 4950
+Wire Wire Line
+	7400 4950 7400 4800
+Wire Wire Line
+	7400 4500 7400 4250
+Wire Wire Line
+	7400 4250 7200 4250
+Wire Wire Line
+	4950 5050 6800 5050
+Connection ~ 4950 4050
+Wire Wire Line
+	3800 3950 4050 3950
+Connection ~ 3800 3550
+Wire Wire Line
+	6700 5050 6700 5400
+Wire Wire Line
+	6700 5400 6900 5400
+Connection ~ 6700 5050
+Wire Wire Line
+	7200 5400 7250 5400
+Wire Wire Line
+	7700 5300 7650 5300
+Wire Wire Line
+	3750 2750 3750 2900
+Wire Wire Line
+	3800 3250 3800 3600
+Wire Wire Line
+	3800 3950 3800 3900
+Wire Wire Line
+	7200 3850 8650 3850
+Wire Wire Line
+	7700 3850 7700 3950
+Wire Wire Line
+	7200 4050 7500 4050
+Wire Wire Line
+	7500 4050 7500 4300
+Wire Wire Line
+	7500 4300 7700 4300
+Wire Wire Line
+	7700 4250 7700 5850
+Connection ~ 7700 4300
+Wire Wire Line
+	8400 3850 8400 3700
+Wire Wire Line
+	8400 3700 8300 3700
+Connection ~ 7700 3850
+Wire Wire Line
+	7900 3650 7750 3650
+Wire Wire Line
+	7450 3650 7200 3650
+Connection ~ 8400 3850
+Wire Wire Line
+	8950 3850 9050 3850
+Wire Wire Line
+	9050 3850 9050 3450
+Wire Wire Line
+	9050 3450 8950 3450
+Wire Wire Line
+	7800 3350 8550 3350
+Wire Wire Line
+	7800 3450 7800 3350
+Wire Wire Line
+	7200 3450 7800 3450
+Wire Wire Line
+	7650 3450 7650 3400
+Connection ~ 7650 3450
+Wire Wire Line
+	7650 3100 7650 3050
+Wire Wire Line
+	7450 3050 7750 3050
+Wire Wire Line
+	7450 3050 7450 3250
+Wire Wire Line
+	7450 3250 7200 3250
+Wire Wire Line
+	7750 3050 7750 2900
+Wire Wire Line
+	7750 2900 7850 2900
+Connection ~ 7650 3050
+Wire Wire Line
+	8150 2900 8250 2900
+Wire Wire Line
+	8250 2900 8250 2250
+Wire Wire Line
+	8250 2250 8950 2250
+Wire Wire Line
+	4550 4500 4500 4500
+Connection ~ 4550 3850
+Wire Wire Line
+	3700 4450 3700 4400
+Wire Wire Line
+	3700 4400 3750 4400
+Wire Wire Line
+	7700 5850 7650 5850
+Connection ~ 7700 5300
+Wire Wire Line
+	6850 5800 6850 5750
+Wire Wire Line
+	6850 5750 6900 5750
+Wire Wire Line
+	7200 5750 7250 5750
+Wire Wire Line
+	4050 4400 4100 4400
+Wire Wire Line
+	7900 3650 7900 3600
+Wire Wire Line
+	8850 3150 8500 3150
+Wire Wire Line
+	8500 3150 8500 3350
+Connection ~ 8500 3350
+Wire Wire Line
+	9650 3100 9650 3050
+Wire Wire Line
+	9650 3050 9600 3050
+Wire Wire Line
+	9300 3050 9250 3050
+Wire Wire Line
+	5700 1150 5600 1150
+Wire Wire Line
+	5600 1150 5600 1550
+Wire Wire Line
+	6400 1550 6400 1050
+Wire Wire Line
+	6300 1050 6500 1050
+Connection ~ 6400 1050
+Wire Wire Line
+	6800 1050 7300 1050
+Wire Wire Line
+	7300 1050 7300 2850
+Wire Wire Line
+	7300 2850 7200 2850
+$Comp
+L R R?
+U 1 1 5B6960B9
+P 7400 2750
+F 0 "R?" V 7480 2750 50  0000 C CNN
+F 1 "R" V 7400 2750 50  0000 C CNN
+F 2 "" V 7330 2750 50  0001 C CNN
+F 3 "" H 7400 2750 50  0001 C CNN
+	1    7400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3050 7400 3050
+Wire Wire Line
+	7400 3050 7400 2900
+Wire Wire Line
+	7400 2600 7400 1400
+Wire Wire Line
+	7400 1400 9700 1400
+Wire Wire Line
+	9700 1400 9700 2350
+Wire Wire Line
+	9700 2350 9550 2350
+$Comp
+L R R?
+U 1 1 5B696B35
+P 6200 1550
+F 0 "R?" V 6280 1550 50  0000 C CNN
+F 1 "100k" V 6200 1550 50  0000 C CNN
+F 2 "" V 6130 1550 50  0001 C CNN
+F 3 "" H 6200 1550 50  0001 C CNN
+	1    6200 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 1550 6050 1550
+Wire Wire Line
+	6350 1550 6400 1550
+$Comp
+L R R?
+U 1 1 5B696EA7
+P 5100 1150
+F 0 "R?" V 5180 1150 50  0000 C CNN
+F 1 "100k" V 5100 1150 50  0000 C CNN
+F 2 "" V 5030 1150 50  0001 C CNN
+F 3 "" H 5100 1150 50  0001 C CNN
+	1    5100 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L POT RV?
+U 1 1 5B69701D
+P 4650 1400
+F 0 "RV?" V 4475 1400 50  0000 C CNN
+F 1 "POT" V 4550 1400 50  0000 C CNN
+F 2 "" H 4650 1400 50  0001 C CNN
+F 3 "" H 4650 1400 50  0001 C CNN
+	1    4650 1400
+	1    0    0    -1  
+$EndComp
+Text Notes 500  4550 0    60   ~ 0
+NOTE: Should accept anything (e.g. -12V) on the CV inputs, \nbut normally say 0-10V or so. \nThe freq input can take +/-6V, but (I think) kind of works with \n-25mV to 155mV – and apparently negative? So with the gain\nas below, values outside 0-8V ought to have no effect, but be \nwell within +/-6V.\nThe res input takes from -18V to +2V. And it seems weird. \nEXPERIMENT AND TEST!
+Text Notes 650  7650 0    60   ~ 0
+A sweep from 8V to 0V on the panel pot should result in a voltage sweep \nof -25mV to 155mV, if I read the data sheet correctly. It says that \nincreasing voltage means a decrease in filter frequency. And I would like\nthe effective range to be 0-8V (as specified by Doepfer). \nPut a trimmer to -12 (plus a fixed resistor), to trim the zero offset, \nperhaps? Or – should be easier to adjust with a voltage dividing trimmer \n(and resistors) between 0 and -12V, and a fixed summing resistor, like for \nthe others.\n
+$Comp
+L POT RV?
+U 1 1 5B6A1E7E
+P 1000 5450
+F 0 "RV?" V 825 5450 50  0000 C CNN
+F 1 "100k" V 900 5450 50  0000 C CNN
+F 2 "" H 1000 5450 50  0001 C CNN
+F 3 "" H 1000 5450 50  0001 C CNN
+	1    1000 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B6A1F9B
+P 1400 5450
+F 0 "R?" V 1480 5450 50  0000 C CNN
+F 1 "110k" V 1400 5450 50  0000 C CNN
+F 2 "" V 1330 5450 50  0001 C CNN
+F 3 "" H 1400 5450 50  0001 C CNN
+	1    1400 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5B6A214C
+P 1400 6000
+F 0 "R?" V 1480 6000 50  0000 C CNN
+F 1 "110k" V 1400 6000 50  0000 C CNN
+F 2 "" V 1330 6000 50  0001 C CNN
+F 3 "" H 1400 6000 50  0001 C CNN
+	1    1400 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B6A2439
+P 1000 5600
+F 0 "#PWR?" H 1000 5350 50  0001 C CNN
+F 1 "GND" H 1000 5450 50  0000 C CNN
+F 2 "" H 1000 5600 50  0001 C CNN
+F 3 "" H 1000 5600 50  0001 C CNN
+	1    1000 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B6A25D8
+P 1000 5100
+F 0 "R?" V 1080 5100 50  0000 C CNN
+F 1 "50k" V 1000 5100 50  0000 C CNN
+F 2 "" V 930 5100 50  0001 C CNN
+F 3 "" H 1000 5100 50  0001 C CNN
+	1    1000 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5B6A2698
+P 1000 4950
+F 0 "#PWR?" H 1000 4800 50  0001 C CNN
+F 1 "+12V" H 1000 5090 50  0000 C CNN
+F 2 "" H 1000 4950 50  0001 C CNN
+F 3 "" H 1000 4950 50  0001 C CNN
+	1    1000 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 5300 1000 5250
+Text Notes -150 5200 0    60   ~ 0
+NOTE: Should be\n1/3 of the pot, to get\n0-8V (our range).
+Wire Wire Line
+	1150 5450 1250 5450
+$Comp
+L GND #PWR?
+U 1 1 5B6A2CDE
+P 1150 6100
+F 0 "#PWR?" H 1150 5850 50  0001 C CNN
+F 1 "GND" H 1150 5950 50  0000 C CNN
+F 2 "" H 1150 6100 50  0001 C CNN
+F 3 "" H 1150 6100 50  0001 C CNN
+	1    1150 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B6A2EBF
+P 1400 6500
+F 0 "R?" V 1480 6500 50  0000 C CNN
+F 1 "110k" V 1400 6500 50  0000 C CNN
+F 2 "" V 1330 6500 50  0001 C CNN
+F 3 "" H 1400 6500 50  0001 C CNN
+	1    1400 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L -12V #PWR?
+U 1 1 5B6A2F62
+P 1150 6550
+F 0 "#PWR?" H 1150 6650 50  0001 C CNN
+F 1 "-12V" H 1150 6700 50  0000 C CNN
+F 2 "" H 1150 6550 50  0001 C CNN
+F 3 "" H 1150 6550 50  0001 C CNN
+	1    1150 6550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 6550 1150 6500
+Wire Wire Line
+	1150 6500 1250 6500
+Wire Wire Line
+	1550 6500 2300 6500
+Wire Wire Line
+	1750 5450 1750 6500
+Wire Wire Line
+	1550 6000 2000 6000
+Connection ~ 1750 6000
+Wire Wire Line
+	1750 5450 1550 5450
+$Comp
+L R R?
+U 1 1 5B6A32C6
+P 2450 6500
+F 0 "R?" V 2530 6500 50  0000 C CNN
+F 1 "2.7k" V 2450 6500 50  0000 C CNN
+F 2 "" V 2380 6500 50  0001 C CNN
+F 3 "" H 2450 6500 50  0001 C CNN
+	1    2450 6500
+	0    1    1    0   
+$EndComp
+Connection ~ 1750 6500
+Wire Wire Line
+	2600 6500 2750 6500
+Wire Wire Line
+	2750 6500 2750 5900
+Connection ~ 2750 5900
+Text Notes 1450 5250 0    60   ~ 0
+TEST RANGE WITH POT\n
+Text Notes 2800 6700 0    60   ~ 0
+NOTE: Possibly increase a bit, and put a attenuation pot on freq CV (and \na bigger one for the manual pot and offset?), to be able to handle \nsmaller CV ranges as well? Could be fairly easy to test in LtSpice? 
+Text Notes 3100 5050 0    60   ~ 0
+TEST AT LEAST ONE HP/LP SWITCH? \nAND ONE SEPARATE OUTPUT?
+$Comp
+L Audio-Jack-2 J?
+U 1 1 5B6A4164
+P 10550 1950
+F 0 "J?" H 10525 2025 50  0000 C CNN
+F 1 "OUT_MAIN" H 10525 1775 50  0000 C CNN
+F 2 "" H 10800 1950 50  0001 C CNN
+F 3 "" H 10800 1950 50  0001 C CNN
+	1    10550 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Audio-Jack-2 J?
+U 1 1 5B6A42A1
+P 10550 2300
+F 0 "J?" H 10525 2375 50  0000 C CNN
+F 1 "OUT_A" H 10525 2125 50  0000 C CNN
+F 2 "" H 10800 2300 50  0001 C CNN
+F 3 "" H 10800 2300 50  0001 C CNN
+	1    10550 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Audio-Jack-2 J?
+U 1 1 5B6A43B2
+P 10550 2700
+F 0 "J?" H 10525 2775 50  0000 C CNN
+F 1 "OUT_B" H 10525 2525 50  0000 C CNN
+F 2 "" H 10800 2700 50  0001 C CNN
+F 3 "" H 10800 2700 50  0001 C CNN
+	1    10550 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Audio-Jack-2 J?
+U 1 1 5B6A445F
+P 10550 3050
+F 0 "J?" H 10525 3125 50  0000 C CNN
+F 1 "OUT_C" H 10525 2875 50  0000 C CNN
+F 2 "" H 10800 3050 50  0001 C CNN
+F 3 "" H 10800 3050 50  0001 C CNN
+	1    10550 3050
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC
