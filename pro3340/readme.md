@@ -26,3 +26,11 @@ NOTE: I have only tested this circuit with the newly produced CEM3340, not e.g. 
 
 An interesting article of how different synthesizers have implemented the CEM3340: 
 <https://electricdruid.net/cem3340-vco-voltage-controlled-oscillator-designs/>
+
+## Panel
+
+The panel is perhaps a bit crowded, haven't tried it out yet. 
+
+Just a reminder (for myself mostly): before sending it to the laser cutter, change text to paths. 
+Also, the holes could be a tad smaller, the pots fit exactly in the hole for the jacks – on the other hand, that would mean that the PCB has to match exactly, maybe better with a little slack. The holes fot the jacks could probably be smaller as well (and I will mount them without PCB).
+
