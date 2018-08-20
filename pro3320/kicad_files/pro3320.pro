@@ -1,4 +1,4 @@
-update=Måndag 06 Augusti 2018 22:30:30
+update=Fredag 10 Augusti 2018 20:20:26
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,4 @@ LibName28=contrib
 LibName29=valves
 LibName30=/Users/hakan/kod/electronics/kicadlib/hakane
 LibName31=switches
+LibName32=diode
