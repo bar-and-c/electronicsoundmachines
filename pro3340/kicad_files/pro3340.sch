@@ -2400,4 +2400,6 @@ Text Notes 10600 7650 0    60   ~ 0
 A
 Text Notes 2750 4750 0    60   ~ 0
 NOTE: R16's 280k was chosen by tweaking a trimmer – theoretically maybe a lower value would be better. \nThe same goes for R17 really, just trimming in something to get better 0V out.
+Text Notes 550  5300 0    60   ~ 0
+NOTE: The three way switch is rather expensive, \nmaybe just use two jacks (pos/neg)? \nLess versatile, but it's almost a 10th of the BOM.
 $EndSCHEMATC
