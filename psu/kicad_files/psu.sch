@@ -1,0 +1,608 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:diode
+LIBS:psu-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_01x03 J1
+U 1 1 5B472D94
+P 1050 2700
+F 0 "J1" H 1050 2900 50  0000 C CNN
+F 1 "2x12V_AC" H 1050 2500 50  0000 C CNN
+F 2 "" H 1050 2700 50  0001 C CNN
+F 3 "" H 1050 2700 50  0001 C CNN
+	1    1050 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 1N4001 D2
+U 1 1 5B472E16
+P 1750 2000
+F 0 "D2" H 1750 2100 50  0000 C CNN
+F 1 "1N4001" H 1750 1900 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_Horizontal_RM10" H 1750 1825 50  0001 C CNN
+F 3 "" H 1750 2000 50  0001 C CNN
+	1    1750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1N4001 D4
+U 1 1 5B472E6E
+P 1750 3800
+F 0 "D4" H 1750 3900 50  0000 C CNN
+F 1 "1N4001" H 1750 3700 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_Horizontal_RM10" H 1750 3625 50  0001 C CNN
+F 3 "" H 1750 3800 50  0001 C CNN
+	1    1750 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1N4001 D3
+U 1 1 5B472EB2
+P 1750 3400
+F 0 "D3" H 1750 3500 50  0000 C CNN
+F 1 "1N4001" H 1750 3300 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_Horizontal_RM10" H 1750 3225 50  0001 C CNN
+F 3 "" H 1750 3400 50  0001 C CNN
+	1    1750 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 1N4001 D1
+U 1 1 5B472EE2
+P 1750 1600
+F 0 "D1" H 1750 1700 50  0000 C CNN
+F 1 "1N4001" H 1750 1500 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_Horizontal_RM10" H 1750 1425 50  0001 C CNN
+F 3 "" H 1750 1600 50  0001 C CNN
+	1    1750 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 5B472F24
+P 2300 2150
+F 0 "C1" H 2325 2250 50  0000 L CNN
+F 1 "4700uF/25V" H 2325 2050 50  0000 L CNN
+F 2 "" H 2338 2000 50  0001 C CNN
+F 3 "" H 2300 2150 50  0001 C CNN
+	1    2300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 5B472F66
+P 2300 3250
+F 0 "C2" H 2325 3350 50  0000 L CNN
+F 1 "4700uF/25V" H 2325 3150 50  0000 L CNN
+F 2 "" H 2338 3100 50  0001 C CNN
+F 3 "" H 2300 3250 50  0001 C CNN
+	1    2300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5B472FB6
+P 2900 2150
+F 0 "C3" H 2925 2250 50  0000 L CNN
+F 1 "10nF" H 2925 2050 50  0000 L CNN
+F 2 "" H 2938 2000 50  0001 C CNN
+F 3 "" H 2900 2150 50  0001 C CNN
+	1    2900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5B473008
+P 2900 3250
+F 0 "C4" H 2925 3350 50  0000 L CNN
+F 1 "10nF" H 2925 3150 50  0000 L CNN
+F 2 "" H 2938 3100 50  0001 C CNN
+F 3 "" H 2900 3250 50  0001 C CNN
+	1    2900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM7805_TO220 U3
+U 1 1 5B47311B
+P 4600 1900
+F 0 "U3" H 4450 2025 50  0000 C CNN
+F 1 "LM7805_TO220" H 4600 2025 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 4600 2125 50  0001 C CIN
+F 3 "" H 4600 1850 50  0001 C CNN
+	1    4600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM7812_TO220 U1
+U 1 1 5B4731AB
+P 3300 1600
+F 0 "U1" H 3150 1725 50  0000 C CNN
+F 1 "LM7812_TO220" H 3300 1725 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 3300 1825 50  0001 C CIN
+F 3 "" H 3300 1550 50  0001 C CNN
+	1    3300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM7912_TO220 U2
+U 1 1 5B473208
+P 3300 3800
+F 0 "U2" H 3150 3675 50  0000 C CNN
+F 1 "LM7912_TO220" H 3300 3675 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 3300 3600 50  0001 C CIN
+F 3 "" H 3300 3800 50  0001 C CNN
+	1    3300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C5
+U 1 1 5B47D4D6
+P 3700 2150
+F 0 "C5" H 3725 2250 50  0000 L CNN
+F 1 "220uF/25V" H 3725 2050 50  0000 L CNN
+F 2 "" H 3738 2000 50  0001 C CNN
+F 3 "" H 3700 2150 50  0001 C CNN
+	1    3700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C6
+U 1 1 5B47D4DC
+P 3700 3250
+F 0 "C6" H 3725 3350 50  0000 L CNN
+F 1 "220uF/25V" H 3725 3150 50  0000 L CNN
+F 2 "" H 3738 3100 50  0001 C CNN
+F 3 "" H 3700 3250 50  0001 C CNN
+	1    3700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 5B47D4E2
+P 4200 2150
+F 0 "C7" H 4225 2250 50  0000 L CNN
+F 1 "10nF" H 4225 2050 50  0000 L CNN
+F 2 "" H 4238 2000 50  0001 C CNN
+F 3 "" H 4200 2150 50  0001 C CNN
+	1    4200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 5B47D4E8
+P 4200 3250
+F 0 "C8" H 4225 3350 50  0000 L CNN
+F 1 "10nF" H 4225 3150 50  0000 L CNN
+F 2 "" H 4238 3100 50  0001 C CNN
+F 3 "" H 4200 3250 50  0001 C CNN
+	1    4200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x08_Odd_Even J2
+U 1 1 5B47D7CF
+P 6200 2700
+F 0 "J2" H 6250 3100 50  0000 C CNN
+F 1 "EURO_POWER" H 6250 2200 50  0000 C CNN
+F 2 "" H 6200 2700 50  0001 C CNN
+F 3 "" H 6200 2700 50  0001 C CNN
+	1    6200 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L CP C9
+U 1 1 5B47E151
+P 5000 2150
+F 0 "C9" H 5025 2250 50  0000 L CNN
+F 1 "220uF/25V" H 5025 2050 50  0000 L CNN
+F 2 "" H 5038 2000 50  0001 C CNN
+F 3 "" H 5000 2150 50  0001 C CNN
+	1    5000 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 5B47E157
+P 5500 2150
+F 0 "C10" H 5525 2250 50  0000 L CNN
+F 1 "10nF" H 5525 2050 50  0000 L CNN
+F 2 "" H 5538 2000 50  0001 C CNN
+F 3 "" H 5500 2150 50  0001 C CNN
+	1    5500 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2700 10700 2700
+Wire Wire Line
+	1400 2600 1250 2600
+Wire Wire Line
+	1400 1600 1400 2600
+Wire Wire Line
+	1400 1600 1600 1600
+Wire Wire Line
+	1250 2800 1400 2800
+Wire Wire Line
+	1400 2800 1400 3800
+Wire Wire Line
+	1400 3800 1600 3800
+Wire Wire Line
+	1900 3800 3000 3800
+Wire Wire Line
+	1600 3400 1400 3400
+Connection ~ 1400 3400
+Wire Wire Line
+	1900 3400 2000 3400
+Wire Wire Line
+	2000 3400 2000 1600
+Wire Wire Line
+	1900 1600 3000 1600
+Connection ~ 2000 1600
+Wire Wire Line
+	1600 2000 1400 2000
+Connection ~ 1400 2000
+Wire Wire Line
+	1900 2000 2100 2000
+Wire Wire Line
+	2100 2000 2100 3800
+Connection ~ 2100 3800
+Wire Wire Line
+	2300 2000 2300 1600
+Connection ~ 2300 1600
+Wire Wire Line
+	2900 2000 2900 1600
+Connection ~ 2900 1600
+Wire Wire Line
+	2300 2300 2300 3100
+Connection ~ 2300 2700
+Wire Wire Line
+	2300 3400 2300 3800
+Connection ~ 2300 3800
+Wire Wire Line
+	2900 2300 2900 3100
+Connection ~ 2900 2700
+Wire Wire Line
+	2900 3400 2900 3800
+Connection ~ 2900 3800
+Wire Wire Line
+	3600 3800 5900 3800
+Wire Wire Line
+	5900 3800 5900 3000
+Wire Wire Line
+	5900 3000 6500 3000
+Wire Wire Line
+	3600 1600 5900 1600
+Wire Wire Line
+	5900 1600 5900 2600
+Wire Wire Line
+	3700 2000 3700 1600
+Connection ~ 3700 1600
+Wire Wire Line
+	3700 2300 3700 3100
+Connection ~ 3700 2700
+Wire Wire Line
+	3700 3400 3700 3800
+Connection ~ 3700 3800
+Wire Wire Line
+	4200 1600 4200 2000
+Connection ~ 4200 1600
+Wire Wire Line
+	4300 1900 4200 1900
+Connection ~ 4200 1900
+Wire Wire Line
+	4200 2300 4200 3100
+Connection ~ 4200 2700
+Wire Wire Line
+	4200 3400 4200 3800
+Connection ~ 4200 3800
+Wire Wire Line
+	3300 1900 3300 3500
+Connection ~ 3300 2700
+Wire Wire Line
+	4600 2200 4600 2700
+Connection ~ 4600 2700
+Wire Wire Line
+	4900 1900 5800 1900
+Wire Wire Line
+	5000 1900 5000 2000
+Wire Wire Line
+	5000 2300 5000 2700
+Connection ~ 5000 2700
+Wire Wire Line
+	5500 1900 5500 2000
+Connection ~ 5000 1900
+Wire Wire Line
+	5500 2300 5500 2700
+Connection ~ 5500 2700
+Wire Wire Line
+	5800 1900 5800 2500
+Wire Wire Line
+	5800 2500 10700 2500
+Connection ~ 5500 1900
+Wire Wire Line
+	5900 2600 10700 2600
+Wire Wire Line
+	6000 2700 6000 2900
+Connection ~ 6000 2800
+Connection ~ 6000 2700
+Wire Wire Line
+	6000 2800 6500 2800
+Connection ~ 6000 3000
+Connection ~ 6000 2600
+Connection ~ 6000 2500
+$Comp
+L Conn_02x08_Odd_Even J3
+U 1 1 5B47EF38
+P 6800 2700
+F 0 "J3" H 6850 3100 50  0000 C CNN
+F 1 "EURO_POWER" H 6850 2200 50  0000 C CNN
+F 2 "" H 6800 2700 50  0001 C CNN
+F 3 "" H 6800 2700 50  0001 C CNN
+	1    6800 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L Conn_02x08_Odd_Even J4
+U 1 1 5B47EF90
+P 7400 2700
+F 0 "J4" H 7450 3100 50  0000 C CNN
+F 1 "EURO_POWER" H 7450 2200 50  0000 C CNN
+F 2 "" H 7400 2700 50  0001 C CNN
+F 3 "" H 7400 2700 50  0001 C CNN
+	1    7400 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L Conn_02x08_Odd_Even J5
+U 1 1 5B47EFE7
+P 8000 2700
+F 0 "J5" H 8050 3100 50  0000 C CNN
+F 1 "EURO_POWER" H 8050 2200 50  0000 C CNN
+F 2 "" H 8000 2700 50  0001 C CNN
+F 3 "" H 8000 2700 50  0001 C CNN
+	1    8000 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L Conn_02x08_Odd_Even J6
+U 1 1 5B47F045
+P 8600 2700
+F 0 "J6" H 8650 3100 50  0000 C CNN
+F 1 "EURO_POWER" H 8650 2200 50  0000 C CNN
+F 2 "" H 8600 2700 50  0001 C CNN
+F 3 "" H 8600 2700 50  0001 C CNN
+	1    8600 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L Conn_02x08_Odd_Even J7
+U 1 1 5B47F0A1
+P 9200 2700
+F 0 "J7" H 9250 3100 50  0000 C CNN
+F 1 "EURO_POWER" H 9250 2200 50  0000 C CNN
+F 2 "" H 9200 2700 50  0001 C CNN
+F 3 "" H 9200 2700 50  0001 C CNN
+	1    9200 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L Conn_02x08_Odd_Even J8
+U 1 1 5B47F100
+P 9800 2700
+F 0 "J8" H 9850 3100 50  0000 C CNN
+F 1 "EURO_POWER" H 9850 2200 50  0000 C CNN
+F 2 "" H 9800 2700 50  0001 C CNN
+F 3 "" H 9800 2700 50  0001 C CNN
+	1    9800 2700
+	1    0    0    1   
+$EndComp
+$Comp
+L Conn_02x08_Odd_Even J9
+U 1 1 5B47F163
+P 10400 2700
+F 0 "J9" H 10450 3100 50  0000 C CNN
+F 1 "EURO_POWER" H 10450 2200 50  0000 C CNN
+F 2 "" H 10400 2700 50  0001 C CNN
+F 3 "" H 10400 2700 50  0001 C CNN
+	1    10400 2700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6450 3000 10700 3000
+Connection ~ 6450 3000
+Connection ~ 6600 3000
+Connection ~ 7100 3000
+Connection ~ 7200 3000
+Connection ~ 7700 3000
+Connection ~ 7800 3000
+Connection ~ 8300 3000
+Connection ~ 8400 3000
+Connection ~ 8900 3000
+Connection ~ 9000 3000
+Connection ~ 9500 3000
+Connection ~ 9600 3000
+Connection ~ 10100 3000
+Connection ~ 10200 3000
+Connection ~ 10200 2900
+Connection ~ 10100 2900
+Connection ~ 9600 2900
+Connection ~ 9500 2900
+Connection ~ 9000 2900
+Connection ~ 8900 2900
+Connection ~ 8400 2900
+Connection ~ 8300 2900
+Connection ~ 7800 2900
+Connection ~ 7700 2900
+Connection ~ 7200 2900
+Connection ~ 7100 2900
+Wire Wire Line
+	6000 2900 10700 2900
+Connection ~ 6500 2900
+Connection ~ 6600 2900
+Wire Wire Line
+	6450 2800 10700 2800
+Connection ~ 6450 2800
+Connection ~ 6600 2800
+Connection ~ 7100 2800
+Connection ~ 7200 2800
+Connection ~ 7700 2800
+Connection ~ 7800 2800
+Connection ~ 8300 2800
+Connection ~ 8400 2800
+Connection ~ 8900 2800
+Connection ~ 9000 2800
+Connection ~ 9500 2800
+Connection ~ 9600 2800
+Connection ~ 10100 2800
+Connection ~ 10200 2800
+Connection ~ 6500 2700
+Connection ~ 6600 2700
+Connection ~ 7100 2700
+Connection ~ 7200 2700
+Connection ~ 7700 2700
+Connection ~ 7800 2700
+Connection ~ 8300 2700
+Connection ~ 8400 2700
+Connection ~ 8900 2700
+Connection ~ 9000 2700
+Connection ~ 9500 2700
+Connection ~ 9600 2700
+Connection ~ 10100 2700
+Connection ~ 10200 2700
+Connection ~ 6500 2600
+Connection ~ 6600 2600
+Connection ~ 7100 2600
+Connection ~ 7200 2600
+Connection ~ 7700 2600
+Connection ~ 7800 2600
+Connection ~ 8300 2600
+Connection ~ 8400 2600
+Connection ~ 8900 2600
+Connection ~ 9000 2600
+Connection ~ 9500 2600
+Connection ~ 9600 2600
+Connection ~ 10100 2600
+Connection ~ 10200 2600
+Connection ~ 6500 2500
+Connection ~ 6600 2500
+Connection ~ 7100 2500
+Connection ~ 7200 2500
+Connection ~ 7700 2500
+Connection ~ 7800 2500
+Connection ~ 8300 2500
+Connection ~ 8400 2500
+Connection ~ 8900 2500
+Connection ~ 9000 2500
+Connection ~ 9500 2500
+Connection ~ 9600 2500
+Connection ~ 10100 2500
+Wire Wire Line
+	6000 2400 7100 2400
+Connection ~ 6500 2400
+Connection ~ 6600 2400
+Wire Wire Line
+	7050 2400 10700 2400
+Connection ~ 7050 2400
+Connection ~ 7200 2400
+Connection ~ 7700 2400
+Connection ~ 7800 2400
+Connection ~ 8300 2400
+Connection ~ 8400 2400
+Connection ~ 8900 2400
+Connection ~ 9000 2400
+Connection ~ 9500 2400
+Connection ~ 9600 2400
+Connection ~ 10100 2400
+Connection ~ 10200 2400
+Wire Wire Line
+	6000 2300 10700 2300
+Connection ~ 6500 2300
+Connection ~ 6600 2300
+Connection ~ 7100 2300
+Connection ~ 7200 2300
+Connection ~ 7700 2300
+Connection ~ 7800 2300
+Connection ~ 8300 2300
+Connection ~ 8400 2300
+Connection ~ 8900 2300
+Connection ~ 9000 2300
+Connection ~ 9500 2300
+Connection ~ 9600 2300
+Connection ~ 10100 2300
+Connection ~ 10200 2300
+Connection ~ 10200 2500
+$Comp
+L GND #PWR01
+U 1 1 5B48481C
+P 5500 2700
+F 0 "#PWR01" H 5500 2450 50  0001 C CNN
+F 1 "GND" H 5500 2550 50  0000 C CNN
+F 2 "" H 5500 2700 50  0001 C CNN
+F 3 "" H 5500 2700 50  0001 C CNN
+	1    5500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR02
+U 1 1 5B484898
+P 5500 1600
+F 0 "#PWR02" H 5500 1450 50  0001 C CNN
+F 1 "+12V" H 5500 1740 50  0000 C CNN
+F 2 "" H 5500 1600 50  0001 C CNN
+F 3 "" H 5500 1600 50  0001 C CNN
+	1    5500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L -12V #PWR3
+U 1 1 5B484914
+P 5500 3800
+F 0 "#PWR3" H 5500 3900 50  0001 C CNN
+F 1 "-12V" H 5500 3950 50  0000 C CNN
+F 2 "" H 5500 3800 50  0001 C CNN
+F 3 "" H 5500 3800 50  0001 C CNN
+	1    5500 3800
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
