@@ -136,7 +136,7 @@ F 3 "" H 3650 3100 50  0001 C CNN
 	1    3650 3100
 	-1   0    0    1   
 $EndComp
-Text Notes 750  7600 0    60   ~ 0
+Text Notes 3000 7550 0    60   ~ 0
 NOTE: The resistor values on the CV side are chosen to match the LEDs \nin the kit; 40 mA for the optocoupler and 20 mA for the LED.\nIf you change these components, make sure the resistors match.\n\nSimilarly, the components on the audio side are chosen to work OK with \nthe optocoupler I chose (it has 500 ohms as its lowest possible value). \n\nFor other optocouplers it might be desirable to change some values (the \nmost important being that R2 has to be large enough not to damage the \noptocoupler's LED).
 $Comp
 L SW_SPDT SW2
@@ -204,8 +204,8 @@ F 3 "" H 7650 3250 50  0001 C CNN
 	1    7650 3250
 	0    1    1    0   
 $EndComp
-Text Notes 7000 6300 0    60   ~ 0
-MODS:\n- The dist connaisseur mod: put a diode (Schottky or Germanium, since \n   those have lower voltage drop => less loss) directly after the audio in \n   jack, for another type of dist. \n- The filter mod: Put another capacitor (of significantly higher (or lower) \n   value) instead of the VCA resistor (R3), for different filter response. \n- The spartan mod: if you're into simplicity, skip everything extra on the \n   audio side, just keep the capacitor (and the optocoupler, obviously). \n   Just put jumpers (e.g. cut off resistor legs) across the skipped \n   components (between pin 1-2 on SW1, 1-3 on SW2, the two end \n   points of the pot, and across the diode.
+Text Notes 7000 6400 0    60   ~ 0
+MODS:\n- The dist connaisseur mod: Put a diode (Schottky or Germanium, since \n   those have lower voltage drop => less loss) directly after the audio in \n   jack, for another type of dist. The diode will clip (half) the waveform. \n- The filter mod: Put another capacitor (of significantly higher (or lower) \n   value) instead of the VCA resistor (R3), for different filter response. \n- The lofi envelope mod: To get a decay thing going, from a gate pulse on\n   CV_IN, add a capacitor where JP1 is. You would probably also want to \n   have a switch there, short circuiting the capacitor to disable it. \n   Given the low ipedance in the rest of the circuit, you will need a fairly \n   high value on the capacitor – I tried with 10uF, getting a pretty fast \n   decay – and also possibly bipolar (since you don't know what kind of \n   voltage to expect.\n- The spartan mod: If you're into simplicity (or tight budgets), skip \n   everything extra on the audio side, just keep the capacitor (and the \n   optocoupler, obviously). \n   Just put jumpers (e.g. cut off resistor legs) across the skipped \n   components (between pin 1-2 on SW1, 1-3 on SW2, the two end \n   points of the pot, and across the diode.
 $Comp
 L SW_SPDT SW1
 U 1 1 5B9309F8
@@ -362,8 +362,8 @@ Wire Wire Line
 	8750 3550 8600 3550
 Wire Wire Line
 	7950 3550 8000 3550
-Text Notes 8650 6900 0    60   ~ 0
-Mini LPG
+Text Notes 7050 7050 0    60   ~ 0
+Mini LPG\nNot a low pass gate per se, but everyone calls them that. Basically it is a low pass \nfilter of the simplest form – a resistor and a capacitor – where the resistor is light \ndependent, i.e. its value depends on the light in the LED in the optocoupler. Low CV => \nhigh resistance, high CV => low resistance, and this affects the low pass filter response. 
 Text Notes 7400 7500 0    60   ~ 0
 Mini LPG\n
 Text Notes 8200 7650 0    60   ~ 0
