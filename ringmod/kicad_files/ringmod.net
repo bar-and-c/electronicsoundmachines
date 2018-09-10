@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/hakan/kod/electronics/ringmod/kicad_files/ringmod.sch)
-    (date "Söndag 09 September 2018 12:26:22")
+    (date "Måndag 10 September 2018 17:42:14")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -16,13 +16,13 @@
         (comment (number 4) (value "")))))
   (components
     (comp (ref TR1)
-      (value TRANSF5)
+      (value 42TM018)
       (footprint hakane:Transformer-42TM018)
       (libsource (lib transf) (part TRANSF5))
       (sheetpath (names /) (tstamps /))
       (tstamp 5B8FF66A))
     (comp (ref TR2)
-      (value TRANSF5)
+      (value 42TM018)
       (footprint hakane:Transformer-42TM018)
       (libsource (lib transf) (part TRANSF5))
       (sheetpath (names /) (tstamps /))
@@ -116,10 +116,10 @@
   (libraries
     (library (logical conn)
       (uri "/Library/Application Support/kicad/library/conn.lib"))
-    (library (logical transf)
-      (uri "/Library/Application Support/kicad/library/transf.lib"))
     (library (logical diode)
-      (uri "/Library/Application Support/kicad/library/diode.lib")))
+      (uri "/Library/Application Support/kicad/library/diode.lib"))
+    (library (logical transf)
+      (uri "/Library/Application Support/kicad/library/transf.lib")))
   (nets
     (net (code 1) (name "Net-(D1-Pad2)")
       (node (ref D1) (pin 2))
