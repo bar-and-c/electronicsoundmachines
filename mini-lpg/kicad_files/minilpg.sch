@@ -99,14 +99,14 @@ L Device:R R1
 U 1 1 5B92A8F7
 P 3650 3100
 F 0 "R1" V 3730 3100 50  0000 C CNN
-F 1 "470" V 3650 3100 50  0000 C CNN
+F 1 "1k" V 3650 3100 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3580 3100 50  0001 C CNN
 F 3 "" H 3650 3100 50  0001 C CNN
 	1    3650 3100
 	-1   0    0    1   
 $EndComp
-Text Notes 3100 7100 0    60   ~ 0
-NOTE: It is important that the resistor values on the CV side \nare chosen to match the LED and the LED in the optocoupler.\nR2 should actually be lower for the NSL-32 to reach its maximum \ncurrent of 40 mA at around 12 volts CV. I chose 390 ohm to match \nother optocouplers available at electrokit.se (to make it easier to \nexperiment with changing optocoupler, and also lowering the load\non the CV).\nYou can pick a larger value for R1 if you want a softer light (and \nless load on the CV source); the 470 ohm in the schematic is \nsimply the lowest possible value formax light (given 12 V in) for\nthe LED in the kit.\nIf you change the LED or optocoupler, make sure the resistors match.\n\nSimilarly, the components on the audio side are chosen to work OK\nwith the optocoupler I chose (it has 500 ohms as its lowest possible \nvalue). For other optocouplers, you’d probably want to change C1, \nL1, and R3 as well (and probably RV1 too).\n
+Text Notes 2950 6450 0    60   ~ 0
+NOTE: It is important that the resistor values on the CV side \nare chosen to match the LED and the LED in the optocoupler.\nR2 could actually be lower for the NSL-32 to reach its maximum \ncurrent of 40 mA at around 12 volts CV. I chose 390 ohm to match \nother optocouplers available at electrokit.se (to make it easier to \nexperiment with changing optocoupler, and also lowering the load\non the CV).\nPick a value for R1 so that it shines as bright as you like – it is a matter\nof taste, but there is a limit to how low you can go (a too small resistor\nleads to a too high current that can destroy the LED; the exact limit \ndepends on the LED).\nIf you change the LED or optocoupler, make sure the resistors match.\n\nSimilarly, the components on the audio side are chosen to work OK\nwith the optocoupler I chose (it has 500 ohms as its lowest possible \nvalue). For other optocouplers, you’d probably want to change C1, \nL1, and R3 as well (and probably RV1 too).\n
 $Comp
 L minilpg-rescue:SW_SPDT SW2
 U 1 1 5B92B047
@@ -173,8 +173,8 @@ F 3 "" H 7650 3250 50  0001 C CNN
 	1    7650 3250
 	0    1    1    0   
 $EndComp
-Text Notes 7000 6400 0    60   ~ 0
-MODS:\n- The dist connaisseur mod: Put a diode (Schottky or Germanium, since \n   those have lower voltage drop => less loss) directly after the audio in \n   jack, for another type of dist. The diode will clip (half) the waveform. \n- The filter mod: Put another capacitor (of significantly higher (or lower) \n   value) instead of the VCA resistor (R3), for different filter response. \n- The lofi envelope mod: To get a decay thing going, from a gate pulse on\n   CV_IN, add a capacitor where JP1 is. You would probably also want to \n   have a switch there, short circuiting the capacitor to disable it. \n   Given the low ipedance in the rest of the circuit, you will need a fairly \n   high value on the capacitor – I tried with 10uF, getting a pretty fast \n   decay – and also possibly bipolar (since you don't know what kind of \n   voltage to expect.\n- The spartan mod: If you're into simplicity (or tight budgets), skip \n   everything extra on the audio side, just keep the capacitor (and the \n   optocoupler, obviously). \n   Just put jumpers (e.g. cut off resistor legs) across the skipped \n   components (between pin 1-2 on SW1, 1-3 on SW2, the two end \n   points of the pot, and across the diode.
+Text Notes 7000 6450 0    60   ~ 0
+MODS:\n- The dist connaisseur mod: Put a diode (Schottky or Germanium, since \n   those have lower voltage drop => less loss) directly after the audio in \n   jack, for another type of dist. The diode will clip (half) the waveform. \n- The filter mod: Put another capacitor (of significantly higher (or lower) \n   value) instead of the VCA resistor (R3), for different filter response.\nActually, you could replace L1, R3, and D3 with capacitors of different\nvalues, if you would like a wider range of low pass filter characteristics. \n- The lofi envelope mod: To get a decay thing going, from a gate pulse on\n   CV_IN, add a capacitor where JP1 is. You would probably also want to \n   have a switch there, short circuiting the capacitor to disable it. \n   Given the low ipedance in the rest of the circuit, you will need a fairly \n   high value on the capacitor – I tried with 10uF, getting a pretty fast \n   decay – and also possibly bipolar (since you don't know what kind of \n   voltage to expect.\n- The spartan mod: If you're into simplicity (or tight budgets), skip \n   everything extra on the audio side, just keep the capacitor (and the \n   optocoupler, obviously). \n   Just put jumpers (e.g. cut off resistor legs) across the skipped \n   components (between pin 1-2 on SW1, 1-3 on SW2, the two end \n   points of the pot, and across the diode.
 $Comp
 L minilpg-rescue:SW_SPDT SW1
 U 1 1 5B9309F8
@@ -331,8 +331,8 @@ Wire Wire Line
 	8750 3550 8600 3550
 Wire Wire Line
 	7950 3550 8000 3550
-Text Notes 3050 2200 0    60   ~ 0
-Not a low pass gate per se, but everyone calls them that. Basically it is a low pass filter of the simplest\nform – a resistor and a capacitor – where the resistor is light dependent, i.e. its value depends \non the light in the LED in the optocoupler. Low CV => high resistance, high CV => low resistance, and \nthis affects the low pass filter response. \n\nI think it is quite useful,at least in a tiny modular like mine, as it for a rather small amount of money gives \na little touch of filter as well as VCA-ish features. \n\nHonestly, the distortion diode sounded a lot better on my breadboard than it did when mounted on the PCB \n(cannot recall if anything else changed). If you’re not happy with it, either skip it altogether for a cheaper \nbuild (then you can skip the switch as well), or replace it with a larger capacitor for more filtering options.\n\nAdding the coil is an attempt to get a band pass filter as well, and it does work, but could be better – \nmaybe with a larger coil (for a lower cutoff). \nAgain, skip this and the accompanying switch if you’re on a budget – or throw in yet another capacitor for even \nmore low pass options.
+Text Notes 3050 2400 0    60   ~ 0
+Not a low pass gate per se, but people calls them that. Basically it is a low pass filter of the simplest\nform – a resistor and a capacitor – where the resistor is light dependent, i.e. its value depends \non the light in the LED in the optocoupler. Low CV => high resistance, high CV => low resistance, and \nthis affects the low pass filter response. \n\nI think it is quite useful,at least in a tiny modular like mine, as it for a rather small amount of money gives \na little touch of filter as well as VCA-ish features. \n\nHonestly, initial tests suggest that the distortion diode doesn’t do much sonically. If you’re not happy with it, \neither skip it altogether for a cheaper \nbuild (then you can skip the switch as well), or replace it with a larger capacitor for more filtering options.\n\nAdding the coil is an attempt to get a band pass filter as well, and it does work, but it cuts a lot of low end – \nmaybe better with a larger coil (for a lower cutoff). \nAgain, skip this and the accompanying switch if you’re on a budget – or throw in yet another capacitor for even \nmore low pass options.\n\nFor some reason, the CV range where the filter is active is extremely narrow (approximately from closed to \nopen filter from 1.4 to 2 volts). I don’t know why, yet.
 Text Notes 7400 7500 0    60   ~ 0
 Mini LPG\n
 Text Notes 8200 7650 0    60   ~ 0
