@@ -11,15 +11,16 @@ layout: home
 
 ## Welcome to Electronic Sound Machines
 
-The idea is to build stuff that makes sound, learn electronics, be creative, and have fun. We will kick off with building a guitar pedal, and see where we will go after that.
+The idea is to build stuff that makes sound, learn electronics, be creative, and have fun. The first series of workshops were about building a guitar pedal. Coming up are one or more workshops for building simple synthesizer modules – tiny and simple enough that they don't even need a power supply, they can just be hanging in the cables of your modular.
 
-### [Build your own effect pedal](effectpedal)
+### [Build a ring modulator](ringmod)
+This workshop will be held at Inkonst, as part of Eter Labs. Check their info for details.
+Tickets here: 
+<https://billetto.se/e/eter-labs-bygg-din-egen-ringmodulator-biljetter-309903>
 
-**[UPDATE]**
-Since this workshop is starting to get fully booked, with a majority of dudes in the group, the remaining seats are reserved for those that are underrepresented in music and tech, e.g. women. 
+### Event archive
 
-The first series of workshops is about building an effect pedal, talk about what makes a fuzz fuzz, and things like that. Expect to spend one to three workshops on this (every other Wednesday), depending on how much you would want to experiment. It could probably be built on one occasion, but if we talk a lot about _how_ it works, it will take more than one occasion. Fear not, there are three Wednesdays booked.
-Read more [on this page](guitarpedal), where you will find information about the event, where to get kits, and how to sign up. 
+#### [Build your own effect pedal](effectpedal)
 
 Basically, the important facts are:
 * The first meeting is on **March 28, 18:00 -  21:00**. 
