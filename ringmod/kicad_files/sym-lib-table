@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name ringmod-rescue)(type Legacy)(uri ${KIPRJMOD}/ringmod-rescue.lib)(options "")(descr ""))
-)

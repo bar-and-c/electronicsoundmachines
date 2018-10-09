@@ -1,8 +1,4 @@
-*.bak
-*kicad_pcb-bak
-.DS_Store
-
 _site
 .sass-cache
 .jekyll-metadata
-Gemfile.lock
+
