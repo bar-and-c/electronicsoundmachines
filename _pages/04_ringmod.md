@@ -5,7 +5,13 @@ permalink: /ringmod/
 exclude: false
 ---
 
-# Placing components
+# The ringmod workshop
+
+<img src="/electronicsoundmachines/_pages/ringmod/ringmod_mini.jpg" width="whatever" height="whatever">
+
+## General information
+
+### Placing components
 
 Mount the smallest components first, e.g. resistors and diodes. 
 
@@ -18,9 +24,7 @@ After putting the component against the board, with legs through holes, bend the
 With one or a few components in place as described above, turn the board upside down for soldering.
 
 
-# Soldering
-
-## Theory
+### Soldering theory
 
 Ideally, the soldering should be done by heating the two parts (e.g. a solder pad on a circuit board and a component leg) enough to melt the solder wire. In other words, the solder should not be melted on the tip of the solder iron and then sort of applied on the pad and the component leg like putty. It is the heat of the pad and the component leg that shall melt the solder. Ideally.
 
@@ -31,7 +35,7 @@ How much solder to apply is hard to say. It should not be a blob. It should look
 There are lots of soldering guides on the internet, here's a link to one of them:
 https://www.kitronik.co.uk/blog/how-to-solder-in-ten-easy-steps/
 
-## In practice, step by step
+### Soldering in practice, step by step
 
 Clean the tip before using it, wipe it on a sponge or brass shavings. This is done to remove oxides and crap from the tip, making the tip function better and the solder joint cleaner.
 
@@ -46,7 +50,7 @@ When enough slder has been applied, remove the solder wire, and after one or two
 When it has cooled off a bit, cut the leg just above the solder joint.
 
 
-# Building the ringmod
+## Building the ringmod
 
 Start by mounting and soldering the four diodes. Diodes must be mounted in the right direction: on the diode there is a ring marking (often black) near one of the ends, and on the component layout print there is also a line near one edge – the diode should be placed in the direction so that its line is where the line is on the circuit board. 
 The markings on the PCB are not super easy to see, but there _is_ a line on one end, close to the pads. 
@@ -59,4 +63,7 @@ Next up – the final step – are the two transformers. Carefully straighten t
 
 After soldering all pins on both transformers, it’s time to test it. 
 If all is well, bend the metal tabs inwards to better hold the transformer in place. For an even more sturdy construction, solder the tabs as well. 
+
+<img src="/electronicsoundmachines/_pages/ringmod/ringmod_schematic.png" width="whatever" height="whatever">
+
 
