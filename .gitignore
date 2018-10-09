@@ -1,15 +1,8 @@
-<<<<<<< HEAD
 *.bak
 *kicad_pcb-bak
 .DS_Store
 
-=======
 _site
 .sass-cache
 .jekyll-metadata
-<<<<<<< HEAD
 Gemfile.lock
->>>>>>> Add initial Jekyll site
-=======
-
->>>>>>> Add Gemfile.lock to repo
