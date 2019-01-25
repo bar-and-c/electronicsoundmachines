@@ -1,0 +1,383 @@
+EESchema Schematic File Version 4
+LIBS:minidrum-77-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:AudioJack2_Ground J1
+U 1 1 5BCF78C7
+P 1600 2600
+F 0 "J1" H 1368 2579 50  0000 R CNN
+F 1 "AudioJack2_Ground" H 1368 2670 50  0000 R CNN
+F 2 "" H 1600 2600 50  0001 C CNN
+F 3 "~" H 1600 2600 50  0001 C CNN
+	1    1600 2600
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J2
+U 1 1 5BCF798F
+P 8500 2600
+F 0 "J2" H 8267 2579 50  0000 R CNN
+F 1 "AudioJack2_Ground" H 8267 2670 50  0000 R CNN
+F 2 "" H 8500 2600 50  0001 C CNN
+F 3 "~" H 8500 2600 50  0001 C CNN
+	1    8500 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5BCF7A5E
+P 3100 2950
+F 0 "C2" H 3215 2996 50  0000 L CNN
+F 1 "C" H 3215 2905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 3138 2800 50  0001 C CNN
+F 3 "~" H 3100 2950 50  0001 C CNN
+	1    3100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5C3CD86B
+P 3100 3400
+F 0 "#PWR01" H 3100 3150 50  0001 C CNN
+F 1 "GND" H 3105 3227 50  0000 C CNN
+F 2 "" H 3100 3400 50  0001 C CNN
+F 3 "" H 3100 3400 50  0001 C CNN
+	1    3100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2700 1900 2700
+Wire Wire Line
+	1900 2700 1900 3300
+Wire Wire Line
+	1900 3300 2700 3300
+Wire Wire Line
+	8200 3300 8200 2700
+Wire Wire Line
+	8200 2700 8300 2700
+Wire Wire Line
+	3100 3300 3100 3400
+Connection ~ 3100 3300
+$Comp
+L Device:R R1
+U 1 1 5C3CD920
+P 2700 2950
+F 0 "R1" H 2770 2996 50  0000 L CNN
+F 1 "R" H 2770 2905 50  0000 L CNN
+F 2 "" V 2630 2950 50  0001 C CNN
+F 3 "~" H 2700 2950 50  0001 C CNN
+	1    2700 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5C3CDA0B
+P 3450 2600
+F 0 "D1" H 3450 2384 50  0000 C CNN
+F 1 "D" H 3450 2475 50  0000 C CNN
+F 2 "" H 3450 2600 50  0001 C CNN
+F 3 "~" H 3450 2600 50  0001 C CNN
+	1    3450 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5C3CDA68
+P 3800 2950
+F 0 "R2" H 3870 2996 50  0000 L CNN
+F 1 "R" H 3870 2905 50  0000 L CNN
+F 2 "" V 3730 2950 50  0001 C CNN
+F 3 "~" H 3800 2950 50  0001 C CNN
+	1    3800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5C3CDA97
+P 4150 2600
+F 0 "R3" V 3943 2600 50  0000 C CNN
+F 1 "R" V 4034 2600 50  0000 C CNN
+F 2 "" V 4080 2600 50  0001 C CNN
+F 3 "~" H 4150 2600 50  0001 C CNN
+	1    4150 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5C3CDAE0
+P 4500 2950
+F 0 "R4" H 4570 2996 50  0000 L CNN
+F 1 "R" H 4570 2905 50  0000 L CNN
+F 2 "" V 4430 2950 50  0001 C CNN
+F 3 "~" H 4500 2950 50  0001 C CNN
+	1    4500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5C3CDB0C
+P 4900 2950
+F 0 "C3" H 5015 2996 50  0000 L CNN
+F 1 "C" H 5015 2905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 4938 2800 50  0001 C CNN
+F 3 "~" H 4900 2950 50  0001 C CNN
+	1    4900 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5C3CDB49
+P 5250 2600
+F 0 "C4" H 5365 2646 50  0000 L CNN
+F 1 "C" H 5365 2555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 5288 2450 50  0001 C CNN
+F 3 "~" H 5250 2600 50  0001 C CNN
+	1    5250 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5C3CDB9E
+P 5600 2950
+F 0 "C5" H 5715 2996 50  0000 L CNN
+F 1 "C" H 5715 2905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 5638 2800 50  0001 C CNN
+F 3 "~" H 5600 2950 50  0001 C CNN
+	1    5600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5C3CDBD0
+P 6000 2950
+F 0 "C6" H 6115 2996 50  0000 L CNN
+F 1 "C" H 6115 2905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 6038 2800 50  0001 C CNN
+F 3 "~" H 6000 2950 50  0001 C CNN
+	1    6000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5C3CDC38
+P 6400 2950
+F 0 "L1" H 6453 2996 50  0000 L CNN
+F 1 "L" H 6453 2905 50  0000 L CNN
+F 2 "" H 6400 2950 50  0001 C CNN
+F 3 "~" H 6400 2950 50  0001 C CNN
+	1    6400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5C3CDC94
+P 6750 2600
+F 0 "C7" H 6865 2646 50  0000 L CNN
+F 1 "C" H 6865 2555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 6788 2450 50  0001 C CNN
+F 3 "~" H 6750 2600 50  0001 C CNN
+	1    6750 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5C3CDCD5
+P 7450 2200
+F 0 "C9" H 7565 2246 50  0000 L CNN
+F 1 "C" H 7565 2155 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7488 2050 50  0001 C CNN
+F 3 "~" H 7450 2200 50  0001 C CNN
+	1    7450 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5C3CDD1E
+P 7100 2950
+F 0 "C8" H 7215 2996 50  0000 L CNN
+F 1 "C" H 7215 2905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7138 2800 50  0001 C CNN
+F 3 "~" H 7100 2950 50  0001 C CNN
+	1    7100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5C3CDD63
+P 7800 2950
+F 0 "C10" H 7915 2996 50  0000 L CNN
+F 1 "C" H 7915 2905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7838 2800 50  0001 C CNN
+F 3 "~" H 7800 2950 50  0001 C CNN
+	1    7800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5C3CDDAE
+P 7450 2600
+F 0 "R5" V 7243 2600 50  0000 C CNN
+F 1 "R" V 7334 2600 50  0000 C CNN
+F 2 "" V 7380 2600 50  0001 C CNN
+F 3 "~" H 7450 2600 50  0001 C CNN
+	1    7450 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 3300 3800 3300
+Wire Wire Line
+	3600 2600 3800 2600
+Wire Wire Line
+	4300 2600 4500 2600
+Wire Wire Line
+	5400 2600 5600 2600
+Wire Wire Line
+	6900 2600 7100 2600
+Wire Wire Line
+	7600 2600 7800 2600
+Wire Wire Line
+	7600 2200 7800 2200
+Wire Wire Line
+	7800 2200 7800 2600
+Connection ~ 7800 2600
+Wire Wire Line
+	7800 2600 8300 2600
+Wire Wire Line
+	7300 2200 7100 2200
+Wire Wire Line
+	7100 2200 7100 2600
+Connection ~ 7100 2600
+Wire Wire Line
+	7100 2600 7300 2600
+Wire Wire Line
+	7100 2600 7100 2800
+Wire Wire Line
+	7100 3100 7100 3300
+Connection ~ 7100 3300
+Wire Wire Line
+	7100 3300 7800 3300
+Wire Wire Line
+	7800 2800 7800 2600
+Wire Wire Line
+	7800 3100 7800 3300
+Connection ~ 7800 3300
+Wire Wire Line
+	7800 3300 8200 3300
+Wire Wire Line
+	6400 3100 6400 3300
+Connection ~ 6400 3300
+Wire Wire Line
+	6400 3300 7100 3300
+Wire Wire Line
+	6000 3100 6000 3300
+Connection ~ 6000 3300
+Wire Wire Line
+	6000 3300 6400 3300
+Wire Wire Line
+	5600 3100 5600 3300
+Connection ~ 5600 3300
+Wire Wire Line
+	5600 3300 6000 3300
+Wire Wire Line
+	4900 3100 4900 3300
+Connection ~ 4900 3300
+Wire Wire Line
+	4900 3300 5600 3300
+Wire Wire Line
+	4500 3100 4500 3300
+Connection ~ 4500 3300
+Wire Wire Line
+	4500 3300 4900 3300
+Wire Wire Line
+	3800 3100 3800 3300
+Connection ~ 3800 3300
+Wire Wire Line
+	3800 3300 4500 3300
+Wire Wire Line
+	2700 3100 2700 3300
+Wire Wire Line
+	2700 3300 3100 3300
+Wire Wire Line
+	3100 3100 3100 3300
+Wire Wire Line
+	3100 2800 3100 2600
+Connection ~ 3100 2600
+Wire Wire Line
+	3100 2600 3300 2600
+Wire Wire Line
+	2700 2800 2700 2600
+Wire Wire Line
+	2700 2600 3100 2600
+Wire Wire Line
+	3800 2800 3800 2600
+Connection ~ 3800 2600
+Wire Wire Line
+	3800 2600 4000 2600
+Wire Wire Line
+	4500 2800 4500 2600
+Connection ~ 4500 2600
+Wire Wire Line
+	4500 2600 4900 2600
+Wire Wire Line
+	4900 2800 4900 2600
+Connection ~ 4900 2600
+Wire Wire Line
+	4900 2600 5100 2600
+Wire Wire Line
+	5600 2800 5600 2600
+Connection ~ 5600 2600
+Wire Wire Line
+	5600 2600 6000 2600
+Wire Wire Line
+	6000 2800 6000 2600
+Connection ~ 6000 2600
+Wire Wire Line
+	6000 2600 6400 2600
+Wire Wire Line
+	6400 2800 6400 2600
+Connection ~ 6400 2600
+Wire Wire Line
+	6400 2600 6600 2600
+Connection ~ 2700 3300
+$Comp
+L Device:C C1
+U 1 1 5C3DAC3B
+P 2350 2600
+F 0 "C1" H 2465 2646 50  0000 L CNN
+F 1 "C" H 2465 2555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 2388 2450 50  0001 C CNN
+F 3 "~" H 2350 2600 50  0001 C CNN
+	1    2350 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 2600 2200 2600
+Wire Wire Line
+	2500 2600 2700 2600
+Connection ~ 2700 2600
+Text Notes 1900 5750 0    59   ~ 0
+CR-78 Claves\n—————————\nC1: 27nF\nR1: 270k\nC2: NC\nD1: ???????\nR2: 2.2M\nR3: 47k\nR4: NC\nC3: 4.7 nF\nC4: 2.2 nF\nC5: 4.7 nF\nC6: NC\nL1: ??? mH\nC7: 250 pF\nC8: 5.6 nF\nC9: 1 nF\nR5: NC\nC10: NC\n
+Text Notes 2800 5750 0    59   ~ 0
+CR-78 Rim Shot\n—————————\nC1: 27nF\nR1: 270k\nC2: NC\nD1: ???????\nR2: NC\nR3: 47k\nR4: 47k\nC3: NC\nC4: NC\nC5: 1.5 nF\nC6: 15 nF\nL1: ??? mH\nC7: 470 pF\nC8: NC\nC9: NC\nR5: 0 (jumper)\nC10: NC
+Text Notes 3700 5750 0    59   ~ 0
+TR-77 Claves\n—————————\nC1: 0 (jumper)\nR1: NC\nC2: 4.7 nF\nD1: ???????\nR2: 4.7M\nR3: 56k\nR4: NC\nC3: 4.7 nF\nC4: 1 nF\nC5: 4.7 nF\nC6: NC\nL1: 700 mH\nC7: 1.5 nF\nC8: 5.6 nF\nC9: 2.2 nF\nR5: NC\nC10: NC
+Text Notes 4600 5750 0    59   ~ 0
+TR-77 Rim Shot\n—————————\nC1: 0 (jumper)\nR1: NC\nC2: 4.7 nF\nD1: ???????\nR2: 4.7M\nR3: 100k\nR4: 47k\nC3: NC\nC4: 0 (jumper)\nC5: 27 nF\nC6: NC\nL1: 700 mH\nC7: 1 nF\nC8: NC\nC9: NC\nR5: 0 (jumper)\nC10: NC\n
+Text Notes 5500 5750 0    59   ~ 0
+TR-77 Bass Drum\n—————————\nC1: 0 (jumper)\nR1: NC\nC2: 4.7 nF\nD1: ???????\nR2: 4.7M\nR3: 33k\nR4: NC\nC3: 56 nF\nC4: 33 nF\nC5: 220 nF\nC6: 1 nF\nL1: 16 H (!)\nC7: 33 nF\nC8: 100 nF\nC9: NC\nR5: 10 k\nC10: 220 nF
+Text Notes 3700 6100 0    59   ~ 0
+For C1 on the TR-77 sounds — instead of a jumper,\nconsider using 27nF as on the CR-77
+$EndSCHEMATC
