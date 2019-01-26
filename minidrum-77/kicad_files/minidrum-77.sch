@@ -20,7 +20,7 @@ U 1 1 5BCF78C7
 P 1950 2500
 F 0 "J1" H 1718 2479 50  0000 R CNN
 F 1 "AudioJack2_Ground" H 1718 2570 50  0000 R CNN
-F 2 "" H 1950 2500 50  0001 C CNN
+F 2 "MusicThingModular:NV-PJ3410_SOCKET_MONO" H 1950 2500 50  0001 C CNN
 F 3 "~" H 1950 2500 50  0001 C CNN
 	1    1950 2500
 	1    0    0    1   
@@ -31,7 +31,7 @@ U 1 1 5BCF798F
 P 9400 2500
 F 0 "J2" H 9167 2479 50  0000 R CNN
 F 1 "AudioJack2_Ground" H 9167 2570 50  0000 R CNN
-F 2 "" H 9400 2500 50  0001 C CNN
+F 2 "MusicThingModular:NV-PJ3410_SOCKET_MONO" H 9400 2500 50  0001 C CNN
 F 3 "~" H 9400 2500 50  0001 C CNN
 	1    9400 2500
 	-1   0    0    1   
@@ -69,7 +69,7 @@ U 1 1 5C3CD920
 P 3050 2900
 F 0 "R1" H 3120 2946 50  0000 L CNN
 F 1 "R" H 3120 2855 50  0000 L CNN
-F 2 "" V 2980 2900 50  0001 C CNN
+F 2 "MusicThingModular:10MM_RESISTOR" V 2980 2900 50  0001 C CNN
 F 3 "~" H 3050 2900 50  0001 C CNN
 	1    3050 2900
 	1    0    0    -1  
@@ -91,7 +91,7 @@ U 1 1 5C3CDA68
 P 4150 2900
 F 0 "R2" H 4220 2946 50  0000 L CNN
 F 1 "R" H 4220 2855 50  0000 L CNN
-F 2 "" V 4080 2900 50  0001 C CNN
+F 2 "MusicThingModular:10MM_RESISTOR" V 4080 2900 50  0001 C CNN
 F 3 "~" H 4150 2900 50  0001 C CNN
 	1    4150 2900
 	1    0    0    -1  
@@ -102,7 +102,7 @@ U 1 1 5C3CDA97
 P 4500 2500
 F 0 "R3" V 4293 2500 50  0000 C CNN
 F 1 "R" V 4384 2500 50  0000 C CNN
-F 2 "" V 4430 2500 50  0001 C CNN
+F 2 "MusicThingModular:10MM_RESISTOR" V 4430 2500 50  0001 C CNN
 F 3 "~" H 4500 2500 50  0001 C CNN
 	1    4500 2500
 	0    1    1    0   
@@ -113,7 +113,7 @@ U 1 1 5C3CDAE0
 P 4850 2900
 F 0 "R4" H 4920 2946 50  0000 L CNN
 F 1 "R" H 4920 2855 50  0000 L CNN
-F 2 "" V 4780 2900 50  0001 C CNN
+F 2 "MusicThingModular:10MM_RESISTOR" V 4780 2900 50  0001 C CNN
 F 3 "~" H 4850 2900 50  0001 C CNN
 	1    4850 2900
 	1    0    0    -1  
@@ -168,7 +168,7 @@ U 1 1 5C3CDC38
 P 6750 2950
 F 0 "L1" H 6803 2996 50  0000 L CNN
 F 1 "L" H 6803 2905 50  0000 L CNN
-F 2 "" H 6750 2950 50  0001 C CNN
+F 2 "kicadlib:CoilC-1X" H 6750 2950 50  0001 C CNN
 F 3 "~" H 6750 2950 50  0001 C CNN
 	1    6750 2950
 	1    0    0    -1  
@@ -223,7 +223,7 @@ U 1 1 5C3CDDAE
 P 8350 2500
 F 0 "R5" V 8143 2500 50  0000 C CNN
 F 1 "R" V 8234 2500 50  0000 C CNN
-F 2 "" V 8280 2500 50  0001 C CNN
+F 2 "MusicThingModular:10MM_RESISTOR" V 8280 2500 50  0001 C CNN
 F 3 "~" H 8350 2500 50  0001 C CNN
 	1    8350 2500
 	0    1    1    0   
@@ -354,17 +354,17 @@ Wire Wire Line
 	2850 2500 3050 2500
 Connection ~ 3050 2500
 Text Notes 2250 5750 0    59   ~ 0
-CR-78 Claves\n—————————\nC1: 27nF\nR1: 270k\nC2: NC\nD1: ???????\nR2: 2.2M\nR3: 47k\nR4: NC\nC3: 4.7 nF\nC4: 2.2 nF\nC5: 4.7 nF\nC6: NC\nL1: ??? mH\nC7: 250 pF\nC8: 5.6 nF\nC9: 1 nF\nR5: NC\nC10: NC\n
+CR-78 Claves\n—————————\nC1: 27nF\nR1: 270k\nC2: NC\nD1: (see note)\nR2: 2.2M\nR3: 47k\nR4: NC\nC3: 4.7 nF\nC4: 2.2 nF\nC5: 4.7 nF\nC6: NC\nL1: 700 mH\nC7: 250 pF\nC8: 5.6 nF\nC9: 1 nF\nR5: NC\nC10: NC\n
 Text Notes 3150 5750 0    59   ~ 0
-CR-78 Rim Shot\n—————————\nC1: 27nF\nR1: 270k\nC2: NC\nD1: ???????\nR2: NC\nR3: 47k\nR4: 47k\nC3: NC\nC4: NC\nC5: 1.5 nF\nC6: 15 nF\nL1: ??? mH\nC7: 470 pF\nC8: NC\nC9: NC\nR5: 0 (jumper)\nC10: NC
+CR-78 Rim Shot\n—————————\nC1: 27nF\nR1: 270k\nC2: NC\nD1: (see note)\nR2: NC\nR3: 47k\nR4: 47k\nC3: NC\nC4: NC\nC5: 1.5 nF\nC6: 15 nF\nL1: 700 mH\nC7: 470 pF\nC8: NC\nC9: NC\nR5: 0 (jumper)\nC10: NC
 Text Notes 4050 5750 0    59   ~ 0
-TR-77 Claves\n—————————\nC1: 0 (jumper)\nR1: NC\nC2: 4.7 nF\nD1: ???????\nR2: 4.7M\nR3: 56k\nR4: NC\nC3: 4.7 nF\nC4: 1 nF\nC5: 4.7 nF\nC6: NC\nL1: 700 mH\nC7: 1.5 nF\nC8: 5.6 nF\nC9: 2.2 nF\nR5: NC\nC10: NC
+TR-77 Claves\n—————————\nC1: 0 (jumper)\nR1: NC\nC2: 4.7 nF\nD1: (see note)\nR2: 4.7M\nR3: 56k\nR4: NC\nC3: 4.7 nF\nC4: 1 nF\nC5: 4.7 nF\nC6: NC\nL1: 700 mH\nC7: 1.5 nF\nC8: 5.6 nF\nC9: 2.2 nF\nR5: NC\nC10: NC
 Text Notes 4950 5750 0    59   ~ 0
-TR-77 Rim Shot\n—————————\nC1: 0 (jumper)\nR1: NC\nC2: 4.7 nF\nD1: ???????\nR2: 4.7M\nR3: 100k\nR4: 47k\nC3: NC\nC4: 0 (jumper)\nC5: 27 nF\nC6: NC\nL1: 700 mH\nC7: 1 nF\nC8: NC\nC9: NC\nR5: 0 (jumper)\nC10: NC\n
+TR-77 Rim Shot\n—————————\nC1: 0 (jumper)\nR1: NC\nC2: 4.7 nF\nD1: (see note)\nR2: 4.7M\nR3: 100k\nR4: 47k\nC3: NC\nC4: 0 (jumper)\nC5: 27 nF\nC6: NC\nL1: 700 mH\nC7: 1 nF\nC8: NC\nC9: NC\nR5: 0 (jumper)\nC10: NC\n
 Text Notes 5850 5750 0    59   ~ 0
-TR-77 Bass Drum\n—————————\nC1: 0 (jumper)\nR1: NC\nC2: 4.7 nF\nD1: ???????\nR2: 4.7M\nR3: 33k\nR4: NC\nC3: 56 nF\nC4: 33 nF\nC5: 220 nF\nC6: 1 nF\nL1: 16 H (!)\nC7: 33 nF\nC8: 100 nF\nC9: NC\nR5: 10 k\nC10: 220 nF
+TR-77 Bass Drum\n—————————\nC1: 0 (jumper)\nR1: NC\nC2: 4.7 nF\nD1: (see note)\nR2: 4.7M\nR3: 33k\nR4: NC\nC3: 56 nF\nC4: 33 nF\nC5: 220 nF\nC6: 1 nF\nL1: 16 H (!)\nC7: 33 nF\nC8: 100 nF\nC9: NC\nR5: 10 k\nC10: 220 nF
 Text Notes 4050 6100 0    59   ~ 0
-For C1 on the TR-77 sounds: instead of a jumper,\ntry 27nF as on the CR-78 – is there a difference?
+NOTE: For C1 on the TR-77 sounds: instead of a jumper,\ntry 27nF as on the CR-78 – is there a difference?
 Wire Wire Line
 	9100 2600 9100 3300
 Wire Wire Line
@@ -375,7 +375,7 @@ U 1 1 5C4CA0A2
 P 7000 2750
 F 0 "JP1" H 7000 2862 50  0000 C CNN
 F 1 "ALT_COIL" H 7000 2953 50  0000 C CNN
-F 2 "" H 7000 2750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7000 2750 50  0001 C CNN
 F 3 "~" H 7000 2750 50  0001 C CNN
 	1    7000 2750
 	1    0    0    1   
@@ -404,4 +404,10 @@ Text Notes 8150 7650 0    50   ~ 0
 January 26, 2019
 Text Notes 10650 7650 0    50   ~ 0
 A
+Text Notes 4050 6400 0    59   ~ 0
+NOTE: The coil values for the listed CR-78 voices are guessed:\nhttp://electro-music.com/forum/post-420004.html#420004
+Text Notes 4050 6900 0    59   ~ 0
+NOTE: The diode is most likely not that important.\nI think I’ll go for a BAT-42, since it has low voltage\ndrop; I’m sure a standard 1N4148 will do as well.\nIf you want the original, check the original schematics. :-)
+Text Notes 2250 6550 0    50   ~ 0
+Inductors at Mouser: \nC-1X    15H (Triad Magnetics)\nC-85X  1.5H (Triad Magnetics)
 $EndSCHEMATC
