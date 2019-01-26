@@ -567,7 +567,7 @@ Connection ~ 4600 4300
 Wire Wire Line
 	5100 6100 5100 5650
 Wire Wire Line
-	2000 6100 2700 6100
+	1900 6100 2700 6100
 Connection ~ 4600 6100
 Wire Wire Line
 	6100 6100 6100 5650
@@ -633,16 +633,16 @@ $EndComp
 $Comp
 L metallic_beat-rescue:Audio-Jack-2 J1
 U 1 1 5AB07F43
-P 1800 5600
-F 0 "J1" H 1775 5675 50  0000 C CNN
-F 1 "GATE_IN" H 1775 5425 50  0000 C CNN
-F 2 "" H 2050 5600 50  0001 C CNN
-F 3 "" H 2050 5600 50  0001 C CNN
-	1    1800 5600
+P 1700 5600
+F 0 "J1" H 1675 5675 50  0000 C CNN
+F 1 "GATE_IN" H 1675 5425 50  0000 C CNN
+F 2 "" H 1950 5600 50  0001 C CNN
+F 3 "" H 1950 5600 50  0001 C CNN
+	1    1700 5600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 5700 2000 6100
+	1900 5700 1900 6100
 Wire Wire Line
 	2700 6100 2700 6000
 Connection ~ 2700 6100
@@ -691,8 +691,6 @@ Wire Wire Line
 Wire Wire Line
 	2700 5700 2700 5600
 Connection ~ 2700 5600
-Wire Wire Line
-	2300 5600 2000 5600
 Wire Wire Line
 	6700 4300 6700 4400
 Wire Wire Line
@@ -809,10 +807,10 @@ Wire Wire Line
 Wire Wire Line
 	9450 1400 9950 1400
 $Comp
-L Transistor_BJT:BC337 Q?
+L Transistor_BJT:BC337 Q4
 U 1 1 5BDB5BE1
 P 7700 5300
-F 0 "Q?" H 7891 5346 50  0000 L CNN
+F 0 "Q4" H 7891 5346 50  0000 L CNN
 F 1 "BC337" H 7891 5255 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7900 5225 50  0001 L CIN
 F 3 "http://www.nxp.com/documents/data_sheet/BC817_BC817W_BC337.pdf" H 7700 5300 50  0001 L CNN
@@ -822,10 +820,10 @@ $EndComp
 Wire Wire Line
 	6500 6100 7400 6100
 $Comp
-L Device:R R?
+L Device:R R24
 U 1 1 5BDBB394
 P 7400 5650
-F 0 "R?" H 7470 5696 50  0000 L CNN
+F 0 "R24" H 7470 5696 50  0000 L CNN
 F 1 "120k" H 7470 5605 50  0000 L CNN
 F 2 "" V 7330 5650 50  0001 C CNN
 F 3 "~" H 7400 5650 50  0001 C CNN
@@ -833,10 +831,10 @@ F 3 "~" H 7400 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R26
 U 1 1 5BDBB432
 P 7800 4550
-F 0 "R?" H 7870 4596 50  0000 L CNN
+F 0 "R26" H 7870 4596 50  0000 L CNN
 F 1 "47k" H 7870 4505 50  0000 L CNN
 F 2 "" V 7730 4550 50  0001 C CNN
 F 3 "~" H 7800 4550 50  0001 C CNN
@@ -861,10 +859,10 @@ Wire Wire Line
 	7800 4300 6700 4300
 Connection ~ 6700 4300
 $Comp
-L Device:R R?
+L Device:R R25
 U 1 1 5BDE303F
 P 7600 4800
-F 0 "R?" V 7393 4800 50  0000 C CNN
+F 0 "R25" V 7393 4800 50  0000 C CNN
 F 1 "470k" V 7484 4800 50  0000 C CNN
 F 2 "" V 7530 4800 50  0001 C CNN
 F 3 "~" H 7600 4800 50  0001 C CNN
@@ -872,10 +870,10 @@ F 3 "~" H 7600 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C11
 U 1 1 5BDED7C4
 P 7600 5000
-F 0 "C?" H 7625 5100 50  0000 L CNN
+F 0 "C11" H 7625 5100 50  0000 L CNN
 F 1 "100pF" H 7625 4900 50  0000 L CNN
 F 2 "" H 7638 4850 50  0001 C CNN
 F 3 "" H 7600 5000 50  0001 C CNN
@@ -905,10 +903,10 @@ Wire Wire Line
 Wire Wire Line
 	7400 6100 7800 6100
 $Comp
-L Device:CP C?
+L Device:CP C12
 U 1 1 5BE08F76
 P 8250 5000
-F 0 "C?" V 8505 5000 50  0000 C CNN
+F 0 "C12" V 8505 5000 50  0000 C CNN
 F 1 "4.7uF" V 8414 5000 50  0000 C CNN
 F 2 "" H 8288 4850 50  0001 C CNN
 F 3 "~" H 8250 5000 50  0001 C CNN
@@ -931,10 +929,10 @@ It ought to be possible to hack in pots for \nR16-R18 to be able to mix the wave
 Text Notes 8050 3350 0    59   ~ 0
 The chip in the original circuit runs on 5V, but if 5V is not \navailable it should be possible to run it on 12V.\nHave not tested, but should result in much higher levels,\nwhich should be solvable by lowering R19, perhaps?\nNot sure if it affects the frequencies.\n\nAlso, the original chip was MC14069. I have built one\nimplementation with a 74HCT04, and this (untested\nprototype) uses CD4069, to be able to run it on 12V\n(which also is untested, and possibly pointless).
 $Comp
-L Jumper:Jumper_3_Bridged12 JP?
+L Jumper:Jumper_3_Bridged12 JP2
 U 1 1 5C490801
 P 8900 1150
-F 0 "JP?" H 8900 1262 50  0000 C CNN
+F 0 "JP2" H 8900 1262 50  0000 C CNN
 F 1 "IC_VCC_SEL" H 8900 1353 50  0000 C CNN
 F 2 "" H 8900 1150 50  0001 C CNN
 F 3 "~" H 8900 1150 50  0001 C CNN
@@ -950,10 +948,10 @@ Connection ~ 8650 1150
 Wire Wire Line
 	8650 1150 8650 900 
 $Comp
-L Device:CP C?
+L Device:CP C13
 U 1 1 5C4BB612
 P 10350 1600
-F 0 "C?" H 10468 1646 50  0000 L CNN
+F 0 "C13" H 10468 1646 50  0000 L CNN
 F 1 "100uF" H 10468 1555 50  0000 L CNN
 F 2 "" H 10388 1450 50  0001 C CNN
 F 3 "~" H 10350 1600 50  0001 C CNN
@@ -961,10 +959,10 @@ F 3 "~" H 10350 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C10
 U 1 1 5C4ECA75
 P 7500 1250
-F 0 "C?" H 7618 1296 50  0000 L CNN
+F 0 "C10" H 7618 1296 50  0000 L CNN
 F 1 "100uF" H 7618 1205 50  0000 L CNN
 F 2 "" H 7538 1100 50  0001 C CNN
 F 3 "~" H 7500 1250 50  0001 C CNN
@@ -977,10 +975,10 @@ Connection ~ 9950 1400
 Wire Wire Line
 	10350 1750 10350 1800
 $Comp
-L Device:C C?
+L Device:C C14
 U 1 1 5C52718B
 P 10800 1600
-F 0 "C?" H 10915 1646 50  0000 L CNN
+F 0 "C14" H 10915 1646 50  0000 L CNN
 F 1 "100nF" H 10915 1555 50  0000 L CNN
 F 2 "" H 10838 1450 50  0001 C CNN
 F 3 "~" H 10800 1600 50  0001 C CNN
@@ -988,10 +986,10 @@ F 3 "~" H 10800 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C9
 U 1 1 5C5272EB
 P 7050 1250
-F 0 "C?" H 7165 1296 50  0000 L CNN
+F 0 "C9" H 7165 1296 50  0000 L CNN
 F 1 "100nF" H 7165 1205 50  0000 L CNN
 F 2 "" H 7088 1100 50  0001 C CNN
 F 3 "~" H 7050 1250 50  0001 C CNN
@@ -1050,10 +1048,10 @@ Connection ~ 9950 1700
 Wire Wire Line
 	9950 1700 10100 1700
 $Comp
-L 4xxx:4069 U?
+L 4xxx:4069 U1
 U 1 1 5C5C6DBC
 P 3150 1300
-F 0 "U?" H 3200 1150 50  0000 C CNN
+F 0 "U1" H 3200 1150 50  0000 C CNN
 F 1 "4069" H 3200 1450 50  0000 C CNN
 F 2 "" H 3150 1300 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 3150 1300 50  0001 C CNN
@@ -1061,10 +1059,10 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4069 U?
+L 4xxx:4069 U1
 U 2 1 5C5CF211
 P 4250 1300
-F 0 "U?" H 4300 1150 50  0000 C CNN
+F 0 "U1" H 4300 1150 50  0000 C CNN
 F 1 "4069" H 4300 1450 50  0000 C CNN
 F 2 "" H 4250 1300 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 4250 1300 50  0001 C CNN
@@ -1072,10 +1070,10 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4069 U?
+L 4xxx:4069 U1
 U 3 1 5C5CF2A0
 P 3150 2300
-F 0 "U?" H 3200 2150 50  0000 C CNN
+F 0 "U1" H 3200 2150 50  0000 C CNN
 F 1 "4069" H 3200 2450 50  0000 C CNN
 F 2 "" H 3150 2300 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 3150 2300 50  0001 C CNN
@@ -1083,10 +1081,10 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4069 U?
+L 4xxx:4069 U1
 U 4 1 5C5CF331
 P 4250 2300
-F 0 "U?" H 4300 2150 50  0000 C CNN
+F 0 "U1" H 4300 2150 50  0000 C CNN
 F 1 "4069" H 4300 2450 50  0000 C CNN
 F 2 "" H 4250 2300 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 4250 2300 50  0001 C CNN
@@ -1094,10 +1092,10 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4069 U?
+L 4xxx:4069 U1
 U 6 1 5C5CF3BC
 P 4250 3300
-F 0 "U?" H 4300 3150 50  0000 C CNN
+F 0 "U1" H 4300 3150 50  0000 C CNN
 F 1 "4069" H 4300 3450 50  0000 C CNN
 F 2 "" H 4250 3300 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 4250 3300 50  0001 C CNN
@@ -1105,10 +1103,10 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4069 U?
+L 4xxx:4069 U1
 U 5 1 5C5CF459
 P 3150 3300
-F 0 "U?" H 3200 3150 50  0000 C CNN
+F 0 "U1" H 3200 3150 50  0000 C CNN
 F 1 "4069" H 3200 3450 50  0000 C CNN
 F 2 "" H 3150 3300 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 3150 3300 50  0001 C CNN
@@ -1116,10 +1114,10 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4069 U?
+L 4xxx:4069 U1
 U 7 1 5C5CF74F
 P 8100 1350
-F 0 "U?" H 8250 1000 50  0000 C CNN
+F 0 "U1" H 8250 1000 50  0000 C CNN
 F 1 "4069" H 8250 1700 50  0000 C CNN
 F 2 "" H 8100 1350 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 8100 1350 50  0001 C CNN
@@ -1151,5 +1149,20 @@ Wire Wire Line
 Wire Wire Line
 	4550 3300 4800 3300
 Text Notes 550  7700 0    59   ~ 0
-Prototype warnings:\n——————————————\nThe IC is changed from my original prototype, as is\nthe IC voltage. Before hooking in the oscillator output \nto the transistor stages, add a volume pot in between.\nIf stuff doesn’t work, try running on 5V (and possibly \nswitch to the tested 74HCT04 – also listen for sound\nchanges).\n\nThe pulse shaping R12/C4 are probably not the best\nsolution. I chose to keep them in since I know they work\n(and I was to lazy to test new solutions). A capacitor in \nseries with the input should work fine, hence the jumper\nthere.\nIn the actual CR-78, the incoming pulse was obviously \ndesigned to have a certain length (and amplitude).
+Prototype warnings:\n——————————————\nThe IC is changed from my original prototype, as is\nthe IC voltage. Before hooking in the oscillator output \nto the transistor stages, add a volume pot in between.\nIf stuff doesn’t work, try running on 5V (and possibly \nswitch to the tested 74HCT04 – also listen for sound\nchanges).\n\nThe pulse shaping R12/C4 are probably not the best\nsolution. I chose to keep them in since I know they work\n(and I was to lazy to test new solutions). A capacitor in \nseries with the input should work fine, hence the jumper\nJ1 there (test that with no R12 and jumper over C4).\nIn the actual CR-78, the incoming pulse was obviously \ndesigned to have a certain length (and amplitude).
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 5C4DC16E
+P 2100 5600
+F 0 "JP1" H 2100 5812 50  0000 C CNN
+F 1 "OPT_CAP" H 2100 5721 50  0000 C CNN
+F 2 "" H 2100 5600 50  0001 C CNN
+F 3 "~" H 2100 5600 50  0001 C CNN
+	1    2100 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 5600 2000 5600
+Wire Wire Line
+	2200 5600 2300 5600
 $EndSCHEMATC
