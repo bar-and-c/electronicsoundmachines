@@ -1,6 +1,37 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:hakane
+LIBS:diode
 LIBS:4xvca-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 4xvca-rescue:V2164M U3
+L V2164M U3
 U 1 1 5B7C8762
 P 6050 2950
 F 0 "U3" H 6750 3050 60  0000 C CNN
@@ -26,7 +57,7 @@ F 3 "" H 6050 2950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:Conn_02x05_Odd_Even J5
+L Conn_02x05_Odd_Even J5
 U 1 1 5B7C87BA
 P 1250 7250
 F 0 "J5" H 1300 7550 50  0000 C CNN
@@ -37,7 +68,7 @@ F 3 "" H 1250 7250 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR01
+L +12V #PWR01
 U 1 1 5B7C8839
 P 950 7000
 F 0 "#PWR01" H 950 6850 50  0001 C CNN
@@ -48,7 +79,7 @@ F 3 "" H 950 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR7
+L -12V #PWR7
 U 1 1 5B7C8851
 P 950 7500
 F 0 "#PWR7" H 950 7600 50  0001 C CNN
@@ -59,7 +90,7 @@ F 3 "" H 950 7500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR02
+L GND #PWR02
 U 1 1 5B7C8869
 P 800 7300
 F 0 "#PWR02" H 800 7050 50  0001 C CNN
@@ -70,7 +101,7 @@ F 3 "" H 800 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:1N4001 D1
+L 1N4001 D1
 U 1 1 5B7C8881
 P 1950 7050
 F 0 "D1" H 1950 7150 50  0000 C CNN
@@ -81,7 +112,7 @@ F 3 "" H 1950 7050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:1N4001 D2
+L 1N4001 D2
 U 1 1 5B7C88F3
 P 1950 7450
 F 0 "D2" H 1950 7550 50  0000 C CNN
@@ -92,7 +123,7 @@ F 3 "" H 1950 7450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:CP C1
+L CP C1
 U 1 1 5B7C8935
 P 2250 7050
 F 0 "C1" H 2275 7150 50  0000 L CNN
@@ -103,7 +134,7 @@ F 3 "" H 2250 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:CP C2
+L CP C2
 U 1 1 5B7C896F
 P 2250 7450
 F 0 "C2" H 2275 7550 50  0000 L CNN
@@ -114,7 +145,7 @@ F 3 "" H 2250 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:C C3
+L C C3
 U 1 1 5B7C899D
 P 2550 7050
 F 0 "C3" H 2575 7150 50  0000 L CNN
@@ -125,7 +156,7 @@ F 3 "" H 2550 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:C C4
+L C C4
 U 1 1 5B7C89DA
 P 2550 7450
 F 0 "C4" H 2575 7550 50  0000 L CNN
@@ -136,7 +167,7 @@ F 3 "" H 2550 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:C C9
+L C C9
 U 1 1 5B7C8B0E
 P 2850 7050
 F 0 "C9" H 2875 7150 50  0000 L CNN
@@ -147,7 +178,7 @@ F 3 "" H 2850 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:C C10
+L C C10
 U 1 1 5B7C8B14
 P 2850 7450
 F 0 "C10" H 2875 7550 50  0000 L CNN
@@ -158,7 +189,7 @@ F 3 "" H 2850 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:C C11
+L C C11
 U 1 1 5B7C8B44
 P 3150 7050
 F 0 "C11" H 3175 7150 50  0000 L CNN
@@ -169,7 +200,7 @@ F 3 "" H 3150 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:C C12
+L C C12
 U 1 1 5B7C8B4A
 P 3150 7450
 F 0 "C12" H 3175 7550 50  0000 L CNN
@@ -180,7 +211,7 @@ F 3 "" H 3150 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR57
+L -12V #PWR57
 U 1 1 5B7C95FB
 P 6350 4750
 F 0 "#PWR57" H 6350 4850 50  0001 C CNN
@@ -191,7 +222,7 @@ F 3 "" H 6350 4750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR03
+L GND #PWR03
 U 1 1 5B7C962A
 P 6550 4750
 F 0 "#PWR03" H 6550 4500 50  0001 C CNN
@@ -202,7 +233,7 @@ F 3 "" H 6550 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR04
+L +12V #PWR04
 U 1 1 5B7C9659
 P 6350 2300
 F 0 "#PWR04" H 6350 2150 50  0001 C CNN
@@ -213,7 +244,7 @@ F 3 "" H 6350 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R37
+L R R37
 U 1 1 5B7C9794
 P 6550 2550
 F 0 "R37" V 6630 2550 50  0000 C CNN
@@ -224,7 +255,7 @@ F 3 "" H 6550 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:TL074 U1
+L TL074 U1
 U 1 1 5B7C9A88
 P 1950 1050
 F 0 "U1" H 1950 1250 50  0000 L CNN
@@ -235,7 +266,7 @@ F 3 "" H 2000 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:Audio-Jack-2 J1
+L Audio-Jack-2 J1
 U 1 1 5B7C9B43
 P 900 1150
 F 0 "J1" H 875 1225 50  0000 C CNN
@@ -246,7 +277,7 @@ F 3 "" H 1150 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:POT RV1
+L POT RV1
 U 1 1 5B7C9DB5
 P 2550 1250
 F 0 "RV1" V 2375 1250 50  0000 C CNN
@@ -257,7 +288,7 @@ F 3 "" H 2550 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:C C5
+L C C5
 U 1 1 5B7C9E5F
 P 2800 1450
 F 0 "C5" H 2825 1550 50  0000 L CNN
@@ -268,7 +299,7 @@ F 3 "" H 2800 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R17
+L R R17
 U 1 1 5B7C9EE6
 P 2100 1550
 F 0 "R17" V 2180 1550 50  0000 C CNN
@@ -279,7 +310,7 @@ F 3 "" H 2100 1550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:R R9
+L R R9
 U 1 1 5B7C9FA7
 P 1400 1150
 F 0 "R9" V 1480 1150 50  0000 C CNN
@@ -290,7 +321,7 @@ F 3 "" H 1400 1150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR05
+L GND #PWR05
 U 1 1 5B7CA184
 P 2550 1400
 F 0 "#PWR05" H 2550 1150 50  0001 C CNN
@@ -301,7 +332,7 @@ F 3 "" H 2550 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR06
+L GND #PWR06
 U 1 1 5B7CA370
 P 1100 1250
 F 0 "#PWR06" H 1100 1000 50  0001 C CNN
@@ -312,7 +343,7 @@ F 3 "" H 1100 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR07
+L +12V #PWR07
 U 1 1 5B7CA4FA
 P 1850 750
 F 0 "#PWR07" H 1850 600 50  0001 C CNN
@@ -323,7 +354,7 @@ F 3 "" H 1850 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR21
+L -12V #PWR21
 U 1 1 5B7CA53E
 P 1850 1350
 F 0 "#PWR21" H 1850 1450 50  0001 C CNN
@@ -334,7 +365,7 @@ F 3 "" H 1850 1350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:Audio-Jack-2 J6
+L Audio-Jack-2 J6
 U 1 1 5B7CA85F
 P 3400 1900
 F 0 "J6" H 3375 1975 50  0000 C CNN
@@ -345,7 +376,7 @@ F 3 "" H 3650 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR08
+L GND #PWR08
 U 1 1 5B7CA866
 P 3600 2000
 F 0 "#PWR08" H 3600 1750 50  0001 C CNN
@@ -356,7 +387,7 @@ F 3 "" H 3600 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R33
+L R R33
 U 1 1 5B7CA8D7
 P 5200 2000
 F 0 "R33" V 5280 2000 50  0000 C CNN
@@ -367,7 +398,7 @@ F 3 "" H 5200 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R29
+L R R29
 U 1 1 5B7CA948
 P 5000 1800
 F 0 "R29" V 5080 1800 50  0000 C CNN
@@ -378,7 +409,7 @@ F 3 "" H 5000 1800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:C C13
+L C C13
 U 1 1 5B7CA9EB
 P 5200 2300
 F 0 "C13" H 5225 2400 50  0000 L CNN
@@ -389,7 +420,7 @@ F 3 "" H 5200 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR09
+L GND #PWR09
 U 1 1 5B7CAC6E
 P 5200 2450
 F 0 "#PWR09" H 5200 2200 50  0001 C CNN
@@ -400,7 +431,7 @@ F 3 "" H 5200 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR010
+L GND #PWR010
 U 1 1 5B7CAF40
 P 2800 1600
 F 0 "#PWR010" H 2800 1350 50  0001 C CNN
@@ -411,7 +442,7 @@ F 3 "" H 2800 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:TL074 U4
+L TL074 U4
 U 1 1 5B7CB506
 P 7700 1150
 F 0 "U4" H 7700 1350 50  0000 L CNN
@@ -422,7 +453,7 @@ F 3 "" H 7750 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:C C17
+L C C17
 U 1 1 5B7CB6A1
 P 7850 1900
 F 0 "C17" H 7875 2000 50  0000 L CNN
@@ -433,7 +464,7 @@ F 3 "" H 7850 1900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:R R38
+L R R38
 U 1 1 5B7CB748
 P 7850 1650
 F 0 "R38" V 7930 1650 50  0000 C CNN
@@ -444,7 +475,7 @@ F 3 "" H 7850 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR62
+L -12V #PWR62
 U 1 1 5B7CB8CB
 P 7600 1450
 F 0 "#PWR62" H 7600 1550 50  0001 C CNN
@@ -455,7 +486,7 @@ F 3 "" H 7600 1450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR011
+L +12V #PWR011
 U 1 1 5B7CBCAC
 P 7600 850
 F 0 "#PWR011" H 7600 700 50  0001 C CNN
@@ -466,7 +497,7 @@ F 3 "" H 7600 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR1
+L -12V #PWR1
 U 1 1 5B7CC0C9
 P 800 1900
 F 0 "#PWR1" H 800 2000 50  0001 C CNN
@@ -477,7 +508,7 @@ F 3 "" H 800 1900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:R R1
+L R R1
 U 1 1 5B7CC13E
 P 800 1750
 F 0 "R1" V 880 1750 50  0000 C CNN
@@ -488,7 +519,7 @@ F 3 "" H 800 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R5
+L R R5
 U 1 1 5B7CC1BF
 P 1050 1750
 F 0 "R5" V 1130 1750 50  0000 C CNN
@@ -499,7 +530,7 @@ F 3 "" H 1050 1750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR012
+L GND #PWR012
 U 1 1 5B7CC7B7
 P 1050 1900
 F 0 "#PWR012" H 1050 1650 50  0001 C CNN
@@ -510,7 +541,7 @@ F 3 "" H 1050 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R10
+L R R10
 U 1 1 5B7CCCC5
 P 1400 1550
 F 0 "R10" V 1480 1550 50  0000 C CNN
@@ -521,7 +552,7 @@ F 3 "" H 1400 1550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR013
+L GND #PWR013
 U 1 1 5B7D072F
 P 1650 950
 F 0 "#PWR013" H 1650 700 50  0001 C CNN
@@ -532,7 +563,7 @@ F 3 "" H 1650 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:TL074 U1
+L TL074 U1
 U 2 1 5B7D1014
 P 1950 2500
 F 0 "U1" H 1950 2700 50  0000 L CNN
@@ -543,7 +574,7 @@ F 3 "" H 2000 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:Audio-Jack-2 J2
+L Audio-Jack-2 J2
 U 1 1 5B7D101A
 P 900 2600
 F 0 "J2" H 875 2675 50  0000 C CNN
@@ -554,7 +585,7 @@ F 3 "" H 1150 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:POT RV2
+L POT RV2
 U 1 1 5B7D1020
 P 2550 2700
 F 0 "RV2" V 2375 2700 50  0000 C CNN
@@ -565,7 +596,7 @@ F 3 "" H 2550 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:C C6
+L C C6
 U 1 1 5B7D1026
 P 2800 2900
 F 0 "C6" H 2825 3000 50  0000 L CNN
@@ -576,7 +607,7 @@ F 3 "" H 2800 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R18
+L R R18
 U 1 1 5B7D102C
 P 2100 3000
 F 0 "R18" V 2180 3000 50  0000 C CNN
@@ -587,7 +618,7 @@ F 3 "" H 2100 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:R R11
+L R R11
 U 1 1 5B7D1032
 P 1400 2600
 F 0 "R11" V 1480 2600 50  0000 C CNN
@@ -598,7 +629,7 @@ F 3 "" H 1400 2600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR014
+L GND #PWR014
 U 1 1 5B7D103F
 P 2550 2850
 F 0 "#PWR014" H 2550 2600 50  0001 C CNN
@@ -609,7 +640,7 @@ F 3 "" H 2550 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR015
+L GND #PWR015
 U 1 1 5B7D1047
 P 1100 2700
 F 0 "#PWR015" H 1100 2450 50  0001 C CNN
@@ -620,7 +651,7 @@ F 3 "" H 1100 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR016
+L +12V #PWR016
 U 1 1 5B7D104D
 P 1850 2200
 F 0 "#PWR016" H 1850 2050 50  0001 C CNN
@@ -631,7 +662,7 @@ F 3 "" H 1850 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR23
+L -12V #PWR23
 U 1 1 5B7D1053
 P 1850 2800
 F 0 "#PWR23" H 1850 2900 50  0001 C CNN
@@ -642,7 +673,7 @@ F 3 "" H 1850 2800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:Audio-Jack-2 J7
+L Audio-Jack-2 J7
 U 1 1 5B7D1059
 P 3400 3350
 F 0 "J7" H 3375 3425 50  0000 C CNN
@@ -653,7 +684,7 @@ F 3 "" H 3650 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR017
+L GND #PWR017
 U 1 1 5B7D105F
 P 3600 3450
 F 0 "#PWR017" H 3600 3200 50  0001 C CNN
@@ -664,7 +695,7 @@ F 3 "" H 3600 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R34
+L R R34
 U 1 1 5B7D1065
 P 5200 3450
 F 0 "R34" V 5280 3450 50  0000 C CNN
@@ -675,7 +706,7 @@ F 3 "" H 5200 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R30
+L R R30
 U 1 1 5B7D106B
 P 5000 3250
 F 0 "R30" V 5080 3250 50  0000 C CNN
@@ -686,7 +717,7 @@ F 3 "" H 5000 3250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:C C14
+L C C14
 U 1 1 5B7D1071
 P 5200 3750
 F 0 "C14" H 5225 3850 50  0000 L CNN
@@ -697,7 +728,7 @@ F 3 "" H 5200 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR018
+L GND #PWR018
 U 1 1 5B7D1077
 P 5200 3900
 F 0 "#PWR018" H 5200 3650 50  0001 C CNN
@@ -708,7 +739,7 @@ F 3 "" H 5200 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR019
+L GND #PWR019
 U 1 1 5B7D107E
 P 2800 3050
 F 0 "#PWR019" H 2800 2800 50  0001 C CNN
@@ -719,7 +750,7 @@ F 3 "" H 2800 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR2
+L -12V #PWR2
 U 1 1 5B7D1084
 P 800 3350
 F 0 "#PWR2" H 800 3450 50  0001 C CNN
@@ -730,7 +761,7 @@ F 3 "" H 800 3350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:R R2
+L R R2
 U 1 1 5B7D108A
 P 800 3200
 F 0 "R2" V 880 3200 50  0000 C CNN
@@ -741,7 +772,7 @@ F 3 "" H 800 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R6
+L R R6
 U 1 1 5B7D1090
 P 1050 3200
 F 0 "R6" V 1130 3200 50  0000 C CNN
@@ -752,7 +783,7 @@ F 3 "" H 1050 3200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR020
+L GND #PWR020
 U 1 1 5B7D1097
 P 1050 3350
 F 0 "#PWR020" H 1050 3100 50  0001 C CNN
@@ -763,7 +794,7 @@ F 3 "" H 1050 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R12
+L R R12
 U 1 1 5B7D10A1
 P 1400 3000
 F 0 "R12" V 1480 3000 50  0000 C CNN
@@ -774,7 +805,7 @@ F 3 "" H 1400 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR021
+L GND #PWR021
 U 1 1 5B7D10AA
 P 1650 2400
 F 0 "#PWR021" H 1650 2150 50  0001 C CNN
@@ -785,7 +816,7 @@ F 3 "" H 1650 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:TL074 U1
+L TL074 U1
 U 3 1 5B7D1832
 P 1950 3950
 F 0 "U1" H 1950 4150 50  0000 L CNN
@@ -796,7 +827,7 @@ F 3 "" H 2000 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:Audio-Jack-2 J3
+L Audio-Jack-2 J3
 U 1 1 5B7D1838
 P 900 4050
 F 0 "J3" H 875 4125 50  0000 C CNN
@@ -807,7 +838,7 @@ F 3 "" H 1150 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:POT RV3
+L POT RV3
 U 1 1 5B7D183E
 P 2550 4150
 F 0 "RV3" V 2375 4150 50  0000 C CNN
@@ -818,7 +849,7 @@ F 3 "" H 2550 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:C C7
+L C C7
 U 1 1 5B7D1844
 P 2800 4350
 F 0 "C7" H 2825 4450 50  0000 L CNN
@@ -829,7 +860,7 @@ F 3 "" H 2800 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R19
+L R R19
 U 1 1 5B7D184A
 P 2100 4450
 F 0 "R19" V 2180 4450 50  0000 C CNN
@@ -840,7 +871,7 @@ F 3 "" H 2100 4450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:R R13
+L R R13
 U 1 1 5B7D1850
 P 1400 4050
 F 0 "R13" V 1480 4050 50  0000 C CNN
@@ -851,7 +882,7 @@ F 3 "" H 1400 4050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR022
+L GND #PWR022
 U 1 1 5B7D185D
 P 2550 4300
 F 0 "#PWR022" H 2550 4050 50  0001 C CNN
@@ -862,7 +893,7 @@ F 3 "" H 2550 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR023
+L GND #PWR023
 U 1 1 5B7D1865
 P 1100 4150
 F 0 "#PWR023" H 1100 3900 50  0001 C CNN
@@ -873,7 +904,7 @@ F 3 "" H 1100 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR024
+L +12V #PWR024
 U 1 1 5B7D186B
 P 1850 3650
 F 0 "#PWR024" H 1850 3500 50  0001 C CNN
@@ -884,7 +915,7 @@ F 3 "" H 1850 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR25
+L -12V #PWR25
 U 1 1 5B7D1871
 P 1850 4250
 F 0 "#PWR25" H 1850 4350 50  0001 C CNN
@@ -895,7 +926,7 @@ F 3 "" H 1850 4250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:Audio-Jack-2 J8
+L Audio-Jack-2 J8
 U 1 1 5B7D1877
 P 3400 4800
 F 0 "J8" H 3375 4875 50  0000 C CNN
@@ -906,7 +937,7 @@ F 3 "" H 3650 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR025
+L GND #PWR025
 U 1 1 5B7D187D
 P 3600 4900
 F 0 "#PWR025" H 3600 4650 50  0001 C CNN
@@ -917,7 +948,7 @@ F 3 "" H 3600 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R35
+L R R35
 U 1 1 5B7D1883
 P 5200 4900
 F 0 "R35" V 5280 4900 50  0000 C CNN
@@ -928,7 +959,7 @@ F 3 "" H 5200 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R31
+L R R31
 U 1 1 5B7D1889
 P 5000 4700
 F 0 "R31" V 5080 4700 50  0000 C CNN
@@ -939,7 +970,7 @@ F 3 "" H 5000 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:C C15
+L C C15
 U 1 1 5B7D188F
 P 5200 5200
 F 0 "C15" H 5225 5300 50  0000 L CNN
@@ -950,7 +981,7 @@ F 3 "" H 5200 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR026
+L GND #PWR026
 U 1 1 5B7D1895
 P 5200 5350
 F 0 "#PWR026" H 5200 5100 50  0001 C CNN
@@ -961,7 +992,7 @@ F 3 "" H 5200 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR027
+L GND #PWR027
 U 1 1 5B7D189C
 P 2800 4500
 F 0 "#PWR027" H 2800 4250 50  0001 C CNN
@@ -972,7 +1003,7 @@ F 3 "" H 2800 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR3
+L -12V #PWR3
 U 1 1 5B7D18A2
 P 800 4800
 F 0 "#PWR3" H 800 4900 50  0001 C CNN
@@ -983,7 +1014,7 @@ F 3 "" H 800 4800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:R R3
+L R R3
 U 1 1 5B7D18A8
 P 800 4650
 F 0 "R3" V 880 4650 50  0000 C CNN
@@ -994,7 +1025,7 @@ F 3 "" H 800 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R7
+L R R7
 U 1 1 5B7D18AE
 P 1050 4650
 F 0 "R7" V 1130 4650 50  0000 C CNN
@@ -1005,7 +1036,7 @@ F 3 "" H 1050 4650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR028
+L GND #PWR028
 U 1 1 5B7D18B5
 P 1050 4800
 F 0 "#PWR028" H 1050 4550 50  0001 C CNN
@@ -1016,7 +1047,7 @@ F 3 "" H 1050 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R14
+L R R14
 U 1 1 5B7D18BF
 P 1400 4450
 F 0 "R14" V 1480 4450 50  0000 C CNN
@@ -1027,7 +1058,7 @@ F 3 "" H 1400 4450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR029
+L GND #PWR029
 U 1 1 5B7D18C8
 P 1650 3850
 F 0 "#PWR029" H 1650 3600 50  0001 C CNN
@@ -1038,7 +1069,7 @@ F 3 "" H 1650 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:TL074 U1
+L TL074 U1
 U 4 1 5B7D18D0
 P 1950 5400
 F 0 "U1" H 1950 5600 50  0000 L CNN
@@ -1049,7 +1080,7 @@ F 3 "" H 2000 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:Audio-Jack-2 J4
+L Audio-Jack-2 J4
 U 1 1 5B7D18D6
 P 900 5500
 F 0 "J4" H 875 5575 50  0000 C CNN
@@ -1060,7 +1091,7 @@ F 3 "" H 1150 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:POT RV4
+L POT RV4
 U 1 1 5B7D18DC
 P 2550 5600
 F 0 "RV4" V 2375 5600 50  0000 C CNN
@@ -1071,7 +1102,7 @@ F 3 "" H 2550 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:C C8
+L C C8
 U 1 1 5B7D18E2
 P 2800 5800
 F 0 "C8" H 2825 5900 50  0000 L CNN
@@ -1082,7 +1113,7 @@ F 3 "" H 2800 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R20
+L R R20
 U 1 1 5B7D18E8
 P 2100 5900
 F 0 "R20" V 2180 5900 50  0000 C CNN
@@ -1093,7 +1124,7 @@ F 3 "" H 2100 5900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:R R15
+L R R15
 U 1 1 5B7D18EE
 P 1400 5500
 F 0 "R15" V 1480 5500 50  0000 C CNN
@@ -1104,7 +1135,7 @@ F 3 "" H 1400 5500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR030
+L GND #PWR030
 U 1 1 5B7D18FB
 P 2550 5750
 F 0 "#PWR030" H 2550 5500 50  0001 C CNN
@@ -1115,7 +1146,7 @@ F 3 "" H 2550 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR031
+L GND #PWR031
 U 1 1 5B7D1903
 P 1100 5600
 F 0 "#PWR031" H 1100 5350 50  0001 C CNN
@@ -1126,7 +1157,7 @@ F 3 "" H 1100 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR032
+L +12V #PWR032
 U 1 1 5B7D1909
 P 1850 5100
 F 0 "#PWR032" H 1850 4950 50  0001 C CNN
@@ -1137,7 +1168,7 @@ F 3 "" H 1850 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR27
+L -12V #PWR27
 U 1 1 5B7D190F
 P 1850 5700
 F 0 "#PWR27" H 1850 5800 50  0001 C CNN
@@ -1148,7 +1179,7 @@ F 3 "" H 1850 5700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:Audio-Jack-2 J9
+L Audio-Jack-2 J9
 U 1 1 5B7D1915
 P 3400 6250
 F 0 "J9" H 3375 6325 50  0000 C CNN
@@ -1159,7 +1190,7 @@ F 3 "" H 3650 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR033
+L GND #PWR033
 U 1 1 5B7D191B
 P 3600 6350
 F 0 "#PWR033" H 3600 6100 50  0001 C CNN
@@ -1170,7 +1201,7 @@ F 3 "" H 3600 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R36
+L R R36
 U 1 1 5B7D1921
 P 5200 6350
 F 0 "R36" V 5280 6350 50  0000 C CNN
@@ -1181,7 +1212,7 @@ F 3 "" H 5200 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R32
+L R R32
 U 1 1 5B7D1927
 P 5000 6150
 F 0 "R32" V 5080 6150 50  0000 C CNN
@@ -1192,7 +1223,7 @@ F 3 "" H 5000 6150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:C C16
+L C C16
 U 1 1 5B7D192D
 P 5200 6650
 F 0 "C16" H 5225 6750 50  0000 L CNN
@@ -1203,7 +1234,7 @@ F 3 "" H 5200 6650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR034
+L GND #PWR034
 U 1 1 5B7D1933
 P 5200 6800
 F 0 "#PWR034" H 5200 6550 50  0001 C CNN
@@ -1214,7 +1245,7 @@ F 3 "" H 5200 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR035
+L GND #PWR035
 U 1 1 5B7D193A
 P 2800 5950
 F 0 "#PWR035" H 2800 5700 50  0001 C CNN
@@ -1225,7 +1256,7 @@ F 3 "" H 2800 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR4
+L -12V #PWR4
 U 1 1 5B7D1940
 P 800 6250
 F 0 "#PWR4" H 800 6350 50  0001 C CNN
@@ -1236,7 +1267,7 @@ F 3 "" H 800 6250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:R R4
+L R R4
 U 1 1 5B7D1946
 P 800 6100
 F 0 "R4" V 880 6100 50  0000 C CNN
@@ -1247,7 +1278,7 @@ F 3 "" H 800 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R8
+L R R8
 U 1 1 5B7D194C
 P 1050 6100
 F 0 "R8" V 1130 6100 50  0000 C CNN
@@ -1258,7 +1289,7 @@ F 3 "" H 1050 6100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR036
+L GND #PWR036
 U 1 1 5B7D1953
 P 1050 6250
 F 0 "#PWR036" H 1050 6000 50  0001 C CNN
@@ -1269,7 +1300,7 @@ F 3 "" H 1050 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R16
+L R R16
 U 1 1 5B7D195D
 P 1400 5900
 F 0 "R16" V 1480 5900 50  0000 C CNN
@@ -1280,7 +1311,7 @@ F 3 "" H 1400 5900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR037
+L GND #PWR037
 U 1 1 5B7D1966
 P 1650 5300
 F 0 "#PWR037" H 1650 5050 50  0001 C CNN
@@ -1291,7 +1322,7 @@ F 3 "" H 1650 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:TL074 U4
+L TL074 U4
 U 3 1 5B7D41D6
 P 8500 2150
 F 0 "U4" H 8500 2350 50  0000 L CNN
@@ -1302,7 +1333,7 @@ F 3 "" H 8550 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:C C19
+L C C19
 U 1 1 5B7D41DC
 P 8650 2900
 F 0 "C19" H 8675 3000 50  0000 L CNN
@@ -1313,7 +1344,7 @@ F 3 "" H 8650 2900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:R R41
+L R R41
 U 1 1 5B7D41E2
 P 8650 2650
 F 0 "R41" V 8730 2650 50  0000 C CNN
@@ -1324,7 +1355,7 @@ F 3 "" H 8650 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR68
+L -12V #PWR68
 U 1 1 5B7D41E8
 P 8400 2450
 F 0 "#PWR68" H 8400 2550 50  0001 C CNN
@@ -1335,7 +1366,7 @@ F 3 "" H 8400 2450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR038
+L +12V #PWR038
 U 1 1 5B7D41FA
 P 8400 1850
 F 0 "#PWR038" H 8400 1700 50  0001 C CNN
@@ -1346,7 +1377,7 @@ F 3 "" H 8400 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:TL074 U4
+L TL074 U4
 U 2 1 5B7D43A8
 P 7700 3150
 F 0 "U4" H 7700 3350 50  0000 L CNN
@@ -1357,7 +1388,7 @@ F 3 "" H 7750 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:C C18
+L C C18
 U 1 1 5B7D43AE
 P 7850 3900
 F 0 "C18" H 7875 4000 50  0000 L CNN
@@ -1368,7 +1399,7 @@ F 3 "" H 7850 3900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:R R39
+L R R39
 U 1 1 5B7D43B4
 P 7850 3650
 F 0 "R39" V 7930 3650 50  0000 C CNN
@@ -1379,7 +1410,7 @@ F 3 "" H 7850 3650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR64
+L -12V #PWR64
 U 1 1 5B7D43BA
 P 7600 3450
 F 0 "#PWR64" H 7600 3550 50  0001 C CNN
@@ -1390,7 +1421,7 @@ F 3 "" H 7600 3450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR039
+L +12V #PWR039
 U 1 1 5B7D43CC
 P 7600 2850
 F 0 "#PWR039" H 7600 2700 50  0001 C CNN
@@ -1401,7 +1432,7 @@ F 3 "" H 7600 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:TL074 U4
+L TL074 U4
 U 4 1 5B7D43D2
 P 8500 4150
 F 0 "U4" H 8500 4350 50  0000 L CNN
@@ -1412,7 +1443,7 @@ F 3 "" H 8550 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:C C20
+L C C20
 U 1 1 5B7D43D8
 P 8650 4900
 F 0 "C20" H 8675 5000 50  0000 L CNN
@@ -1423,7 +1454,7 @@ F 3 "" H 8650 4900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:R R42
+L R R42
 U 1 1 5B7D43DE
 P 8650 4650
 F 0 "R42" V 8730 4650 50  0000 C CNN
@@ -1434,7 +1465,7 @@ F 3 "" H 8650 4650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR70
+L -12V #PWR70
 U 1 1 5B7D43E4
 P 8400 4450
 F 0 "#PWR70" H 8400 4550 50  0001 C CNN
@@ -1445,7 +1476,7 @@ F 3 "" H 8400 4450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR040
+L +12V #PWR040
 U 1 1 5B7D43F6
 P 8400 3850
 F 0 "#PWR040" H 8400 3700 50  0001 C CNN
@@ -1456,7 +1487,7 @@ F 3 "" H 8400 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R48
+L R R48
 U 1 1 5B7D51FA
 P 9050 4350
 F 0 "R48" V 9130 4350 50  0000 C CNN
@@ -1467,7 +1498,7 @@ F 3 "" H 9050 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R53
+L R R53
 U 1 1 5B7D5384
 P 9300 4150
 F 0 "R53" V 9380 4150 50  0000 C CNN
@@ -1478,7 +1509,7 @@ F 3 "" H 9300 4150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR041
+L GND #PWR041
 U 1 1 5B7D560C
 P 9050 4500
 F 0 "#PWR041" H 9050 4250 50  0001 C CNN
@@ -1489,7 +1520,7 @@ F 3 "" H 9050 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R47
+L R R47
 U 1 1 5B7D58BF
 P 9050 3350
 F 0 "R47" V 9130 3350 50  0000 C CNN
@@ -1500,7 +1531,7 @@ F 3 "" H 9050 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R52
+L R R52
 U 1 1 5B7D58C5
 P 9300 3150
 F 0 "R52" V 9380 3150 50  0000 C CNN
@@ -1511,7 +1542,7 @@ F 3 "" H 9300 3150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR042
+L GND #PWR042
 U 1 1 5B7D58CB
 P 9050 3500
 F 0 "#PWR042" H 9050 3250 50  0001 C CNN
@@ -1522,7 +1553,7 @@ F 3 "" H 9050 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R46
+L R R46
 U 1 1 5B7D59AF
 P 9050 2350
 F 0 "R46" V 9130 2350 50  0000 C CNN
@@ -1533,7 +1564,7 @@ F 3 "" H 9050 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R51
+L R R51
 U 1 1 5B7D59B5
 P 9300 2150
 F 0 "R51" V 9380 2150 50  0000 C CNN
@@ -1544,7 +1575,7 @@ F 3 "" H 9300 2150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR043
+L GND #PWR043
 U 1 1 5B7D59BB
 P 9050 2500
 F 0 "#PWR043" H 9050 2250 50  0001 C CNN
@@ -1555,7 +1586,7 @@ F 3 "" H 9050 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R45
+L R R45
 U 1 1 5B7D5AA5
 P 9050 1350
 F 0 "R45" V 9130 1350 50  0000 C CNN
@@ -1566,7 +1597,7 @@ F 3 "" H 9050 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R50
+L R R50
 U 1 1 5B7D5AAB
 P 9300 1150
 F 0 "R50" V 9380 1150 50  0000 C CNN
@@ -1577,7 +1608,7 @@ F 3 "" H 9300 1150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR044
+L GND #PWR044
 U 1 1 5B7D5AB1
 P 9050 1500
 F 0 "#PWR044" H 9050 1250 50  0001 C CNN
@@ -1588,7 +1619,7 @@ F 3 "" H 9050 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:TL074 U2
+L TL074 U2
 U 1 1 5B7D79F4
 P 4450 1800
 F 0 "U2" H 4450 2000 50  0000 L CNN
@@ -1599,7 +1630,7 @@ F 3 "" H 4500 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R25
+L R R25
 U 1 1 5B7D79FA
 P 4600 2300
 F 0 "R25" V 4680 2300 50  0000 C CNN
@@ -1610,7 +1641,7 @@ F 3 "" H 4600 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:R R21
+L R R21
 U 1 1 5B7D7A00
 P 3900 1900
 F 0 "R21" V 3980 1900 50  0000 C CNN
@@ -1621,7 +1652,7 @@ F 3 "" H 3900 1900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR045
+L +12V #PWR045
 U 1 1 5B7D7A0C
 P 4350 1500
 F 0 "#PWR045" H 4350 1350 50  0001 C CNN
@@ -1632,7 +1663,7 @@ F 3 "" H 4350 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR45
+L -12V #PWR45
 U 1 1 5B7D7A12
 P 4350 2100
 F 0 "#PWR45" H 4350 2200 50  0001 C CNN
@@ -1643,7 +1674,7 @@ F 3 "" H 4350 2100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR046
+L GND #PWR046
 U 1 1 5B7D7A21
 P 4150 1700
 F 0 "#PWR046" H 4150 1450 50  0001 C CNN
@@ -1654,7 +1685,7 @@ F 3 "" H 4150 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:TL074 U2
+L TL074 U2
 U 2 1 5B7D7A29
 P 4450 3250
 F 0 "U2" H 4450 3450 50  0000 L CNN
@@ -1665,7 +1696,7 @@ F 3 "" H 4500 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R26
+L R R26
 U 1 1 5B7D7A2F
 P 4600 3750
 F 0 "R26" V 4680 3750 50  0000 C CNN
@@ -1676,7 +1707,7 @@ F 3 "" H 4600 3750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:R R22
+L R R22
 U 1 1 5B7D7A35
 P 3900 3350
 F 0 "R22" V 3980 3350 50  0000 C CNN
@@ -1687,7 +1718,7 @@ F 3 "" H 3900 3350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR047
+L +12V #PWR047
 U 1 1 5B7D7A40
 P 4350 2950
 F 0 "#PWR047" H 4350 2800 50  0001 C CNN
@@ -1698,7 +1729,7 @@ F 3 "" H 4350 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR47
+L -12V #PWR47
 U 1 1 5B7D7A46
 P 4350 3550
 F 0 "#PWR47" H 4350 3650 50  0001 C CNN
@@ -1709,7 +1740,7 @@ F 3 "" H 4350 3550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR048
+L GND #PWR048
 U 1 1 5B7D7A55
 P 4150 3150
 F 0 "#PWR048" H 4150 2900 50  0001 C CNN
@@ -1720,7 +1751,7 @@ F 3 "" H 4150 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:TL074 U2
+L TL074 U2
 U 3 1 5B7D7A5D
 P 4450 4700
 F 0 "U2" H 4450 4900 50  0000 L CNN
@@ -1731,7 +1762,7 @@ F 3 "" H 4500 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R27
+L R R27
 U 1 1 5B7D7A63
 P 4600 5200
 F 0 "R27" V 4680 5200 50  0000 C CNN
@@ -1742,7 +1773,7 @@ F 3 "" H 4600 5200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:R R23
+L R R23
 U 1 1 5B7D7A69
 P 3900 4800
 F 0 "R23" V 3980 4800 50  0000 C CNN
@@ -1753,7 +1784,7 @@ F 3 "" H 3900 4800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR049
+L +12V #PWR049
 U 1 1 5B7D7A75
 P 4350 4400
 F 0 "#PWR049" H 4350 4250 50  0001 C CNN
@@ -1764,7 +1795,7 @@ F 3 "" H 4350 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR49
+L -12V #PWR49
 U 1 1 5B7D7A7B
 P 4350 5000
 F 0 "#PWR49" H 4350 5100 50  0001 C CNN
@@ -1775,7 +1806,7 @@ F 3 "" H 4350 5000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR050
+L GND #PWR050
 U 1 1 5B7D7A8A
 P 4150 4600
 F 0 "#PWR050" H 4150 4350 50  0001 C CNN
@@ -1786,7 +1817,7 @@ F 3 "" H 4150 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:TL074 U2
+L TL074 U2
 U 4 1 5B7D7A92
 P 4450 6150
 F 0 "U2" H 4450 6350 50  0000 L CNN
@@ -1797,7 +1828,7 @@ F 3 "" H 4500 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R28
+L R R28
 U 1 1 5B7D7A98
 P 4600 6650
 F 0 "R28" V 4680 6650 50  0000 C CNN
@@ -1808,7 +1839,7 @@ F 3 "" H 4600 6650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:R R24
+L R R24
 U 1 1 5B7D7A9E
 P 3900 6250
 F 0 "R24" V 3980 6250 50  0000 C CNN
@@ -1819,7 +1850,7 @@ F 3 "" H 3900 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR051
+L +12V #PWR051
 U 1 1 5B7D7AAA
 P 4350 5850
 F 0 "#PWR051" H 4350 5700 50  0001 C CNN
@@ -1830,7 +1861,7 @@ F 3 "" H 4350 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR51
+L -12V #PWR51
 U 1 1 5B7D7AB0
 P 4350 6450
 F 0 "#PWR51" H 4350 6550 50  0001 C CNN
@@ -1841,7 +1872,7 @@ F 3 "" H 4350 6450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR052
+L GND #PWR052
 U 1 1 5B7D7ABF
 P 4150 6050
 F 0 "#PWR052" H 4150 5800 50  0001 C CNN
@@ -1852,7 +1883,7 @@ F 3 "" H 4150 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR053
+L GND #PWR053
 U 1 1 5B7DEE98
 P 7400 3050
 F 0 "#PWR053" H 7400 2800 50  0001 C CNN
@@ -1863,7 +1894,7 @@ F 3 "" H 7400 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR054
+L GND #PWR054
 U 1 1 5B7DF3B1
 P 7400 1050
 F 0 "#PWR054" H 7400 800 50  0001 C CNN
@@ -1874,7 +1905,7 @@ F 3 "" H 7400 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR055
+L GND #PWR055
 U 1 1 5B7DF4E2
 P 8200 2050
 F 0 "#PWR055" H 8200 1800 50  0001 C CNN
@@ -1885,7 +1916,7 @@ F 3 "" H 8200 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR056
+L GND #PWR056
 U 1 1 5B7DF613
 P 8200 4050
 F 0 "#PWR056" H 8200 3800 50  0001 C CNN
@@ -1896,29 +1927,29 @@ F 3 "" H 8200 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	950  7050 1050 7050
+	950  7050 1600 7050
 Wire Wire Line
 	950  7050 950  7000
 Wire Wire Line
-	950  7450 1050 7450
+	950  7450 1600 7450
 Wire Wire Line
 	950  7450 950  7500
 Wire Wire Line
 	800  7300 800  7250
 Wire Wire Line
-	800  7250 1000 7250
+	800  7250 1050 7250
 Wire Wire Line
-	1000 7150 1050 7150
+	1000 7150 1600 7150
 Wire Wire Line
-	1000 7150 1000 7250
+	1000 7150 1000 7350
 Connection ~ 1000 7250
 Wire Wire Line
-	1000 7350 1050 7350
+	1000 7350 1600 7350
 Connection ~ 1050 7350
 Wire Wire Line
-	1600 7350 1600 7250
+	1600 7350 1600 7150
 Wire Wire Line
-	1550 7250 1600 7250
+	1550 7250 3150 7250
 Connection ~ 1550 7350
 Connection ~ 1600 7250
 Connection ~ 1550 7150
@@ -1928,7 +1959,7 @@ Connection ~ 1050 7450
 Wire Wire Line
 	1600 7050 1600 6850
 Wire Wire Line
-	1600 6850 1950 6850
+	1600 6850 3150 6850
 Wire Wire Line
 	3150 6850 3150 6900
 Connection ~ 1550 7050
@@ -1945,24 +1976,24 @@ Wire Wire Line
 	1950 6900 1950 6850
 Connection ~ 1950 6850
 Wire Wire Line
-	3150 7200 3150 7250
+	3150 7200 3150 7300
 Connection ~ 3150 7250
 Wire Wire Line
-	1950 7200 1950 7250
+	1950 7200 1950 7300
 Connection ~ 1950 7250
 Wire Wire Line
-	2250 7200 2250 7250
+	2250 7200 2250 7300
 Connection ~ 2250 7250
 Wire Wire Line
-	2550 7200 2550 7250
+	2550 7200 2550 7300
 Connection ~ 2550 7250
 Wire Wire Line
-	2850 7200 2850 7250
+	2850 7200 2850 7300
 Connection ~ 2850 7250
 Wire Wire Line
 	3150 7650 3150 7600
 Wire Wire Line
-	1600 7650 1950 7650
+	1600 7650 3150 7650
 Wire Wire Line
 	1600 7450 1600 7650
 Connection ~ 1550 7450
@@ -1983,44 +2014,44 @@ Wire Wire Line
 Wire Wire Line
 	6550 2350 6350 2350
 Wire Wire Line
-	6350 2300 6350 2350
+	6350 2300 6350 2750
 Connection ~ 6350 2350
 Wire Wire Line
 	6550 2700 6550 2750
 Wire Wire Line
 	1600 1550 1600 1150
 Wire Wire Line
-	1550 1150 1600 1150
+	1550 1150 1650 1150
 Wire Wire Line
 	2250 1550 2300 1550
 Wire Wire Line
 	2300 1550 2300 1050
 Wire Wire Line
-	2250 1050 2300 1050
+	2250 1050 2550 1050
 Wire Wire Line
 	2550 1050 2550 1100
 Connection ~ 2300 1050
 Wire Wire Line
 	2800 1300 2800 1250
 Wire Wire Line
-	2700 1250 2800 1250
+	2700 1250 5800 1250
 Wire Wire Line
-	5150 1800 5200 1800
+	5150 1800 5700 1800
 Wire Wire Line
 	8100 1900 8000 1900
 Wire Wire Line
-	8100 1150 8100 1650
+	8100 1150 8100 1900
 Wire Wire Line
-	8000 1150 8100 1150
+	8000 1150 9150 1150
 Wire Wire Line
 	8000 1650 8100 1650
 Connection ~ 8100 1650
 Wire Wire Line
 	7700 1650 7300 1650
 Wire Wire Line
-	7300 1250 7300 1650
+	7300 1250 7300 1900
 Wire Wire Line
-	7100 1250 7300 1250
+	7100 1250 7400 1250
 Wire Wire Line
 	7300 1900 7700 1900
 Connection ~ 7300 1650
@@ -2032,17 +2063,17 @@ Wire Wire Line
 Connection ~ 1600 1550
 Connection ~ 1050 1550
 Wire Wire Line
-	1550 1550 1600 1550
+	1550 1550 1950 1550
 Wire Wire Line
 	5200 1850 5200 1800
 Wire Wire Line
 	1100 1150 1250 1150
 Wire Wire Line
-	800  1550 1050 1550
+	800  1550 1250 1550
 Wire Wire Line
 	1600 3000 1600 2600
 Wire Wire Line
-	1550 2600 1600 2600
+	1550 2600 1650 2600
 Wire Wire Line
 	2250 3000 2300 3000
 Wire Wire Line
@@ -2053,9 +2084,9 @@ Connection ~ 2300 2500
 Wire Wire Line
 	2800 2750 2800 2700
 Wire Wire Line
-	2700 2700 2800 2700
+	2700 2700 5600 2700
 Wire Wire Line
-	5150 3250 5200 3250
+	5150 3250 5500 3250
 Connection ~ 1600 2600
 Wire Wire Line
 	800  3050 800  3000
@@ -2064,32 +2095,32 @@ Wire Wire Line
 Connection ~ 1600 3000
 Connection ~ 1050 3000
 Wire Wire Line
-	1550 3000 1600 3000
+	1550 3000 1950 3000
 Wire Wire Line
 	5200 3300 5200 3250
 Wire Wire Line
 	1100 2600 1250 2600
 Wire Wire Line
-	800  3000 1050 3000
+	800  3000 1250 3000
 Wire Wire Line
 	1600 4450 1600 4050
 Wire Wire Line
-	1550 4050 1600 4050
+	1550 4050 1650 4050
 Wire Wire Line
 	2250 4450 2300 4450
 Wire Wire Line
 	2300 4450 2300 3950
 Wire Wire Line
-	2250 3950 2300 3950
+	2250 3950 2550 3950
 Wire Wire Line
 	2550 3950 2550 4000
 Connection ~ 2300 3950
 Wire Wire Line
 	2800 4200 2800 4150
 Wire Wire Line
-	2700 4150 2800 4150
+	2700 4150 5500 4150
 Wire Wire Line
-	5150 4700 5200 4700
+	5150 4700 5600 4700
 Connection ~ 1600 4050
 Wire Wire Line
 	800  4500 800  4450
@@ -2098,32 +2129,32 @@ Wire Wire Line
 Connection ~ 1600 4450
 Connection ~ 1050 4450
 Wire Wire Line
-	1550 4450 1600 4450
+	1550 4450 1950 4450
 Wire Wire Line
 	5200 4750 5200 4700
 Wire Wire Line
 	1100 4050 1250 4050
 Wire Wire Line
-	800  4450 1050 4450
+	800  4450 1250 4450
 Wire Wire Line
 	1600 5900 1600 5500
 Wire Wire Line
-	1550 5500 1600 5500
+	1550 5500 1650 5500
 Wire Wire Line
 	2250 5900 2300 5900
 Wire Wire Line
 	2300 5900 2300 5400
 Wire Wire Line
-	2250 5400 2300 5400
+	2250 5400 2550 5400
 Wire Wire Line
 	2550 5400 2550 5450
 Connection ~ 2300 5400
 Wire Wire Line
 	2800 5650 2800 5600
 Wire Wire Line
-	2700 5600 2800 5600
+	2700 5600 5700 5600
 Wire Wire Line
-	5150 6150 5200 6150
+	5150 6150 5800 6150
 Connection ~ 1600 5500
 Wire Wire Line
 	800  5950 800  5900
@@ -2132,13 +2163,13 @@ Wire Wire Line
 Connection ~ 1600 5900
 Connection ~ 1050 5900
 Wire Wire Line
-	1550 5900 1600 5900
+	1550 5900 1950 5900
 Wire Wire Line
 	5200 6200 5200 6150
 Wire Wire Line
 	1100 5500 1250 5500
 Wire Wire Line
-	800  5900 1050 5900
+	800  5900 1250 5900
 Wire Wire Line
 	5800 1250 5800 3050
 Wire Wire Line
@@ -2178,38 +2209,38 @@ Wire Wire Line
 	5500 3850 5850 3850
 Connection ~ 2800 4150
 Wire Wire Line
-	2250 2500 2300 2500
+	2250 2500 2550 2500
 Connection ~ 2800 2700
 Connection ~ 2800 1250
 Wire Wire Line
 	8900 2900 8800 2900
 Wire Wire Line
-	8900 2150 8900 2650
+	8900 2150 8900 2900
 Wire Wire Line
-	8800 2150 8900 2150
+	8800 2150 9150 2150
 Wire Wire Line
 	8800 2650 8900 2650
 Connection ~ 8900 2650
 Wire Wire Line
 	8500 2650 8100 2650
 Wire Wire Line
-	8100 2250 8100 2650
+	8100 2250 8100 2900
 Wire Wire Line
-	7200 2250 8100 2250
+	7200 2250 8200 2250
 Wire Wire Line
 	8100 2900 8500 2900
 Connection ~ 8100 2650
 Wire Wire Line
 	8100 3900 8000 3900
 Wire Wire Line
-	8100 3150 8100 3650
+	8100 3150 8100 3900
 Wire Wire Line
-	8000 3150 8100 3150
+	8000 3150 9150 3150
 Wire Wire Line
 	8000 3650 8100 3650
 Connection ~ 8100 3650
 Wire Wire Line
-	7300 3250 7300 3650
+	7300 3250 7300 3950
 Wire Wire Line
 	7300 3250 7400 3250
 Wire Wire Line
@@ -2218,18 +2249,18 @@ Connection ~ 7300 3650
 Wire Wire Line
 	8900 4900 8800 4900
 Wire Wire Line
-	8900 4150 8900 4650
+	8900 4150 8900 4900
 Wire Wire Line
-	8800 4150 8900 4150
+	8800 4150 9150 4150
 Wire Wire Line
 	8800 4650 8900 4650
 Connection ~ 8900 4650
 Wire Wire Line
 	8500 4650 8100 4650
 Wire Wire Line
-	8100 4250 8100 4650
+	8100 4250 8100 4900
 Wire Wire Line
-	7050 4250 8100 4250
+	7050 4250 8200 4250
 Wire Wire Line
 	8100 4900 8500 4900
 Connection ~ 8100 4650
@@ -2268,7 +2299,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 2300 4100 1900
 Wire Wire Line
-	4050 1900 4100 1900
+	4050 1900 4150 1900
 Wire Wire Line
 	4750 1800 4750 2300
 Wire Wire Line
@@ -2278,7 +2309,7 @@ Connection ~ 4100 1900
 Wire Wire Line
 	4100 3750 4100 3350
 Wire Wire Line
-	4050 3350 4100 3350
+	4050 3350 4150 3350
 Wire Wire Line
 	4750 3250 4750 3750
 Connection ~ 4750 3250
@@ -2288,7 +2319,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 4800 4100 5200
 Wire Wire Line
-	4050 4800 4100 4800
+	4050 4800 4150 4800
 Wire Wire Line
 	4750 4700 4750 5200
 Wire Wire Line
@@ -2300,7 +2331,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 6250 4100 6650
 Wire Wire Line
-	4050 6250 4100 6250
+	4050 6250 4150 6250
 Wire Wire Line
 	4750 6150 4750 6650
 Wire Wire Line
@@ -2337,7 +2368,7 @@ NOTE: Verify that the voltage divider into the \nCV OP amp gives the expected re
 Text Notes 3950 7800 0    60   ~ 0
 NOTE: Verify that the module doesn't invert. The data sheet's \nreference circuit has inverting OP amps on the output, but there's\nno mention of the IC inverting the signal. 
 $Comp
-L 4xvca-rescue:TL071 U5
+L TL071 U5
 U 1 1 5B7DE554
 P 9750 5900
 F 0 "U5" H 9750 6150 50  0000 L CNN
@@ -2348,7 +2379,7 @@ F 3 "" H 9900 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R40
+L R R40
 U 1 1 5B7E0291
 P 8550 5800
 F 0 "R40" V 8630 5800 50  0000 C CNN
@@ -2359,7 +2390,7 @@ F 3 "" H 8550 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R43
+L R R43
 U 1 1 5B7E0523
 P 8750 5800
 F 0 "R43" V 8830 5800 50  0000 C CNN
@@ -2370,7 +2401,7 @@ F 3 "" H 8750 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:Audio-Jack-2_Switch J10
+L Audio-Jack-2_Switch J10
 U 1 1 5B7E0927
 P 9950 1250
 F 0 "J10" H 9900 1425 50  0000 C CNN
@@ -2381,7 +2412,7 @@ F 3 "" H 10200 1350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:Audio-Jack-2_Switch J11
+L Audio-Jack-2_Switch J11
 U 1 1 5B7E0B68
 P 9950 2250
 F 0 "J11" H 9900 2425 50  0000 C CNN
@@ -2392,7 +2423,7 @@ F 3 "" H 10200 2350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:Audio-Jack-2_Switch J12
+L Audio-Jack-2_Switch J12
 U 1 1 5B7E0DFB
 P 9950 3250
 F 0 "J12" H 9900 3425 50  0000 C CNN
@@ -2403,7 +2434,7 @@ F 3 "" H 10200 3350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:Audio-Jack-2_Switch J13
+L Audio-Jack-2_Switch J13
 U 1 1 5B7E0E01
 P 9950 4250
 F 0 "J13" H 9900 4425 50  0000 C CNN
@@ -2414,7 +2445,7 @@ F 3 "" H 10200 4350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R55
+L R R55
 U 1 1 5B7E12F8
 P 10200 6100
 F 0 "R55" V 10280 6100 50  0000 C CNN
@@ -2425,7 +2456,7 @@ F 3 "" H 10200 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R56
+L R R56
 U 1 1 5B7E12FE
 P 10400 5900
 F 0 "R56" V 10480 5900 50  0000 C CNN
@@ -2436,7 +2467,7 @@ F 3 "" H 10400 5900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR057
+L GND #PWR057
 U 1 1 5B7E1304
 P 10200 6250
 F 0 "#PWR057" H 10200 6000 50  0001 C CNN
@@ -2447,12 +2478,12 @@ F 3 "" H 10200 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10050 5900 10100 5900
+	10050 5900 10250 5900
 Wire Wire Line
 	10200 5900 10200 5950
 Connection ~ 10200 5900
 $Comp
-L 4xvca-rescue:R R44
+L R R44
 U 1 1 5B7E194C
 P 8950 5800
 F 0 "R44" V 9030 5800 50  0000 C CNN
@@ -2463,7 +2494,7 @@ F 3 "" H 8950 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R49
+L R R49
 U 1 1 5B7E1AA0
 P 9150 5800
 F 0 "R49" V 9230 5800 50  0000 C CNN
@@ -2474,7 +2505,7 @@ F 3 "" H 9150 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:R R54
+L R R54
 U 1 1 5B7E1BF7
 P 9900 6400
 F 0 "R54" V 9980 6400 50  0000 C CNN
@@ -2485,7 +2516,7 @@ F 3 "" H 9900 6400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 4xvca-rescue:-12V #PWR77
+L -12V #PWR77
 U 1 1 5B7E1D83
 P 9650 6200
 F 0 "#PWR77" H 9650 6300 50  0001 C CNN
@@ -2496,7 +2527,7 @@ F 3 "" H 9650 6200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4xvca-rescue:+12V #PWR058
+L +12V #PWR058
 U 1 1 5B7E1ED8
 P 9650 5600
 F 0 "#PWR058" H 9650 5450 50  0001 C CNN
@@ -2507,7 +2538,7 @@ F 3 "" H 9650 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR059
+L GND #PWR059
 U 1 1 5B7E2F44
 P 9450 5800
 F 0 "#PWR059" H 9450 5550 50  0001 C CNN
@@ -2527,7 +2558,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 6400 9400 6000
 Wire Wire Line
-	8550 6000 8750 6000
+	8550 6000 9450 6000
 Wire Wire Line
 	8550 5950 8550 6000
 Connection ~ 9400 6000
@@ -2541,7 +2572,7 @@ Wire Wire Line
 	8750 5950 8750 6000
 Connection ~ 8750 6000
 $Comp
-L 4xvca-rescue:GND #PWR060
+L GND #PWR060
 U 1 1 5B7E449D
 P 10650 6000
 F 0 "#PWR060" H 10650 5750 50  0001 C CNN
@@ -2554,7 +2585,7 @@ $EndComp
 Wire Wire Line
 	10550 5900 10650 5900
 $Comp
-L 4xvca-rescue:Audio-Jack-2 J14
+L Audio-Jack-2 J14
 U 1 1 5B7E4B00
 P 10850 5900
 F 0 "J14" H 10825 5975 50  0000 C CNN
@@ -2565,7 +2596,7 @@ F 3 "" H 11100 5900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR061
+L GND #PWR061
 U 1 1 5B7E5992
 P 10150 1350
 F 0 "#PWR061" H 10150 1100 50  0001 C CNN
@@ -2576,7 +2607,7 @@ F 3 "" H 10150 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR062
+L GND #PWR062
 U 1 1 5B7E5AE7
 P 10150 4350
 F 0 "#PWR062" H 10150 4100 50  0001 C CNN
@@ -2587,7 +2618,7 @@ F 3 "" H 10150 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR063
+L GND #PWR063
 U 1 1 5B7E5C3C
 P 10150 3350
 F 0 "#PWR063" H 10150 3100 50  0001 C CNN
@@ -2598,7 +2629,7 @@ F 3 "" H 10150 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xvca-rescue:GND #PWR064
+L GND #PWR064
 U 1 1 5B7E5D91
 P 10150 2350
 F 0 "#PWR064" H 10150 2100 50  0001 C CNN
@@ -2645,174 +2676,4 @@ Wire Wire Line
 	8550 5100 8550 5650
 NoConn ~ 9750 6200
 NoConn ~ 9850 6200
-Wire Wire Line
-	1000 7250 1050 7250
-Wire Wire Line
-	1000 7250 1000 7350
-Wire Wire Line
-	1050 7350 1550 7350
-Wire Wire Line
-	1550 7350 1600 7350
-Wire Wire Line
-	1600 7250 1600 7150
-Wire Wire Line
-	1600 7250 1950 7250
-Wire Wire Line
-	1550 7150 1600 7150
-Wire Wire Line
-	1050 7150 1550 7150
-Wire Wire Line
-	1050 7050 1550 7050
-Wire Wire Line
-	1050 7450 1550 7450
-Wire Wire Line
-	1550 7050 1600 7050
-Wire Wire Line
-	2850 6850 3150 6850
-Wire Wire Line
-	2550 6850 2850 6850
-Wire Wire Line
-	2250 6850 2550 6850
-Wire Wire Line
-	1950 6850 2250 6850
-Wire Wire Line
-	3150 7250 3150 7300
-Wire Wire Line
-	1950 7250 1950 7300
-Wire Wire Line
-	1950 7250 2250 7250
-Wire Wire Line
-	2250 7250 2250 7300
-Wire Wire Line
-	2250 7250 2550 7250
-Wire Wire Line
-	2550 7250 2550 7300
-Wire Wire Line
-	2550 7250 2850 7250
-Wire Wire Line
-	2850 7250 2850 7300
-Wire Wire Line
-	2850 7250 3150 7250
-Wire Wire Line
-	1550 7450 1600 7450
-Wire Wire Line
-	1950 7650 2250 7650
-Wire Wire Line
-	2250 7650 2550 7650
-Wire Wire Line
-	2550 7650 2850 7650
-Wire Wire Line
-	2850 7650 3150 7650
-Wire Wire Line
-	6350 2350 6350 2750
-Wire Wire Line
-	2300 1050 2550 1050
-Wire Wire Line
-	8100 1650 8100 1900
-Wire Wire Line
-	7300 1650 7300 1900
-Wire Wire Line
-	1600 1150 1650 1150
-Wire Wire Line
-	1600 1550 1950 1550
-Wire Wire Line
-	1050 1550 1250 1550
-Wire Wire Line
-	2300 2500 2550 2500
-Wire Wire Line
-	1600 2600 1650 2600
-Wire Wire Line
-	1600 3000 1950 3000
-Wire Wire Line
-	1050 3000 1250 3000
-Wire Wire Line
-	2300 3950 2550 3950
-Wire Wire Line
-	1600 4050 1650 4050
-Wire Wire Line
-	1600 4450 1950 4450
-Wire Wire Line
-	1050 4450 1250 4450
-Wire Wire Line
-	2300 5400 2550 5400
-Wire Wire Line
-	1600 5500 1650 5500
-Wire Wire Line
-	1600 5900 1950 5900
-Wire Wire Line
-	1050 5900 1250 5900
-Wire Wire Line
-	5200 1800 5700 1800
-Wire Wire Line
-	5200 3250 5500 3250
-Wire Wire Line
-	5200 6150 5800 6150
-Wire Wire Line
-	2800 5600 5700 5600
-Wire Wire Line
-	5200 4700 5600 4700
-Wire Wire Line
-	2800 4150 5500 4150
-Wire Wire Line
-	2800 2700 5600 2700
-Wire Wire Line
-	2800 1250 5800 1250
-Wire Wire Line
-	8900 2650 8900 2900
-Wire Wire Line
-	8100 2650 8100 2900
-Wire Wire Line
-	8100 3650 8100 3900
-Wire Wire Line
-	7300 3650 7300 3900
-Wire Wire Line
-	8900 4650 8900 4900
-Wire Wire Line
-	8100 4650 8100 4900
-Wire Wire Line
-	9050 1150 9150 1150
-Wire Wire Line
-	8100 1150 9050 1150
-Wire Wire Line
-	8900 2150 9050 2150
-Wire Wire Line
-	9050 2150 9150 2150
-Wire Wire Line
-	8100 3150 9050 3150
-Wire Wire Line
-	9050 3150 9150 3150
-Wire Wire Line
-	9050 4150 9150 4150
-Wire Wire Line
-	8900 4150 9050 4150
-Wire Wire Line
-	4100 1900 4150 1900
-Wire Wire Line
-	4100 3350 4150 3350
-Wire Wire Line
-	4100 4800 4150 4800
-Wire Wire Line
-	4100 6250 4150 6250
-Wire Wire Line
-	8100 4250 8200 4250
-Wire Wire Line
-	8100 2250 8200 2250
-Wire Wire Line
-	7300 1250 7400 1250
-Wire Wire Line
-	10200 5900 10250 5900
-Wire Wire Line
-	10100 5900 10200 5900
-Wire Wire Line
-	9400 6000 9450 6000
-Wire Wire Line
-	9150 6000 9400 6000
-Wire Wire Line
-	8950 6000 9150 6000
-Wire Wire Line
-	8750 6000 8950 6000
-Wire Wire Line
-	7300 3900 7300 3950
-Text Notes 3350 1200 0    50   ~ 0
-NOTE: The 2164 seems to be inverting (https://www.muffwiggler.com/forum/viewtopic.php?t=148098&sid=06baf47ec4ac164e66c19838e964063c).\nObviously I _shold_ test that, as well as the entire circuit, but if I \ndon’t feel like it, maybe just either change the first OP-amp \nto non-inverting, or remove it altogether (the input impedance is 5k, \nshould be cool, I guess, but it just feels better with a buffer). \n\nALSO NOTE: \nThe mix output inverts. Either take the input from the 2164 outs, \nor (if I want the break jack thing) put another inverter on the mix out.
 $EndSCHEMATC
