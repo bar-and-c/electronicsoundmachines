@@ -15,28 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:AudioJack2_Ground J1
-U 1 1 5BCF78C7
-P 1950 2500
-F 0 "J1" H 1718 2479 50  0000 R CNN
-F 1 "AudioJack2_Ground" H 1718 2570 50  0000 R CNN
-F 2 "MusicThingModular:NV-PJ3410_SOCKET_MONO" H 1950 2500 50  0001 C CNN
-F 3 "~" H 1950 2500 50  0001 C CNN
-	1    1950 2500
-	1    0    0    1   
-$EndComp
-$Comp
-L Connector:AudioJack2_Ground J2
-U 1 1 5BCF798F
-P 9400 2500
-F 0 "J2" H 9167 2479 50  0000 R CNN
-F 1 "AudioJack2_Ground" H 9167 2570 50  0000 R CNN
-F 2 "MusicThingModular:NV-PJ3410_SOCKET_MONO" H 9400 2500 50  0001 C CNN
-F 3 "~" H 9400 2500 50  0001 C CNN
-	1    9400 2500
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:C C2
 U 1 1 5BCF7A5E
 P 3450 2900
@@ -69,7 +47,7 @@ U 1 1 5C3CD920
 P 3050 2900
 F 0 "R1" H 3120 2946 50  0000 L CNN
 F 1 "R" H 3120 2855 50  0000 L CNN
-F 2 "MusicThingModular:10MM_RESISTOR" V 2980 2900 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2980 2900 50  0001 C CNN
 F 3 "~" H 3050 2900 50  0001 C CNN
 	1    3050 2900
 	1    0    0    -1  
@@ -91,7 +69,7 @@ U 1 1 5C3CDA68
 P 4150 2900
 F 0 "R2" H 4220 2946 50  0000 L CNN
 F 1 "R" H 4220 2855 50  0000 L CNN
-F 2 "MusicThingModular:10MM_RESISTOR" V 4080 2900 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4080 2900 50  0001 C CNN
 F 3 "~" H 4150 2900 50  0001 C CNN
 	1    4150 2900
 	1    0    0    -1  
@@ -102,7 +80,7 @@ U 1 1 5C3CDA97
 P 4500 2500
 F 0 "R3" V 4293 2500 50  0000 C CNN
 F 1 "R" V 4384 2500 50  0000 C CNN
-F 2 "MusicThingModular:10MM_RESISTOR" V 4430 2500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4430 2500 50  0001 C CNN
 F 3 "~" H 4500 2500 50  0001 C CNN
 	1    4500 2500
 	0    1    1    0   
@@ -113,7 +91,7 @@ U 1 1 5C3CDAE0
 P 4850 2900
 F 0 "R4" H 4920 2946 50  0000 L CNN
 F 1 "R" H 4920 2855 50  0000 L CNN
-F 2 "MusicThingModular:10MM_RESISTOR" V 4780 2900 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4780 2900 50  0001 C CNN
 F 3 "~" H 4850 2900 50  0001 C CNN
 	1    4850 2900
 	1    0    0    -1  
@@ -223,7 +201,7 @@ U 1 1 5C3CDDAE
 P 8350 2500
 F 0 "R5" V 8143 2500 50  0000 C CNN
 F 1 "R" V 8234 2500 50  0000 C CNN
-F 2 "MusicThingModular:10MM_RESISTOR" V 8280 2500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8280 2500 50  0001 C CNN
 F 3 "~" H 8350 2500 50  0001 C CNN
 	1    8350 2500
 	0    1    1    0   
@@ -410,4 +388,28 @@ Text Notes 4050 6900 0    59   ~ 0
 NOTE: The diode is most likely not that important.\nI think I’ll go for a BAT-42, since it has low voltage\ndrop; I’m sure a standard 1N4148 will do as well.\nIf you want the original, check the original schematics. :-)
 Text Notes 2250 6550 0    50   ~ 0
 Inductors at Mouser: \nC-1X    15H (Triad Magnetics)\nC-85X  1.5H (Triad Magnetics)
+NoConn ~ 9200 2400
+NoConn ~ 2150 2400
+$Comp
+L hakane:AudioJack_Mono_Switch J1
+U 1 1 5C5B0CA6
+P 1950 2500
+F 0 "J1" H 1717 2479 50  0000 R CNN
+F 1 "TRIG_IN" H 1717 2570 50  0000 R CNN
+F 2 "kicadlib:PJ301BM" H 1950 2500 50  0001 C CNN
+F 3 "~" H 1950 2500 50  0001 C CNN
+	1    1950 2500
+	1    0    0    1   
+$EndComp
+$Comp
+L hakane:AudioJack_Mono_Switch J2
+U 1 1 5C5B0D0D
+P 9400 2500
+F 0 "J2" H 9167 2479 50  0000 R CNN
+F 1 "AUDIO_OUT" H 9167 2570 50  0000 R CNN
+F 2 "kicadlib:PJ301BM" H 9400 2500 50  0001 C CNN
+F 3 "~" H 9400 2500 50  0001 C CNN
+	1    9400 2500
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
