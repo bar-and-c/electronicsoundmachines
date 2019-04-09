@@ -1,6 +1,38 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:hakane
+LIBS:switches
+LIBS:diode
 LIBS:pro3320-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +47,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L pro3320-rescue:AS3320 U2
+L AS3320 U2
 U 1 1 5B68A90F
 P 4900 2750
 F 0 "U2" H 5550 2850 60  0000 C CNN
@@ -26,7 +58,7 @@ F 3 "" H 4900 2750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:Audio-Jack-2 J3
+L Audio-Jack-2 J3
 U 1 1 5B68A98D
 P 800 5950
 F 0 "J3" H 775 6025 50  0000 C CNN
@@ -37,7 +69,7 @@ F 3 "" H 1050 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:Audio-Jack-2 J1
+L Audio-Jack-2 J1
 U 1 1 5B68A9BC
 P 800 1250
 F 0 "J1" H 775 1325 50  0000 C CNN
@@ -48,7 +80,7 @@ F 3 "" H 1050 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:TL074 U1
+L TL074 U1
 U 1 1 5B68ADB1
 P 2150 2300
 F 0 "U1" H 2150 2500 50  0000 L CNN
@@ -59,7 +91,7 @@ F 3 "" H 2200 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:TL074 U1
+L TL074 U1
 U 2 1 5B68AE16
 P 2250 6050
 F 0 "U1" H 2250 6250 50  0000 L CNN
@@ -70,7 +102,7 @@ F 3 "" H 2300 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:TL074 U1
+L TL074 U1
 U 4 1 5B68AE4D
 P 5550 1000
 F 0 "U1" H 5550 1200 50  0000 L CNN
@@ -81,7 +113,7 @@ F 3 "" H 5600 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:TL074 U3
+L TL074 U3
 U 1 1 5B68AE81
 P 9650 1100
 F 0 "U3" H 9650 1300 50  0000 L CNN
@@ -92,7 +124,7 @@ F 3 "" H 9700 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:Audio-Jack-2 J2
+L Audio-Jack-2 J2
 U 1 1 5B68AEF2
 P 800 2000
 F 0 "J2" H 775 2075 50  0000 C CNN
@@ -103,7 +135,7 @@ F 3 "" H 1050 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:C C3
+L C C3
 U 1 1 5B68B05F
 P 4650 2600
 F 0 "C3" H 4675 2700 50  0000 L CNN
@@ -114,7 +146,7 @@ F 3 "" H 4650 2600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:C C2
+L C C2
 U 1 1 5B68B0EC
 P 4550 3450
 F 0 "C2" H 4575 3550 50  0000 L CNN
@@ -125,7 +157,7 @@ F 3 "" H 4550 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:C C12
+L C C12
 U 1 1 5B68B124
 P 6700 3650
 F 0 "C12" H 6725 3750 50  0000 L CNN
@@ -136,7 +168,7 @@ F 3 "" H 6700 3650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pro3320-rescue:C C13
+L C C13
 U 1 1 5B68B180
 P 6700 4650
 F 0 "C13" H 6725 4750 50  0000 L CNN
@@ -147,7 +179,7 @@ F 3 "" H 6700 4650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:R R19
+L R R19
 U 1 1 5B68B1B5
 P 4450 3050
 F 0 "R19" V 4530 3050 50  0000 C CNN
@@ -158,7 +190,7 @@ F 3 "" H 4450 3050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:SW_DPDT_x2 SW2
+L SW_DPDT_x2 SW2
 U 2 1 5B68B91D
 P 4200 2200
 F 0 "SW2" H 4200 2370 50  0000 C CNN
@@ -169,7 +201,7 @@ F 3 "" H 4200 2200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:SW_DPDT_x2 SW2
+L SW_DPDT_x2 SW2
 U 1 1 5B68B96F
 P 3900 2900
 F 0 "SW2" H 3900 3070 50  0000 C CNN
@@ -180,7 +212,7 @@ F 3 "" H 3900 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR01
+L GND #PWR01
 U 1 1 5B68BA82
 P 4000 2100
 F 0 "#PWR01" H 4000 1850 50  0001 C CNN
@@ -191,7 +223,7 @@ F 3 "" H 4000 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R16
+L R R16
 U 1 1 5B68BBD5
 P 3550 2600
 F 0 "R16" V 3630 2600 50  0000 C CNN
@@ -202,7 +234,7 @@ F 3 "" H 3550 2600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:CP C1
+L CP C1
 U 1 1 5B68C01D
 P 1200 2000
 F 0 "C1" H 1225 2100 50  0000 L CNN
@@ -214,7 +246,7 @@ F 3 "" H 1200 2000 50  0001 C CNN
 $EndComp
 NoConn ~ 4100 3000
 $Comp
-L pro3320-rescue:GND #PWR02
+L GND #PWR02
 U 1 1 5B68C42D
 P 3600 3350
 F 0 "#PWR02" H 3600 3100 50  0001 C CNN
@@ -225,7 +257,7 @@ F 3 "" H 3600 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R14
+L R R14
 U 1 1 5B68C506
 P 3350 3750
 F 0 "R14" V 3430 3750 50  0000 C CNN
@@ -236,7 +268,7 @@ F 3 "" H 3350 3750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:R R20
+L R R20
 U 1 1 5B68C61D
 P 4450 3850
 F 0 "R20" V 4530 3850 50  0000 C CNN
@@ -247,7 +279,7 @@ F 3 "" H 4450 3850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:-12V #PWR28
+L -12V #PWR28
 U 1 1 5B68C865
 P 4900 4650
 F 0 "#PWR28" H 4900 4750 50  0001 C CNN
@@ -258,7 +290,7 @@ F 3 "" H 4900 4650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR03
+L GND #PWR03
 U 1 1 5B68C8A5
 P 5900 4550
 F 0 "#PWR03" H 5900 4300 50  0001 C CNN
@@ -269,7 +301,7 @@ F 3 "" H 5900 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:+12V #PWR04
+L +12V #PWR04
 U 1 1 5B68C931
 P 5300 2550
 F 0 "#PWR04" H 5300 2400 50  0001 C CNN
@@ -280,7 +312,7 @@ F 3 "" H 5300 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR05
+L GND #PWR05
 U 1 1 5B68CAD3
 P 6100 4850
 F 0 "#PWR05" H 6100 4600 50  0001 C CNN
@@ -291,7 +323,7 @@ F 3 "" H 6100 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R24
+L R R24
 U 1 1 5B68CBD7
 P 6350 5400
 F 0 "R24" V 6430 5400 50  0000 C CNN
@@ -302,7 +334,7 @@ F 3 "" H 6350 5400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pro3320-rescue:R R28
+L R R28
 U 1 1 5B68D72E
 P 7000 4100
 F 0 "R28" V 7080 4100 50  0000 C CNN
@@ -313,7 +345,7 @@ F 3 "" H 7000 4100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR06
+L GND #PWR06
 U 1 1 5B68D9E4
 P 7400 3550
 F 0 "#PWR06" H 7400 3300 50  0001 C CNN
@@ -324,7 +356,7 @@ F 3 "" H 7400 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R31
+L R R31
 U 1 1 5B68DCD1
 P 7700 3850
 F 0 "R31" V 7780 3850 50  0000 C CNN
@@ -335,7 +367,7 @@ F 3 "" H 7700 3850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pro3320-rescue:R R26
+L R R26
 U 1 1 5B68DEB5
 P 6900 3250
 F 0 "R26" V 6980 3250 50  0000 C CNN
@@ -346,7 +378,7 @@ F 3 "" H 6900 3250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:CP C14
+L CP C14
 U 1 1 5B68E16F
 P 8950 1000
 F 0 "C14" H 8975 1100 50  0000 L CNN
@@ -359,7 +391,7 @@ $EndComp
 Text Notes 8650 2700 0    60   ~ 0
 It would be really nice to have insert jacks between \nstages. Although I think there is a slight risk that the \ninputs may disturb (destroy?) the IC, and also – it is \ndesigned to work like a chain... \nOn the other hand, it would be interesting to know \nwhat that would sound like. :-) 
 $Comp
-L pro3320-rescue:SW_3PDT SW1
+L SW_3PDT SW1
 U 1 1 5B69343C
 P 3800 3450
 F 0 "SW1" H 3800 3620 50  0000 C CNN
@@ -370,7 +402,7 @@ F 3 "" H 3800 3450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:SW_3PDT SW1
+L SW_3PDT SW1
 U 2 1 5B6934E7
 P 3800 3950
 F 0 "SW1" H 3800 4120 50  0000 C CNN
@@ -381,7 +413,7 @@ F 3 "" H 3800 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:SW_3PDT SW1
+L SW_3PDT SW1
 U 3 1 5B693560
 P 3850 4500
 F 0 "SW1" H 3850 4670 50  0000 C CNN
@@ -392,7 +424,7 @@ F 3 "" H 3850 4500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R15
+L R R15
 U 1 1 5B6939F0
 P 3450 4400
 F 0 "R15" V 3530 4400 50  0000 C CNN
@@ -403,7 +435,7 @@ F 3 "" H 3450 4400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:-12V #PWR20
+L -12V #PWR20
 U 1 1 5B693A8B
 P 3250 4450
 F 0 "#PWR20" H 3250 4550 50  0001 C CNN
@@ -414,7 +446,7 @@ F 3 "" H 3250 4450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:SW_3PDT SW3
+L SW_3PDT SW3
 U 1 1 5B693BB4
 P 6300 4950
 F 0 "SW3" H 6300 5120 50  0000 C CNN
@@ -425,7 +457,7 @@ F 3 "" H 6300 4950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:SW_3PDT SW3
+L SW_3PDT SW3
 U 2 1 5B693C69
 P 6750 5400
 F 0 "SW3" H 6750 5570 50  0000 C CNN
@@ -436,7 +468,7 @@ F 3 "" H 6750 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:SW_3PDT SW3
+L SW_3PDT SW3
 U 3 1 5B693D0B
 P 6750 5850
 F 0 "SW3" H 6750 6020 50  0000 C CNN
@@ -447,7 +479,7 @@ F 3 "" H 6750 5850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R25
+L R R25
 U 1 1 5B693E71
 P 6350 5750
 F 0 "R25" V 6430 5750 50  0000 C CNN
@@ -458,7 +490,7 @@ F 3 "" H 6350 5750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:-12V #PWR35
+L -12V #PWR35
 U 1 1 5B693E77
 P 6150 5800
 F 0 "#PWR35" H 6150 5900 50  0001 C CNN
@@ -469,7 +501,7 @@ F 3 "" H 6150 5800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:SW_3PDT SW4
+L SW_3PDT SW4
 U 1 1 5B694668
 P 7200 3650
 F 0 "SW4" H 7150 3550 50  0000 C CNN
@@ -480,7 +512,7 @@ F 3 "" H 7200 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:SW_3PDT SW4
+L SW_3PDT SW4
 U 3 1 5B694949
 P 7750 3450
 F 0 "SW4" H 7750 3620 50  0000 C CNN
@@ -491,7 +523,7 @@ F 3 "" H 7750 3450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:SW_3PDT SW4
+L SW_3PDT SW4
 U 2 1 5B694ADF
 P 7450 2900
 F 0 "SW4" H 7450 3070 50  0000 C CNN
@@ -502,7 +534,7 @@ F 3 "" H 7450 2900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pro3320-rescue:R R30
+L R R30
 U 1 1 5B694C74
 P 7350 2500
 F 0 "R30" V 7430 2500 50  0000 C CNN
@@ -513,7 +545,7 @@ F 3 "" H 7350 2500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:-12V #PWR38
+L -12V #PWR38
 U 1 1 5B694D13
 P 7550 2350
 F 0 "#PWR38" H 7550 2450 50  0001 C CNN
@@ -530,7 +562,7 @@ NoConn ~ 6950 5500
 NoConn ~ 3650 4600
 NoConn ~ 4000 4050
 $Comp
-L pro3320-rescue:-12V #PWR32
+L -12V #PWR32
 U 1 1 5B69553D
 P 5450 1300
 F 0 "#PWR32" H 5450 1400 50  0001 C CNN
@@ -541,7 +573,7 @@ F 3 "" H 5450 1300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:+12V #PWR07
+L +12V #PWR07
 U 1 1 5B6955EB
 P 5450 700
 F 0 "#PWR07" H 5450 550 50  0001 C CNN
@@ -552,7 +584,7 @@ F 3 "" H 5450 700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:+12V #PWR08
+L +12V #PWR08
 U 1 1 5B695665
 P 9550 800
 F 0 "#PWR08" H 9550 650 50  0001 C CNN
@@ -563,7 +595,7 @@ F 3 "" H 9550 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:+12V #PWR09
+L +12V #PWR09
 U 1 1 5B6956DF
 P 2050 2000
 F 0 "#PWR09" H 2050 1850 50  0001 C CNN
@@ -574,7 +606,7 @@ F 3 "" H 2050 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:+12V #PWR010
+L +12V #PWR010
 U 1 1 5B695759
 P 2150 5750
 F 0 "#PWR010" H 2150 5600 50  0001 C CNN
@@ -585,7 +617,7 @@ F 3 "" H 2150 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:-12V #PWR15
+L -12V #PWR15
 U 1 1 5B6957D3
 P 2050 2600
 F 0 "#PWR15" H 2050 2700 50  0001 C CNN
@@ -596,7 +628,7 @@ F 3 "" H 2050 2600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:-12V #PWR18
+L -12V #PWR18
 U 1 1 5B69584D
 P 2150 6350
 F 0 "#PWR18" H 2150 6450 50  0001 C CNN
@@ -607,7 +639,7 @@ F 3 "" H 2150 6350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:-12V #PWR44
+L -12V #PWR44
 U 1 1 5B6958C7
 P 9550 1400
 F 0 "#PWR44" H 9550 1500 50  0001 C CNN
@@ -618,7 +650,7 @@ F 3 "" H 9550 1400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:R R23
+L R R23
 U 1 1 5B695968
 P 6200 1000
 F 0 "R23" V 6280 1000 50  0000 C CNN
@@ -631,7 +663,7 @@ $EndComp
 Text Notes 5800 850  0    60   ~ 0
 NOTE: ProOne uses 200k to pin 9, and 240k as pull down for LP, \nand also 150pF for caps. Experiment with those values? \n\nAlso, the resonance feedback is different: the OP amplifies the output \n2.4 times, and then the feedback seems to be voltage divided a LOT. \nWell, there is also 3.6k to GND in the IC, on pin 8, and that in parallell\nwith the ProOne's 3k kind of makes up for the gain of 2.4 in the output.\n
 $Comp
-L pro3320-rescue:R R29
+L R R29
 U 1 1 5B6960B9
 P 7200 1800
 F 0 "R29" V 7280 1800 50  0000 C CNN
@@ -642,7 +674,7 @@ F 3 "" H 7200 1800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:R R22
+L R R22
 U 1 1 5B696B35
 P 5750 1500
 F 0 "R22" V 5830 1500 50  0000 C CNN
@@ -653,7 +685,7 @@ F 3 "" H 5750 1500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:R R17
+L R R17
 U 1 1 5B696EA7
 P 3600 1650
 F 0 "R17" V 3680 1650 50  0000 C CNN
@@ -664,7 +696,7 @@ F 3 "" H 3600 1650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pro3320-rescue:POT RV3
+L POT RV3
 U 1 1 5B69701D
 P 1450 1450
 F 0 "RV3" V 1275 1450 50  0000 C CNN
@@ -677,7 +709,7 @@ $EndComp
 Text Notes 550  4750 0    60   ~ 0
 A sweep from 0-8V on the panel pot should \nresult in a voltage sweep from 155mV to -25mV, \nand a resulting filter sweep from approx min to \nmax cutoff frequency, if I read the data sheet OK. \nIt says that increasing voltage means a decrease \nin filter frequency. So, the effective input CV range\n is 0-8V (as suggested by Doepfer). Still, to \naccomodate for smaller CV ranges, I increased the \ngain a bit, so that 5V should cause the cutoff to\npeak, and added an attenuator.\nNote that values outside this range should not \ncause damage to the IC, the data sheet states \nthe max voltage on that input to be +/-6V.
 $Comp
-L pro3320-rescue:POT RV1
+L POT RV1
 U 1 1 5B6A1E7E
 P 1300 5550
 F 0 "RV1" V 1125 5550 50  0000 C CNN
@@ -688,7 +720,7 @@ F 3 "" H 1300 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R4
+L R R4
 U 1 1 5B6A1F9B
 P 1650 5550
 F 0 "R4" V 1730 5550 50  0000 C CNN
@@ -699,7 +731,7 @@ F 3 "" H 1650 5550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pro3320-rescue:R R5
+L R R5
 U 1 1 5B6A214C
 P 1650 6150
 F 0 "R5" V 1730 6150 50  0000 C CNN
@@ -710,7 +742,7 @@ F 3 "" H 1650 6150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR011
+L GND #PWR011
 U 1 1 5B6A2439
 P 1300 5700
 F 0 "#PWR011" H 1300 5450 50  0001 C CNN
@@ -721,7 +753,7 @@ F 3 "" H 1300 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R1
+L R R1
 U 1 1 5B6A25D8
 P 1300 5200
 F 0 "R1" V 1380 5200 50  0000 C CNN
@@ -732,7 +764,7 @@ F 3 "" H 1300 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:+12V #PWR012
+L +12V #PWR012
 U 1 1 5B6A2698
 P 1300 5050
 F 0 "#PWR012" H 1300 4900 50  0001 C CNN
@@ -743,7 +775,7 @@ F 3 "" H 1300 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR013
+L GND #PWR013
 U 1 1 5B6A2CDE
 P 1000 6050
 F 0 "#PWR013" H 1000 5800 50  0001 C CNN
@@ -754,7 +786,7 @@ F 3 "" H 1000 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R6
+L R R6
 U 1 1 5B6A2EBF
 P 1650 7050
 F 0 "R6" V 1730 7050 50  0000 C CNN
@@ -765,7 +797,7 @@ F 3 "" H 1650 7050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pro3320-rescue:-12V #PWR8
+L -12V #PWR8
 U 1 1 5B6A2F62
 P 1300 7400
 F 0 "#PWR8" H 1300 7500 50  0001 C CNN
@@ -776,7 +808,7 @@ F 3 "" H 1300 7400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:R R10
+L R R10
 U 1 1 5B6A32C6
 P 2400 6650
 F 0 "R10" V 2480 6650 50  0000 C CNN
@@ -791,7 +823,7 @@ TEST RANGE OF FREQ CV POT\nTEST RANGE OF RES CV POT\n
 Text Notes 1300 400  0    60   ~ 0
 TEST AT LEAST ONE HP/LP SWITCH? \nAND ONE SEPARATE OUTPUT?
 $Comp
-L pro3320-rescue:Audio-Jack-2 J5
+L Audio-Jack-2 J5
 U 1 1 5B6A4164
 P 10950 1100
 F 0 "J5" H 10925 1175 50  0000 C CNN
@@ -802,7 +834,7 @@ F 3 "" H 11200 1100 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:Audio-Jack-2 J8
+L Audio-Jack-2 J8
 U 1 1 5B6A42A1
 P 10950 5800
 F 0 "J8" H 10925 5875 50  0000 C CNN
@@ -813,7 +845,7 @@ F 3 "" H 11200 5800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:Audio-Jack-2 J7
+L Audio-Jack-2 J7
 U 1 1 5B6A43B2
 P 10950 4650
 F 0 "J7" H 10925 4725 50  0000 C CNN
@@ -824,7 +856,7 @@ F 3 "" H 11200 4650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:Audio-Jack-2 J6
+L Audio-Jack-2 J6
 U 1 1 5B6A445F
 P 10950 3400
 F 0 "J6" H 10925 3475 50  0000 C CNN
@@ -835,7 +867,7 @@ F 3 "" H 11200 3400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R3
+L R R3
 U 1 1 5B6DD17E
 P 1300 7250
 F 0 "R3" V 1380 7250 50  0000 C CNN
@@ -846,7 +878,7 @@ F 3 "" H 1300 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R2
+L R R2
 U 1 1 5B6DD283
 P 1300 6850
 F 0 "R2" V 1380 6850 50  0000 C CNN
@@ -857,7 +889,7 @@ F 3 "" H 1300 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR014
+L GND #PWR014
 U 1 1 5B6DD8F7
 P 1300 6700
 F 0 "#PWR014" H 1300 6450 50  0001 C CNN
@@ -868,7 +900,7 @@ F 3 "" H 1300 6700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:POT RV2
+L POT RV2
 U 1 1 5B6DE919
 P 1300 6150
 F 0 "RV2" V 1125 6150 50  0000 C CNN
@@ -879,7 +911,7 @@ F 3 "" H 1300 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR015
+L GND #PWR015
 U 1 1 5B6DEB47
 P 1300 6300
 F 0 "#PWR015" H 1300 6050 50  0001 C CNN
@@ -890,7 +922,7 @@ F 3 "" H 1300 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:POT RV4
+L POT RV4
 U 1 1 5B6E11CC
 P 1450 2200
 F 0 "RV4" V 1275 2200 50  0000 C CNN
@@ -901,7 +933,7 @@ F 3 "" H 1450 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR016
+L GND #PWR016
 U 1 1 5B6E15C9
 P 1000 2100
 F 0 "#PWR016" H 1000 1850 50  0001 C CNN
@@ -912,7 +944,7 @@ F 3 "" H 1000 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR017
+L GND #PWR017
 U 1 1 5B6E167F
 P 1450 2350
 F 0 "#PWR017" H 1450 2100 50  0001 C CNN
@@ -925,7 +957,7 @@ $EndComp
 Text Notes 550  3350 0    60   ~ 0
 Normal level in should \nbe about +/-10V, but \nadding a bit more gain \nto the amp, so that weak\nsignals can have a go \n(and to see whether \nthat kind of distortion \nagrees with the VCF). 
 $Comp
-L pro3320-rescue:R R9
+L R R9
 U 1 1 5B6E20E1
 P 2350 2850
 F 0 "R9" V 2430 2850 50  0000 C CNN
@@ -936,7 +968,7 @@ F 3 "" H 2350 2850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:R R7
+L R R7
 U 1 1 5B6E21BC
 P 1850 3050
 F 0 "R7" V 1930 3050 50  0000 C CNN
@@ -947,7 +979,7 @@ F 3 "" H 1850 3050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:R R13
+L R R13
 U 1 1 5B6E237B
 P 2700 2300
 F 0 "R13" V 2780 2300 50  0000 C CNN
@@ -958,7 +990,7 @@ F 3 "" H 2700 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR018
+L GND #PWR018
 U 1 1 5B6E308D
 P 1850 3200
 F 0 "#PWR018" H 1850 2950 50  0001 C CNN
@@ -969,7 +1001,7 @@ F 3 "" H 1850 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:Conn_02x05_Odd_Even J4
+L Conn_02x05_Odd_Even J4
 U 1 1 5B6E512F
 P 4950 7200
 F 0 "J4" H 5000 7500 50  0000 C CNN
@@ -980,7 +1012,7 @@ F 3 "" H 4950 7200 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:+12V #PWR019
+L +12V #PWR019
 U 1 1 5B6E523E
 P 4600 6950
 F 0 "#PWR019" H 4600 6800 50  0001 C CNN
@@ -991,7 +1023,7 @@ F 3 "" H 4600 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:-12V #PWR27
+L -12V #PWR27
 U 1 1 5B6E546B
 P 4600 7450
 F 0 "#PWR27" H 4600 7550 50  0001 C CNN
@@ -1002,7 +1034,7 @@ F 3 "" H 4600 7450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR020
+L GND #PWR020
 U 1 1 5B6E5527
 P 4450 7250
 F 0 "#PWR020" H 4450 7000 50  0001 C CNN
@@ -1013,7 +1045,7 @@ F 3 "" H 4450 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:CP C4
+L CP C4
 U 1 1 5B6E6112
 P 5700 7000
 F 0 "C4" H 5725 7100 50  0000 L CNN
@@ -1024,7 +1056,7 @@ F 3 "" H 5700 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:CP C5
+L CP C5
 U 1 1 5B6E61FA
 P 5700 7400
 F 0 "C5" H 5725 7500 50  0000 L CNN
@@ -1035,7 +1067,7 @@ F 3 "" H 5700 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:C C9
+L C C9
 U 1 1 5B6E6304
 P 6300 7400
 F 0 "C9" H 6325 7500 50  0000 L CNN
@@ -1046,7 +1078,7 @@ F 3 "" H 6300 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:C C8
+L C C8
 U 1 1 5B6E6559
 P 6300 7000
 F 0 "C8" H 6325 7100 50  0000 L CNN
@@ -1057,7 +1089,7 @@ F 3 "" H 6300 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:C C7
+L C C7
 U 1 1 5B6E66D1
 P 6000 7400
 F 0 "C7" H 6025 7500 50  0000 L CNN
@@ -1068,7 +1100,7 @@ F 3 "" H 6000 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:C C6
+L C C6
 U 1 1 5B6E66D7
 P 6000 7000
 F 0 "C6" H 6025 7100 50  0000 L CNN
@@ -1079,7 +1111,7 @@ F 3 "" H 6000 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:C C11
+L C C11
 U 1 1 5B6E6775
 P 6600 7400
 F 0 "C11" H 6625 7500 50  0000 L CNN
@@ -1090,7 +1122,7 @@ F 3 "" H 6600 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:C C10
+L C C10
 U 1 1 5B6E677B
 P 6600 7000
 F 0 "C10" H 6625 7100 50  0000 L CNN
@@ -1101,7 +1133,7 @@ F 3 "" H 6600 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:1N4001 D1
+L 1N4001 D1
 U 1 1 5B6E69C3
 P 5450 7000
 F 0 "D1" H 5450 7100 50  0000 C CNN
@@ -1112,7 +1144,7 @@ F 3 "" H 5450 7000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:1N4001 D2
+L 1N4001 D2
 U 1 1 5B6E6AC6
 P 5450 7400
 F 0 "D2" H 5450 7500 50  0000 C CNN
@@ -1123,7 +1155,7 @@ F 3 "" H 5450 7400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:R R36
+L R R36
 U 1 1 5B6EB179
 P 9900 1600
 F 0 "R36" V 9980 1600 50  0000 C CNN
@@ -1134,7 +1166,7 @@ F 3 "" H 9900 1600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:R R32
+L R R32
 U 1 1 5B6EB46F
 P 9100 1600
 F 0 "R32" V 9180 1600 50  0000 C CNN
@@ -1145,7 +1177,7 @@ F 3 "" H 9100 1600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR021
+L GND #PWR021
 U 1 1 5B6EB568
 P 8850 1600
 F 0 "#PWR021" H 8850 1350 50  0001 C CNN
@@ -1158,7 +1190,7 @@ $EndComp
 Text Notes 9750 750  0    60   ~ 0
 NOTE: ProOne has 68k between \npos input and GND – why?\n
 $Comp
-L pro3320-rescue:R R27
+L R R27
 U 1 1 5B6EC661
 P 7000 2050
 F 0 "R27" V 7080 2050 50  0000 C CNN
@@ -1169,7 +1201,7 @@ F 3 "" H 7000 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR022
+L GND #PWR022
 U 1 1 5B6EC758
 P 7000 2200
 F 0 "#PWR022" H 7000 1950 50  0001 C CNN
@@ -1180,7 +1212,7 @@ F 3 "" H 7000 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R40
+L R R40
 U 1 1 5B6ED0F9
 P 10350 1100
 F 0 "R40" V 10430 1100 50  0000 C CNN
@@ -1191,7 +1223,7 @@ F 3 "" H 10350 1100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:R R44
+L R R44
 U 1 1 5B6ED220
 P 10550 1300
 F 0 "R44" V 10630 1300 50  0000 C CNN
@@ -1202,7 +1234,7 @@ F 3 "" H 10550 1300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR023
+L GND #PWR023
 U 1 1 5B6ED59D
 P 10550 1450
 F 0 "#PWR023" H 10550 1200 50  0001 C CNN
@@ -1213,7 +1245,7 @@ F 3 "" H 10550 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR024
+L GND #PWR024
 U 1 1 5B6ED9DA
 P 10750 1200
 F 0 "#PWR024" H 10750 950 50  0001 C CNN
@@ -1224,7 +1256,7 @@ F 3 "" H 10750 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:TL074 U3
+L TL074 U3
 U 3 1 5B6EE084
 P 9650 4650
 F 0 "U3" H 9650 4850 50  0000 L CNN
@@ -1235,7 +1267,7 @@ F 3 "" H 9700 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:CP C16
+L CP C16
 U 1 1 5B6EE08A
 P 8950 4550
 F 0 "C16" H 8975 4650 50  0000 L CNN
@@ -1246,7 +1278,7 @@ F 3 "" H 8950 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pro3320-rescue:+12V #PWR025
+L +12V #PWR025
 U 1 1 5B6EE090
 P 9550 4350
 F 0 "#PWR025" H 9550 4200 50  0001 C CNN
@@ -1257,7 +1289,7 @@ F 3 "" H 9550 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:-12V #PWR48
+L -12V #PWR48
 U 1 1 5B6EE096
 P 9550 4950
 F 0 "#PWR48" H 9550 5050 50  0001 C CNN
@@ -1268,7 +1300,7 @@ F 3 "" H 9550 4950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:R R38
+L R R38
 U 1 1 5B6EE0A6
 P 9900 5150
 F 0 "R38" V 9980 5150 50  0000 C CNN
@@ -1279,7 +1311,7 @@ F 3 "" H 9900 5150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:R R34
+L R R34
 U 1 1 5B6EE0AC
 P 9150 5150
 F 0 "R34" V 9230 5150 50  0000 C CNN
@@ -1290,7 +1322,7 @@ F 3 "" H 9150 5150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR026
+L GND #PWR026
 U 1 1 5B6EE0B2
 P 8900 5150
 F 0 "#PWR026" H 8900 4900 50  0001 C CNN
@@ -1301,7 +1333,7 @@ F 3 "" H 8900 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R42
+L R R42
 U 1 1 5B6EE0BE
 P 10350 4650
 F 0 "R42" V 10430 4650 50  0000 C CNN
@@ -1312,7 +1344,7 @@ F 3 "" H 10350 4650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:R R46
+L R R46
 U 1 1 5B6EE0C4
 P 10550 4850
 F 0 "R46" V 10630 4850 50  0000 C CNN
@@ -1323,7 +1355,7 @@ F 3 "" H 10550 4850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR027
+L GND #PWR027
 U 1 1 5B6EE0CA
 P 10550 5000
 F 0 "#PWR027" H 10550 4750 50  0001 C CNN
@@ -1334,7 +1366,7 @@ F 3 "" H 10550 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR028
+L GND #PWR028
 U 1 1 5B6EE0D3
 P 10750 4750
 F 0 "#PWR028" H 10750 4500 50  0001 C CNN
@@ -1345,7 +1377,7 @@ F 3 "" H 10750 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:TL074 U3
+L TL074 U3
 U 4 1 5B6EE9A2
 P 9650 5800
 F 0 "U3" H 9650 6000 50  0000 L CNN
@@ -1356,7 +1388,7 @@ F 3 "" H 9700 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:CP C17
+L CP C17
 U 1 1 5B6EE9A8
 P 8950 5700
 F 0 "C17" H 8975 5800 50  0000 L CNN
@@ -1367,7 +1399,7 @@ F 3 "" H 8950 5700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pro3320-rescue:+12V #PWR029
+L +12V #PWR029
 U 1 1 5B6EE9AE
 P 9550 5500
 F 0 "#PWR029" H 9550 5350 50  0001 C CNN
@@ -1378,7 +1410,7 @@ F 3 "" H 9550 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:-12V #PWR50
+L -12V #PWR50
 U 1 1 5B6EE9B4
 P 9550 6100
 F 0 "#PWR50" H 9550 6200 50  0001 C CNN
@@ -1389,7 +1421,7 @@ F 3 "" H 9550 6100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:R R39
+L R R39
 U 1 1 5B6EE9BB
 P 9900 6300
 F 0 "R39" V 9980 6300 50  0000 C CNN
@@ -1400,7 +1432,7 @@ F 3 "" H 9900 6300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:R R35
+L R R35
 U 1 1 5B6EE9C1
 P 9150 6300
 F 0 "R35" V 9230 6300 50  0000 C CNN
@@ -1411,7 +1443,7 @@ F 3 "" H 9150 6300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR030
+L GND #PWR030
 U 1 1 5B6EE9C7
 P 8900 6300
 F 0 "#PWR030" H 8900 6050 50  0001 C CNN
@@ -1422,7 +1454,7 @@ F 3 "" H 8900 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R43
+L R R43
 U 1 1 5B6EE9D3
 P 10350 5800
 F 0 "R43" V 10430 5800 50  0000 C CNN
@@ -1433,7 +1465,7 @@ F 3 "" H 10350 5800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:R R47
+L R R47
 U 1 1 5B6EE9D9
 P 10550 6000
 F 0 "R47" V 10630 6000 50  0000 C CNN
@@ -1444,7 +1476,7 @@ F 3 "" H 10550 6000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR031
+L GND #PWR031
 U 1 1 5B6EE9DF
 P 10550 6150
 F 0 "#PWR031" H 10550 5900 50  0001 C CNN
@@ -1455,7 +1487,7 @@ F 3 "" H 10550 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:TL074 U3
+L TL074 U3
 U 2 1 5B6EFED8
 P 9650 3400
 F 0 "U3" H 9650 3600 50  0000 L CNN
@@ -1466,7 +1498,7 @@ F 3 "" H 9700 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:CP C15
+L CP C15
 U 1 1 5B6EFEDE
 P 8950 3300
 F 0 "C15" H 8975 3400 50  0000 L CNN
@@ -1477,7 +1509,7 @@ F 3 "" H 8950 3300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pro3320-rescue:+12V #PWR032
+L +12V #PWR032
 U 1 1 5B6EFEE4
 P 9550 3100
 F 0 "#PWR032" H 9550 2950 50  0001 C CNN
@@ -1488,7 +1520,7 @@ F 3 "" H 9550 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:-12V #PWR46
+L -12V #PWR46
 U 1 1 5B6EFEEA
 P 9550 3700
 F 0 "#PWR46" H 9550 3800 50  0001 C CNN
@@ -1499,7 +1531,7 @@ F 3 "" H 9550 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:R R37
+L R R37
 U 1 1 5B6EFEF0
 P 9900 3900
 F 0 "R37" V 9980 3900 50  0000 C CNN
@@ -1510,7 +1542,7 @@ F 3 "" H 9900 3900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:R R33
+L R R33
 U 1 1 5B6EFEF6
 P 9150 3900
 F 0 "R33" V 9230 3900 50  0000 C CNN
@@ -1521,7 +1553,7 @@ F 3 "" H 9150 3900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR033
+L GND #PWR033
 U 1 1 5B6EFEFC
 P 8900 3900
 F 0 "#PWR033" H 8900 3650 50  0001 C CNN
@@ -1532,7 +1564,7 @@ F 3 "" H 8900 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R41
+L R R41
 U 1 1 5B6EFF02
 P 10350 3400
 F 0 "R41" V 10430 3400 50  0000 C CNN
@@ -1543,7 +1575,7 @@ F 3 "" H 10350 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:R R45
+L R R45
 U 1 1 5B6EFF08
 P 10550 3600
 F 0 "R45" V 10630 3600 50  0000 C CNN
@@ -1554,7 +1586,7 @@ F 3 "" H 10550 3600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR034
+L GND #PWR034
 U 1 1 5B6EFF0E
 P 10550 3750
 F 0 "#PWR034" H 10550 3500 50  0001 C CNN
@@ -1565,7 +1597,7 @@ F 3 "" H 10550 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR035
+L GND #PWR035
 U 1 1 5B6EFF14
 P 10750 3500
 F 0 "#PWR035" H 10750 3250 50  0001 C CNN
@@ -1576,7 +1608,7 @@ F 3 "" H 10750 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR036
+L GND #PWR036
 U 1 1 5B6F9F97
 P 1950 5950
 F 0 "#PWR036" H 1950 5700 50  0001 C CNN
@@ -1627,6 +1659,8 @@ Wire Wire Line
 	4600 3050 4600 2800
 Connection ~ 4450 2800
 Connection ~ 4450 3250
+Wire Wire Line
+	4700 3450 4700 3450
 Wire Wire Line
 	4000 3450 4400 3450
 Wire Wire Line
@@ -1750,6 +1784,8 @@ Wire Wire Line
 Wire Wire Line
 	6750 3050 6900 3050
 Wire Wire Line
+	6900 3050 6900 3050
+Wire Wire Line
 	6750 3050 6750 3250
 Wire Wire Line
 	6750 3250 6500 3250
@@ -1857,6 +1893,8 @@ Wire Wire Line
 	1350 2000 1450 2000
 Wire Wire Line
 	1450 2000 1450 2050
+Wire Wire Line
+	2500 2850 2500 2850
 Wire Wire Line
 	2500 2850 2500 2300
 Connection ~ 2500 2300
@@ -2143,7 +2181,7 @@ TEST THIS, REALLY UNSURE. ALL THREE COMPONENTS.
 Text Notes 4500 2100 0    60   ~ 0
 The resonance control input is a current.\nThe ProOne has max 75uA (but I think it\nalso has to do with the input at pin 8).\nI chose 56k for a max current of 89 uA\nfor 5V in (thinking 0-5V in, as for cutoff).\n
 $Comp
-L pro3320-rescue:POT RV5
+L POT RV5
 U 1 1 5B706205
 P 2150 900
 F 0 "RV5" V 1975 900 50  0000 C CNN
@@ -2154,7 +2192,7 @@ F 3 "" H 2150 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R11
+L R R11
 U 1 1 5B70620B
 P 2450 900
 F 0 "R11" V 2530 900 50  0000 C CNN
@@ -2165,7 +2203,7 @@ F 3 "" H 2450 900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR037
+L GND #PWR037
 U 1 1 5B706211
 P 2150 1050
 F 0 "#PWR037" H 2150 800 50  0001 C CNN
@@ -2176,7 +2214,7 @@ F 3 "" H 2150 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R8
+L R R8
 U 1 1 5B706217
 P 1950 700
 F 0 "R8" V 2030 700 50  0000 C CNN
@@ -2187,7 +2225,7 @@ F 3 "" H 1950 700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pro3320-rescue:+12V #PWR038
+L +12V #PWR038
 U 1 1 5B70621D
 P 1700 700
 F 0 "#PWR038" H 1700 550 50  0001 C CNN
@@ -2200,9 +2238,11 @@ $EndComp
 Wire Wire Line
 	2150 750  2150 700 
 Wire Wire Line
+	2300 900  2300 900 
+Wire Wire Line
 	2600 900  2800 900 
 $Comp
-L pro3320-rescue:TL074 U1
+L TL074 U1
 U 3 1 5B706A4A
 P 3400 1100
 F 0 "U1" H 3400 1300 50  0000 L CNN
@@ -2213,7 +2253,7 @@ F 3 "" H 3450 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:+12V #PWR039
+L +12V #PWR039
 U 1 1 5B706CBE
 P 3300 800
 F 0 "#PWR039" H 3300 650 50  0001 C CNN
@@ -2224,7 +2264,7 @@ F 3 "" H 3300 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:-12V #PWR22
+L -12V #PWR22
 U 1 1 5B706DE9
 P 3300 1400
 F 0 "#PWR22" H 3300 1500 50  0001 C CNN
@@ -2243,7 +2283,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 1250 1450 1300
 $Comp
-L pro3320-rescue:GND #PWR040
+L GND #PWR040
 U 1 1 5B70943A
 P 1450 1600
 F 0 "#PWR040" H 1450 1350 50  0001 C CNN
@@ -2254,7 +2294,7 @@ F 3 "" H 1450 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR041
+L GND #PWR041
 U 1 1 5B709565
 P 1000 1350
 F 0 "#PWR041" H 1000 1100 50  0001 C CNN
@@ -2265,7 +2305,7 @@ F 3 "" H 1000 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R12
+L R R12
 U 1 1 5B709750
 P 2450 1450
 F 0 "R12" V 2530 1450 50  0000 C CNN
@@ -2300,7 +2340,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 1100 3900 1100
 $Comp
-L pro3320-rescue:R R18
+L R R18
 U 1 1 5B70A124
 P 4050 1100
 F 0 "R18" V 4130 1100 50  0000 C CNN
@@ -2313,7 +2353,7 @@ $EndComp
 Connection ~ 3800 1100
 Connection ~ 5150 1100
 $Comp
-L pro3320-rescue:GND #PWR042
+L GND #PWR042
 U 1 1 5B70A73F
 P 3100 1000
 F 0 "#PWR042" H 3100 750 50  0001 C CNN
@@ -2324,7 +2364,7 @@ F 3 "" H 3100 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:GND #PWR043
+L GND #PWR043
 U 1 1 5B70A870
 P 5250 900
 F 0 "#PWR043" H 5250 650 50  0001 C CNN
@@ -2335,7 +2375,7 @@ F 3 "" H 5250 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pro3320-rescue:R R21
+L R R21
 U 1 1 5B6F9665
 P 5100 4600
 F 0 "R21" V 5180 4600 50  0000 C CNN
@@ -2363,7 +2403,7 @@ Wire Wire Line
 	9350 5900 9350 6300
 Connection ~ 9350 6300
 $Comp
-L pro3320-rescue:GND #PWR044
+L GND #PWR044
 U 1 1 5B6FF2B6
 P 10750 5900
 F 0 "#PWR044" H 10750 5650 50  0001 C CNN
