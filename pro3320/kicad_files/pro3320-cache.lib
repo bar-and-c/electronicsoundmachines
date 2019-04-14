@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_TestPoint
+# Connector:TestPoint
 #
-DEF Connector_TestPoint TP 0 30 N N 1 F N
+DEF Connector:TestPoint TP 0 30 N N 1 F N
 F0 "TP" 0 270 50 H V C CNN
-F1 "Connector_TestPoint" 0 200 50 H V C CNN
+F1 "Connector:TestPoint" 0 200 50 H V C CNN
 F2 "" 200 0 50 H I C CNN
 F3 "" 200 0 50 H I C CNN
 $FPLIST
@@ -18,11 +18,11 @@ X 1 1 0 0 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R
+# Device:R
 #
-DEF Device_R R 0 0 N Y 1 F N
+DEF Device:R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device_R" 0 0 50 V V C CNN
+F1 "Device:R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -35,11 +35,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_SPDT
+# Switch:SW_SPDT
 #
-DEF Switch_SW_SPDT SW 0 0 Y N 1 F N
+DEF Switch:SW_SPDT SW 0 0 Y N 1 F N
 F0 "SW" 0 170 50 H V C CNN
-F1 "Switch_SW_SPDT" 0 -200 50 H V C CNN
+F1 "Switch:SW_SPDT" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -53,11 +53,11 @@ X C 3 200 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# hakane_AudioJack_Mono_Switch
+# hakane:AudioJack_Mono_Switch
 #
-DEF hakane_AudioJack_Mono_Switch J 0 40 Y Y 1 F N
+DEF hakane:AudioJack_Mono_Switch J 0 40 Y Y 1 F N
 F0 "J" 0 350 50 H V C CNN
-F1 "hakane_AudioJack_Mono_Switch" 0 250 50 H V C CNN
+F1 "hakane:AudioJack_Mono_Switch" 0 250 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -73,11 +73,11 @@ X ~ 3 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pro3320-rescue_+12V
+# pro3320-rescue:+12V
 #
-DEF pro3320-rescue_+12V #PWR 0 0 Y Y 1 F P
+DEF pro3320-rescue:+12V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "pro3320-rescue_+12V" 0 140 50 H V C CNN
+F1 "pro3320-rescue:+12V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -88,11 +88,11 @@ X +12V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pro3320-rescue_-12V
+# pro3320-rescue:-12V
 #
-DEF pro3320-rescue_-12V #PWR 0 0 Y Y 1 F N
+DEF pro3320-rescue:-12V #PWR 0 0 Y Y 1 F N
 F0 "#PWR" 0 100 50 H I C CNN
-F1 "pro3320-rescue_-12V" 0 150 50 H V C CNN
+F1 "pro3320-rescue:-12V" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -101,11 +101,11 @@ X -12V 1 0 0 0 U 50 50 0 0 W N
 ENDDRAW
 ENDDEF
 #
-# pro3320-rescue_1N4001
+# pro3320-rescue:1N4001
 #
-DEF pro3320-rescue_1N4001 D 0 40 N N 1 F N
+DEF pro3320-rescue:1N4001 D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "pro3320-rescue_1N4001" 0 -100 50 H V C CNN
+F1 "pro3320-rescue:1N4001" 0 -100 50 H V C CNN
 F2 "Diodes_THT:D_DO-41_SOD81_Horizontal_RM10" 0 -175 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -122,11 +122,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pro3320-rescue_AS3320
+# pro3320-rescue:AS3320
 #
-DEF pro3320-rescue_AS3320 U 0 40 Y Y 1 F N
+DEF pro3320-rescue:AS3320 U 0 40 Y Y 1 F N
 F0 "U" 650 100 60 H V C CNN
-F1 "pro3320-rescue_AS3320" 700 -1700 60 H V C CNN
+F1 "pro3320-rescue:AS3320" 700 -1700 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -152,11 +152,11 @@ X I_RES 9 1600 -100 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# pro3320-rescue_C
+# pro3320-rescue:C
 #
-DEF pro3320-rescue_C C 0 10 N Y 1 F N
+DEF pro3320-rescue:C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "pro3320-rescue_C" 25 -100 50 H V L CNN
+F1 "pro3320-rescue:C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -170,11 +170,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pro3320-rescue_CP
+# pro3320-rescue:CP
 #
-DEF pro3320-rescue_CP C 0 10 N Y 1 F N
+DEF pro3320-rescue:CP C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "pro3320-rescue_CP" 25 -100 50 H V L CNN
+F1 "pro3320-rescue:CP" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -193,11 +193,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pro3320-rescue_Conn_02x05_Odd_Even
+# pro3320-rescue:Conn_02x05_Odd_Even
 #
-DEF pro3320-rescue_Conn_02x05_Odd_Even J 0 40 Y N 1 F N
+DEF pro3320-rescue:Conn_02x05_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 300 50 H V C CNN
-F1 "pro3320-rescue_Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
+F1 "pro3320-rescue:Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -233,11 +233,11 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pro3320-rescue_GND
+# pro3320-rescue:GND
 #
-DEF pro3320-rescue_GND #PWR 0 0 Y Y 1 F P
+DEF pro3320-rescue:GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "pro3320-rescue_GND" 0 -150 50 H V C CNN
+F1 "pro3320-rescue:GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -246,11 +246,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pro3320-rescue_POT
+# pro3320-rescue:POT
 #
-DEF pro3320-rescue_POT RV 0 40 N N 1 F N
+DEF pro3320-rescue:POT RV 0 40 N N 1 F N
 F0 "RV" -175 0 50 V V C CNN
-F1 "pro3320-rescue_POT" -100 0 50 V V C CNN
+F1 "pro3320-rescue:POT" -100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -266,11 +266,11 @@ X 3 3 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pro3320-rescue_R
+# pro3320-rescue:R
 #
-DEF pro3320-rescue_R R 0 0 N Y 1 F N
+DEF pro3320-rescue:R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "pro3320-rescue_R" 0 0 50 V V C CNN
+F1 "pro3320-rescue:R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -284,11 +284,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pro3320-rescue_SW_DPDT_x2
+# pro3320-rescue:SW_DPDT_x2
 #
-DEF pro3320-rescue_SW_DPDT_x2 SW 0 0 Y N 2 F N
+DEF pro3320-rescue:SW_DPDT_x2 SW 0 0 Y N 2 F N
 F0 "SW" 0 170 50 H V C CNN
-F1 "pro3320-rescue_SW_DPDT_x2" 0 -200 50 H V C CNN
+F1 "pro3320-rescue:SW_DPDT_x2" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -308,11 +308,11 @@ X C 6 200 -100 100 L 50 50 2 1 P
 ENDDRAW
 ENDDEF
 #
-# pro3320-rescue_TL074
+# pro3320-rescue:TL074
 #
-DEF pro3320-rescue_TL074 U 0 20 Y Y 4 F N
+DEF pro3320-rescue:TL074 U 0 20 Y Y 4 F N
 F0 "U" 0 200 50 H V L CNN
-F1 "pro3320-rescue_TL074" 0 -200 50 H V L CNN
+F1 "pro3320-rescue:TL074" 0 -200 50 H V L CNN
 F2 "" -50 100 50 H I C CNN
 F3 "" 50 200 50 H I C CNN
 $FPLIST

@@ -74,7 +74,7 @@ L pro3320-rescue:C C3
 U 1 1 5B68B05F
 P 4650 2600
 F 0 "C3" H 4675 2700 50  0000 L CNN
-F 1 "300p" H 4675 2500 50  0000 L CNN
+F 1 "150p" H 4675 2500 50  0000 L CNN
 F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 4688 2450 50  0001 C CNN
 F 3 "" H 4650 2600 50  0001 C CNN
 	1    4650 2600
@@ -85,7 +85,7 @@ L pro3320-rescue:C C2
 U 1 1 5B68B0EC
 P 4550 3450
 F 0 "C2" H 4575 3550 50  0000 L CNN
-F 1 "300p" V 4600 3200 50  0000 L CNN
+F 1 "150p" V 4600 3200 50  0000 L CNN
 F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 4588 3300 50  0001 C CNN
 F 3 "" H 4550 3450 50  0001 C CNN
 	1    4550 3450
@@ -96,7 +96,7 @@ L pro3320-rescue:C C12
 U 1 1 5B68B124
 P 6700 3650
 F 0 "C12" H 6725 3750 50  0000 L CNN
-F 1 "300p" V 6750 3400 50  0000 L CNN
+F 1 "150p" V 6750 3400 50  0000 L CNN
 F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 6738 3500 50  0001 C CNN
 F 3 "" H 6700 3650 50  0001 C CNN
 	1    6700 3650
@@ -107,7 +107,7 @@ L pro3320-rescue:C C13
 U 1 1 5B68B180
 P 6700 4650
 F 0 "C13" H 6725 4750 50  0000 L CNN
-F 1 "300p" H 6725 4550 50  0000 L CNN
+F 1 "150p" H 6725 4550 50  0000 L CNN
 F 2 "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm" H 6738 4500 50  0001 C CNN
 F 3 "" H 6700 4650 50  0001 C CNN
 	1    6700 4650
@@ -980,7 +980,7 @@ F 3 "" H 8850 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 9500 350  0    60   ~ 0
-NOTE: The 68k between pos input and\nGND is from ProOne – what does it do?\n
+NOTE: The 68k between pos input and\nGND is from ProOne – what does it do?\nAnd should the other outs have one as well?
 $Comp
 L pro3320-rescue:R R27
 U 1 1 5B6EC661
@@ -2276,7 +2276,7 @@ L hakane:AudioJack_Mono_Switch J1
 U 1 1 5CC04472
 P 750 1250
 F 0 "J1" H 754 1592 50  0000 C CNN
-F 1 "RES_CV_IN" H 754 1501 50  0000 C CNN
+F 1 "RES_CV" H 754 1501 50  0000 C CNN
 F 2 "kicadlib:PJ301BM" H 750 1250 50  0001 C CNN
 F 3 "~" H 750 1250 50  0001 C CNN
 	1    750  1250
@@ -2287,7 +2287,7 @@ L hakane:AudioJack_Mono_Switch J2
 U 1 1 5CC04EC0
 P 750 2000
 F 0 "J2" H 754 2342 50  0000 C CNN
-F 1 "AUDIO_IN" H 754 2251 50  0000 C CNN
+F 1 "IN" H 754 2251 50  0000 C CNN
 F 2 "kicadlib:PJ301BM" H 750 2000 50  0001 C CNN
 F 3 "~" H 750 2000 50  0001 C CNN
 	1    750  2000
@@ -2326,7 +2326,7 @@ L hakane:AudioJack_Mono_Switch J3
 U 1 1 5CC594FC
 P 750 5950
 F 0 "J3" H 754 6292 50  0000 C CNN
-F 1 "FREQ_CV_IN" H 754 6201 50  0000 C CNN
+F 1 "FREQ_CV" H 754 6201 50  0000 C CNN
 F 2 "kicadlib:PJ301BM" H 750 5950 50  0001 C CNN
 F 3 "~" H 750 5950 50  0001 C CNN
 	1    750  5950
@@ -2418,7 +2418,7 @@ L hakane:AudioJack_Mono_Switch J5
 U 1 1 5CDD4C87
 P 10900 1100
 F 0 "J5" H 10900 1350 50  0000 R CNN
-F 1 "OUT_MAIN" H 11000 900 50  0000 R CNN
+F 1 "OUT" H 11000 900 50  0000 R CNN
 F 2 "kicadlib:PJ301BM" H 10900 1100 50  0001 C CNN
 F 3 "~" H 10900 1100 50  0001 C CNN
 	1    10900 1100
@@ -2437,7 +2437,7 @@ $Comp
 L Device:R R48
 U 1 1 5CE1A2F8
 P 9150 1200
-F 0 "R48" H 9000 1150 50  0000 L CNN
+F 0 "R48" V 9050 1100 50  0000 L CNN
 F 1 "68k" V 9150 1150 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9080 1200 50  0001 C CNN
 F 3 "~" H 9150 1200 50  0001 C CNN
@@ -2524,4 +2524,6 @@ Wire Wire Line
 Connection ~ 3650 6300
 Wire Wire Line
 	3650 6300 8700 6300
+Text Notes 1950 7550 0    50   ~ 0
+NOTE: Using 150pF for filter capacitors, like ProOne.\nApparently, this raises the base frequency one octave.
 $EndSCHEMATC
