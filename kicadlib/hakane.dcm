@@ -31,8 +31,8 @@ D CEM3340 VCO IC
 $ENDCMP
 #
 $CMP SW_3PDT
-D Switch, dual pole double throw, separate symbols
-K switch dual-pole double-throw DPDT spdt ON-ON
+D Switch, dual pole triple throw, separate symbols
+K switch triple-pole double-throw 3PDT ON-ON
 $ENDCMP
 #
 $CMP SW_Rotary2x5
