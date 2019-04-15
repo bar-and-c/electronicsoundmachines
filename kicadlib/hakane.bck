@@ -20,7 +20,19 @@ D Hex inverseur schmitt trigger
 K TTL not inv
 $ENDCMP
 #
+$CMP AudioJack_Mono_No_Switch
+D Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)
+K audio jack receptacle mono headphones phone TS connector
+F ~
+$ENDCMP
+#
 $CMP AudioJack_Mono_Switch
+D Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)
+K audio jack receptacle mono headphones phone TS connector
+F ~
+$ENDCMP
+#
+$CMP AudioJack_No_Switch
 D Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)
 K audio jack receptacle mono headphones phone TS connector
 F ~
@@ -31,8 +43,8 @@ D CEM3340 VCO IC
 $ENDCMP
 #
 $CMP SW_3PDT
-D Switch, dual pole double throw, separate symbols
-K switch dual-pole double-throw DPDT spdt ON-ON
+D Switch, dual pole triple throw, separate symbols
+K switch triple-pole double-throw 3PDT ON-ON
 $ENDCMP
 #
 $CMP SW_Rotary2x5
