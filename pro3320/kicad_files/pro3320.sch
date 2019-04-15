@@ -1650,25 +1650,24 @@ Wire Wire Line
 	950  1150 1000 1150
 Wire Wire Line
 	950  1250 1450 1250
-NoConn ~ 950  1350
 $Comp
-L hakane:AudioJack_Mono_Switch J1
+L hakane:AudioJack_Mono_No_Switch J1
 U 1 1 5CC04472
 P 750 1250
 F 0 "J1" H 754 1592 50  0000 C CNN
 F 1 "RES_CV" H 754 1501 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 750 1250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 750 1250 50  0001 C CNN
 F 3 "~" H 750 1250 50  0001 C CNN
 	1    750  1250
 	1    0    0    -1  
 $EndComp
 $Comp
-L hakane:AudioJack_Mono_Switch J2
+L hakane:AudioJack_Mono_No_Switch J2
 U 1 1 5CC04EC0
 P 750 2000
 F 0 "J2" H 754 2342 50  0000 C CNN
 F 1 "IN" H 754 2251 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 750 2000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 750 2000 50  0001 C CNN
 F 3 "~" H 750 2000 50  0001 C CNN
 	1    750  2000
 	1    0    0    -1  
@@ -1683,7 +1682,6 @@ Wire Wire Line
 	1100 1650 1100 1700
 Wire Wire Line
 	950  2000 1050 2000
-NoConn ~ 950  2100
 $Comp
 L pro3320-rescue:GND #PWR041
 U 1 1 5CC43256
@@ -1702,12 +1700,12 @@ Wire Wire Line
 Wire Wire Line
 	1000 950  1000 1150
 $Comp
-L hakane:AudioJack_Mono_Switch J3
+L hakane:AudioJack_Mono_No_Switch J3
 U 1 1 5CC594FC
 P 750 5950
 F 0 "J3" H 754 6292 50  0000 C CNN
 F 1 "FREQ_CV" H 754 6201 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 750 5950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 750 5950 50  0001 C CNN
 F 3 "~" H 750 5950 50  0001 C CNN
 	1    750  5950
 	1    0    0    -1  
@@ -1720,19 +1718,17 @@ Wire Wire Line
 	1050 5650 1050 5700
 Wire Wire Line
 	950  5950 1300 5950
-NoConn ~ 950  6050
 $Comp
-L hakane:AudioJack_Mono_Switch J5
+L hakane:AudioJack_Mono_No_Switch J5
 U 1 1 5CDD4C87
 P 10900 1100
 F 0 "J5" H 10900 1350 50  0000 R CNN
 F 1 "OUT" H 11000 900 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10900 1100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10900 1100 50  0001 C CNN
 F 3 "~" H 10900 1100 50  0001 C CNN
 	1    10900 1100
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 10700 1200
 Wire Wire Line
 	10700 1000 10650 1000
 Wire Wire Line
@@ -2023,12 +2019,12 @@ Wire Wire Line
 Text Notes 9050 4500 0    50   ~ 0
 Optional untested extra output, not in the PCB. \nPut it in because a TL072 takes no more room than \na TL071, so if one wants it, it’s there (for anything).
 $Comp
-L hakane:AudioJack_Mono_Switch J6
+L hakane:AudioJack_Mono_No_Switch J6
 U 1 1 5CD970CB
 P 10900 4950
 F 0 "J6" H 10900 5200 50  0000 R CNN
 F 1 "OUT2" H 11000 4750 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10900 4950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10900 4950 50  0001 C CNN
 F 3 "~" H 10900 4950 50  0001 C CNN
 	1    10900 4950
 	-1   0    0    -1  
@@ -2054,7 +2050,6 @@ Wire Wire Line
 	10650 4650 10650 4850
 Wire Wire Line
 	10650 4850 10700 4850
-NoConn ~ 10700 5050
 $Comp
 L Amplifier_Operational:TL072 U3
 U 1 1 5CDE45A7
