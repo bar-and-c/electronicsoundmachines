@@ -1769,7 +1769,7 @@ L Connector:TestPoint TP1
 U 1 1 5CE342D3
 P 9500 6050
 F 0 "TP1" H 9558 6170 50  0000 L CNN
-F 1 "OUT_STAGE_1" H 9558 6079 50  0000 L CNN
+F 1 "OP1" H 9558 6079 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 9700 6050 50  0001 C CNN
 F 3 "~" H 9700 6050 50  0001 C CNN
 	1    9500 6050
@@ -1780,7 +1780,7 @@ L Connector:TestPoint TP2
 U 1 1 5CE34EBC
 P 8100 6050
 F 0 "TP2" H 8158 6170 50  0000 L CNN
-F 1 "OUT_STAGE_2" H 8158 6079 50  0000 L CNN
+F 1 "OP2" H 8158 6079 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8300 6050 50  0001 C CNN
 F 3 "~" H 8300 6050 50  0001 C CNN
 	1    8100 6050
@@ -1791,7 +1791,7 @@ L Connector:TestPoint TP3
 U 1 1 5CE3509A
 P 8600 3900
 F 0 "TP3" H 8658 4020 50  0000 L CNN
-F 1 "OUT_STAGE_3" H 8658 3929 50  0000 L CNN
+F 1 "OP3" H 8658 3929 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8800 3900 50  0001 C CNN
 F 3 "~" H 8800 3900 50  0001 C CNN
 	1    8600 3900
@@ -1802,7 +1802,7 @@ L Connector:TestPoint TP4
 U 1 1 5CE351CC
 P 8150 1350
 F 0 "TP4" H 8350 1500 50  0000 R CNN
-F 1 "OUT_STAGE_4" H 8700 1400 50  0000 R CNN
+F 1 "OP4" H 8700 1400 50  0000 R CNN
 F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8350 1350 50  0001 C CNN
 F 3 "~" H 8350 1350 50  0001 C CNN
 	1    8150 1350
@@ -2124,4 +2124,20 @@ Wire Wire Line
 Connection ~ 6250 6800
 Wire Wire Line
 	6250 6800 5950 6800
+Wire Notes Line
+	8800 5700 11150 5700
+Wire Notes Line
+	11150 5700 11150 4200
+Wire Notes Line
+	11150 4200 8800 4200
+Wire Notes Line
+	8800 4200 8800 5700
+Text Notes 8050 7000 0    50   ~ 0
+A VCF built on the CEM3320,based on its data sheet reference \nimplementations, and a bit of inspiration from the ProOne.\n\nRev. A in a severe prototype state.
+Text Notes 7500 7500 0    50   ~ 0
+pro3320 vcf\n
+Text Notes 10650 7650 0    50   ~ 0
+A
+Text Notes 8150 7650 0    50   ~ 0
+April 16, 2019
 $EndSCHEMATC
