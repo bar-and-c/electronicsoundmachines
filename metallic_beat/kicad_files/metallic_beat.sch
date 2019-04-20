@@ -434,12 +434,12 @@ $EndComp
 $Comp
 L Device:C C6
 U 1 1 5AB052BF
-P 5600 3650
-F 0 "C6" H 5625 3750 50  0000 L CNN
-F 1 "15 nF" H 5300 3750 50  0000 L CNN
-F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 5638 3500 50  0001 C CNN
-F 3 "" H 5600 3650 50  0001 C CNN
-	1    5600 3650
+P 5600 3600
+F 0 "C6" H 5625 3700 50  0000 L CNN
+F 1 "15 nF" H 5350 3700 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 5638 3450 50  0001 C CNN
+F 3 "" H 5600 3600 50  0001 C CNN
+	1    5600 3600
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -453,8 +453,6 @@ F 3 "" H 6500 4200 50  0001 C CNN
 	1    6500 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5600 3300 5600 3500
 Wire Wire Line
 	4200 4900 4200 5300
 Wire Wire Line
@@ -472,9 +470,6 @@ Wire Wire Line
 Wire Wire Line
 	5100 5350 5100 5000
 Connection ~ 5100 5000
-Wire Wire Line
-	5500 5000 5600 5000
-Connection ~ 5600 5000
 Wire Wire Line
 	6000 5000 6100 5000
 Wire Wire Line
@@ -655,8 +650,6 @@ Wire Wire Line
 	7300 4800 7350 4800
 Connection ~ 6500 6100
 Wire Wire Line
-	5600 3800 5600 5000
-Wire Wire Line
 	6700 4700 6700 4800
 Connection ~ 6700 4800
 Connection ~ 3700 4300
@@ -696,8 +689,6 @@ Wire Wire Line
 	4600 5000 4600 5100
 Wire Wire Line
 	5100 5000 5200 5000
-Wire Wire Line
-	5600 5000 5700 5000
 Wire Wire Line
 	6100 5000 6200 5000
 Wire Wire Line
@@ -1105,7 +1096,6 @@ F 3 "~" H 5800 3200 50  0001 C CNN
 	1    5600 3200
 	1    0    0    -1  
 $EndComp
-Connection ~ 5600 3300
 $Comp
 L Connector:TestPoint TP4
 U 1 1 5CB2283B
@@ -1382,4 +1372,27 @@ Wire Wire Line
 	9450 1450 9950 1450
 Connection ~ 9450 1450
 Connection ~ 9950 1450
+$Comp
+L Device:Jumper_NC_Small JP3
+U 1 1 5CBCB580
+P 5600 4000
+F 0 "JP3" H 5600 4212 50  0000 C CNN
+F 1 "VCA_IN" H 5600 4121 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 4000 50  0001 C CNN
+F 3 "~" H 5600 4000 50  0001 C CNN
+	1    5600 4000
+	0    1    1    0   
+$EndComp
+Connection ~ 5600 3300
+Wire Wire Line
+	5600 3300 5600 3450
+Wire Wire Line
+	5500 5000 5600 5000
+Wire Wire Line
+	5600 3750 5600 3900
+Wire Wire Line
+	5600 4100 5600 5000
+Connection ~ 5600 5000
+Wire Wire Line
+	5600 5000 5700 5000
 $EndSCHEMATC
