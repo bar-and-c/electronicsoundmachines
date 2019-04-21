@@ -1,0 +1,1768 @@
+EESchema Schematic File Version 4
+LIBS:triggerhappy-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L hakane:AudioJack_Mono_No_Switch J2
+U 1 1 5CB9F920
+P 2300 1150
+F 0 "J2" H 2250 1400 50  0000 R CNN
+F 1 "GATE_IN" H 2400 950 50  0000 R CNN
+F 2 "kicadlib:PJ301BM_NO_SWITCH" H 2300 1150 50  0001 C CNN
+F 3 "~" H 2300 1150 50  0001 C CNN
+	1    2300 1150
+	1    0    0    1   
+$EndComp
+$Comp
+L hakane:AudioJack_Mono_No_Switch J8
+U 1 1 5CB9FC45
+P 10750 5850
+F 0 "J8" H 10500 6000 50  0000 R CNN
+F 1 "TRIG_MIX" H 10850 6100 50  0000 R CNN
+F 2 "kicadlib:PJ301BM_NO_SWITCH" H 10750 5850 50  0001 C CNN
+F 3 "~" H 10750 5850 50  0001 C CNN
+	1    10750 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5CB9FD3B
+P 3100 1150
+F 0 "C3" V 2848 1150 50  0000 C CNN
+F 1 "100n" V 2939 1150 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 3138 1000 50  0001 C CNN
+F 3 "~" H 3100 1150 50  0001 C CNN
+	1    3100 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CB9FDC8
+P 3300 1400
+F 0 "R2" H 3150 1300 50  0000 L CNN
+F 1 "330k" V 3300 1300 50  0000 L CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 3230 1400 50  0001 C CNN
+F 3 "~" H 3300 1400 50  0001 C CNN
+	1    3300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L hakane:40106-pwr U1
+U 1 1 5CBAB853
+P 4000 1150
+F 0 "U1" H 4000 1515 50  0000 C CNN
+F 1 "40106-pwr" H 4000 1424 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 4000 1150 60  0001 C CNN
+F 3 "" H 4000 1150 60  0001 C CNN
+	1    4000 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L hakane:40106-pwr U1
+U 2 1 5CBAB902
+P 8050 1150
+F 0 "U1" H 8050 1515 50  0000 C CNN
+F 1 "40106-pwr" H 8050 1424 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 8050 1150 60  0001 C CNN
+F 3 "" H 8050 1150 60  0001 C CNN
+	2    8050 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L hakane:40106-pwr U2
+U 1 1 5CBABAB5
+P 4000 2050
+F 0 "U2" H 4000 2415 50  0000 C CNN
+F 1 "40106-pwr" H 4000 2324 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 4000 2050 60  0001 C CNN
+F 3 "" H 4000 2050 60  0001 C CNN
+	1    4000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 5CBAC1B3
+P 900 7000
+F 0 "#PWR01" H 900 6850 50  0001 C CNN
+F 1 "+12V" H 915 7173 50  0000 C CNN
+F 2 "" H 900 7000 50  0001 C CNN
+F 3 "" H 900 7000 50  0001 C CNN
+	1    900  7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR04
+U 1 1 5CBAC26B
+P 1100 7500
+F 0 "#PWR04" H 1100 7600 50  0001 C CNN
+F 1 "-12V" H 1115 7673 50  0000 C CNN
+F 2 "" H 1100 7500 50  0001 C CNN
+F 3 "" H 1100 7500 50  0001 C CNN
+	1    1100 7500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5CBAC30B
+P 1050 7300
+F 0 "#PWR03" H 1050 7050 50  0001 C CNN
+F 1 "GND" H 950 7200 50  0000 C CNN
+F 2 "" H 1050 7300 50  0001 C CNN
+F 3 "" H 1050 7300 50  0001 C CNN
+	1    1050 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 7450 1100 7450
+Wire Wire Line
+	1100 7450 1100 7500
+Wire Wire Line
+	1050 7250 1200 7250
+Wire Wire Line
+	1200 7050 900  7050
+Wire Wire Line
+	900  7050 900  7000
+Wire Wire Line
+	1050 7250 1050 7300
+Text Notes 7700 7000 0    50   ~ 0
+A delay of trig signals, this ”trigtrain” takes an incoming gate signal, \nshortens it to a trig puls, and offers a way to delay this trig pulse. The \nresult is (if all goes well) a train of trig pulses, delayed more or less \nwith respect to the gate’s positive edge.
+Text Notes 600  5900 0    50   ~ 0
+REMEMBER TO TEST THIS: \nShort delays on all, creating almost a drum sound, and run it through \nan LPG that is triggered by the same gate (with cap in series for \ndecay).
+Wire Wire Line
+	3250 1150 3300 1150
+Wire Wire Line
+	3300 1150 3300 1250
+Wire Wire Line
+	3300 1150 3450 1150
+Connection ~ 3300 1150
+$Comp
+L power:GND #PWR05
+U 1 1 5CBD1525
+P 3300 1650
+F 0 "#PWR05" H 3300 1400 50  0001 C CNN
+F 1 "GND" H 3305 1477 50  0000 C CNN
+F 2 "" H 3300 1650 50  0001 C CNN
+F 3 "" H 3300 1650 50  0001 C CNN
+	1    3300 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1650 3300 1600
+Wire Wire Line
+	2550 1250 2500 1250
+Wire Wire Line
+	3450 2050 3450 1150
+Wire Wire Line
+	3450 2050 3500 2050
+Connection ~ 3450 1150
+Wire Wire Line
+	3450 1150 3500 1150
+$Comp
+L hakane:40106-pwr U2
+U 3 1 5CBD91AD
+P 8050 2050
+F 0 "U2" H 8050 2415 50  0000 C CNN
+F 1 "40106-pwr" H 8050 2324 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 8050 2050 60  0001 C CNN
+F 3 "" H 8050 2050 60  0001 C CNN
+	3    8050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5CBD9610
+P 7300 2050
+F 0 "C10" V 7048 2050 50  0000 C CNN
+F 1 "100n" V 7139 2050 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7338 1900 50  0001 C CNN
+F 3 "~" H 7300 2050 50  0001 C CNN
+	1    7300 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5CBD9616
+P 7500 1850
+F 0 "R4" H 7550 1850 50  0000 L CNN
+F 1 "330k" V 7500 1750 50  0000 L CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 7430 1850 50  0001 C CNN
+F 3 "~" H 7500 1850 50  0001 C CNN
+	1    7500 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2050 7500 2050
+Wire Wire Line
+	7500 2050 7500 2000
+Wire Wire Line
+	7500 2050 7550 2050
+Connection ~ 7500 2050
+$Comp
+L power:GND #PWR015
+U 1 1 5CBD9621
+P 8250 2500
+F 0 "#PWR015" H 8250 2250 50  0001 C CNN
+F 1 "GND" H 8255 2327 50  0000 C CNN
+F 2 "" H 8250 2500 50  0001 C CNN
+F 3 "" H 8250 2500 50  0001 C CNN
+	1    8250 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2500 8250 2450
+Text Notes 500  3850 0    50   ~ 0
+Design choices:\n1. Had planned to run it on 12V, but that would mean adjusting levels on \n   inputs and outputs (with OP amps). That would have given a more \n   robust interface as well, but I opted for fewer parts, simpler design, \n   lower quality. If it turns out to be a problem, I’ll change.\n   So, yes, the non-buffered in- and outputs is perhaps not so \n   professional, but I figured I’d try —if it works it works.\n\n2. The ”direct out” could have been implemented just like the other\n   stages — setting the delay to zero should have the same effect. \n   I chose to do it like this, just because it feels good to have it as \n   clean as possible, minimal delay. If it in practice is revealed that the \n   extra delay is not heard, consider making all channels identical, for \n   better UX.\n\n3. The actual delay was originally an NE555, but when I realised that it \n   pretty much could be removed (the diode + RC inbetween two \n   Schmitt inverters fixes that) I decided to give it a try — again, with \n   simplicity in mind.\n\n4. Originally, there were two more inverters per channel, until I got \n   clever and optimized. Potential problems: maybe the extra load of \n   having the LED on the output will make the output weaker. Maybe \n   more.\n
+$Comp
+L Device:LED D8
+U 1 1 5CBE0EB5
+P 8650 2250
+F 0 "D8" V 8688 2133 50  0000 R CNN
+F 1 "LED" V 8597 2133 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 8650 2250 50  0001 C CNN
+F 3 "~" H 8650 2250 50  0001 C CNN
+	1    8650 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5CBE0FDF
+P 8450 2450
+F 0 "R8" V 8350 2450 50  0000 C CNN
+F 1 "1k" V 8450 2450 50  0000 C CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 8380 2450 50  0001 C CNN
+F 3 "~" H 8450 2450 50  0001 C CNN
+	1    8450 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5CBE1087
+P 4800 3300
+F 0 "D4" H 4800 3516 50  0000 C CNN
+F 1 "BAT42" H 4800 3425 50  0000 C CNN
+F 2 "MusicThingModular:DO35-7" H 4800 3300 50  0001 C CNN
+F 3 "~" H 4800 3300 50  0001 C CNN
+	1    4800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2100 8650 2050
+Wire Wire Line
+	8650 2050 8550 2050
+Connection ~ 8650 2050
+$Comp
+L hakane:40106-pwr U2
+U 4 1 5CBEE8D4
+P 4000 3300
+F 0 "U2" H 4000 3665 50  0000 C CNN
+F 1 "40106-pwr" H 4000 3574 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 4000 3300 60  0001 C CNN
+F 3 "" H 4000 3300 60  0001 C CNN
+	4    4000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 5CBEE909
+P 5400 3100
+F 0 "RV2" H 5550 3250 50  0000 R CNN
+F 1 "100k" V 5400 3200 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 5400 3100 50  0001 C CNN
+F 3 "~" H 5400 3100 50  0001 C CNN
+	1    5400 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2950 5400 2900
+Wire Wire Line
+	5400 2900 5050 2900
+Wire Wire Line
+	5550 3100 5600 3100
+Wire Wire Line
+	5600 3100 5600 2900
+Wire Wire Line
+	5600 2900 5400 2900
+Connection ~ 5400 2900
+$Comp
+L Device:CP C7
+U 1 1 5CBEE924
+P 5050 3100
+F 0 "C7" H 5168 3146 50  0000 L CNN
+F 1 "10u" H 5168 3055 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 5088 2950 50  0001 C CNN
+F 3 "~" H 5050 3100 50  0001 C CNN
+	1    5050 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3300 3500 3300
+$Comp
+L hakane:40106-pwr U2
+U 6 1 5CBEE936
+P 8050 3300
+F 0 "U2" H 8050 3665 50  0000 C CNN
+F 1 "40106-pwr" H 8050 3574 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 8050 3300 60  0001 C CNN
+F 3 "" H 8050 3300 60  0001 C CNN
+	6    8050 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5CBEE946
+P 7300 3300
+F 0 "C11" V 7048 3300 50  0000 C CNN
+F 1 "100n" V 7139 3300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7338 3150 50  0001 C CNN
+F 3 "~" H 7300 3300 50  0001 C CNN
+	1    7300 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5CBEE94D
+P 7500 3100
+F 0 "R5" H 7350 3000 50  0000 L CNN
+F 1 "330k" V 7500 3000 50  0000 L CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 7430 3100 50  0001 C CNN
+F 3 "~" H 7500 3100 50  0001 C CNN
+	1    7500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3300 7500 3300
+Wire Wire Line
+	7500 3300 7500 3250
+Wire Wire Line
+	7500 3300 7550 3300
+Connection ~ 7500 3300
+$Comp
+L power:GND #PWR016
+U 1 1 5CBEE959
+P 8250 3750
+F 0 "#PWR016" H 8250 3500 50  0001 C CNN
+F 1 "GND" H 8255 3577 50  0000 C CNN
+F 2 "" H 8250 3750 50  0001 C CNN
+F 3 "" H 8250 3750 50  0001 C CNN
+	1    8250 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3750 8250 3700
+$Comp
+L Device:LED D9
+U 1 1 5CBEE962
+P 8650 3500
+F 0 "D9" V 8688 3383 50  0000 R CNN
+F 1 "LED" V 8597 3383 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 8650 3500 50  0001 C CNN
+F 3 "~" H 8650 3500 50  0001 C CNN
+	1    8650 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5CBEE969
+P 8450 3700
+F 0 "R9" V 8350 3700 50  0000 C CNN
+F 1 "1k" V 8450 3700 50  0000 C CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 8380 3700 50  0001 C CNN
+F 3 "~" H 8450 3700 50  0001 C CNN
+	1    8450 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 3350 8650 3300
+Wire Wire Line
+	8650 3300 8550 3300
+Connection ~ 8650 3300
+Wire Wire Line
+	5400 3250 5400 3300
+Connection ~ 5050 2900
+Wire Wire Line
+	5050 2900 5050 2950
+Wire Wire Line
+	5050 3250 5050 3300
+Wire Wire Line
+	5050 3300 4950 3300
+Wire Wire Line
+	5600 3300 5400 3300
+Wire Wire Line
+	5400 3300 5050 3300
+Connection ~ 5400 3300
+Connection ~ 5050 3300
+Wire Wire Line
+	4650 3300 4500 3300
+Wire Wire Line
+	3450 3300 3450 2050
+Connection ~ 3450 2050
+Wire Wire Line
+	5050 2850 5050 2900
+$Comp
+L power:GND #PWR019
+U 1 1 5CC1A07C
+P 9300 1300
+F 0 "#PWR019" H 9300 1050 50  0001 C CNN
+F 1 "GND" H 9305 1127 50  0000 C CNN
+F 2 "" H 9300 1300 50  0001 C CNN
+F 3 "" H 9300 1300 50  0001 C CNN
+	1    9300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 5CC1A0D7
+P 9300 2200
+F 0 "#PWR020" H 9300 1950 50  0001 C CNN
+F 1 "GND" H 9305 2027 50  0000 C CNN
+F 2 "" H 9300 2200 50  0001 C CNN
+F 3 "" H 9300 2200 50  0001 C CNN
+	1    9300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5CC1A132
+P 9300 3450
+F 0 "#PWR021" H 9300 3200 50  0001 C CNN
+F 1 "GND" H 9305 3277 50  0000 C CNN
+F 2 "" H 9300 3450 50  0001 C CNN
+F 3 "" H 9300 3450 50  0001 C CNN
+	1    9300 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3450 9300 3400
+Wire Wire Line
+	9300 3400 9350 3400
+Wire Wire Line
+	9300 2200 9300 2150
+Wire Wire Line
+	9300 2150 9350 2150
+Wire Wire Line
+	9300 1300 9300 1250
+Wire Wire Line
+	9300 1250 9350 1250
+$Comp
+L Device:D D3
+U 1 1 5CBDE272
+P 4800 2050
+F 0 "D3" H 4800 2266 50  0000 C CNN
+F 1 "BAT42" H 4800 2175 50  0000 C CNN
+F 2 "MusicThingModular:DO35-7" H 4800 2050 50  0001 C CNN
+F 3 "~" H 4800 2050 50  0001 C CNN
+	1    4800 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5CBDE27E
+P 5400 1850
+F 0 "RV1" H 5550 2000 50  0000 R CNN
+F 1 "100k" V 5400 1950 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 5400 1850 50  0001 C CNN
+F 3 "~" H 5400 1850 50  0001 C CNN
+	1    5400 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 1700 5400 1650
+Wire Wire Line
+	5400 1650 5050 1650
+Wire Wire Line
+	5550 1850 5600 1850
+Wire Wire Line
+	5600 1850 5600 1650
+Wire Wire Line
+	5600 1650 5400 1650
+Connection ~ 5400 1650
+$Comp
+L Device:CP C6
+U 1 1 5CBDE28A
+P 5050 1850
+F 0 "C6" H 5168 1896 50  0000 L CNN
+F 1 "10u" H 5168 1805 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 5088 1700 50  0001 C CNN
+F 3 "~" H 5050 1850 50  0001 C CNN
+	1    5050 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2000 5400 2050
+Connection ~ 5050 1650
+Wire Wire Line
+	5050 1650 5050 1700
+Wire Wire Line
+	5050 2000 5050 2050
+Wire Wire Line
+	5050 2050 4950 2050
+Wire Wire Line
+	5600 2050 5400 2050
+Wire Wire Line
+	5400 2050 5050 2050
+Connection ~ 5400 2050
+Connection ~ 5050 2050
+Wire Wire Line
+	4650 2050 4500 2050
+Wire Wire Line
+	5050 1600 5050 1650
+$Comp
+L Device:R R1
+U 1 1 5CBECE3A
+P 2700 1150
+F 0 "R1" V 2600 1150 50  0000 C CNN
+F 1 "120" V 2700 1150 50  0000 C CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 2630 1150 50  0001 C CNN
+F 3 "~" H 2700 1150 50  0001 C CNN
+	1    2700 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D2
+U 1 1 5CBED06E
+P 2900 1400
+F 0 "D2" V 2854 1479 50  0000 L CNN
+F 1 "BZX55C5V1" V 3200 1150 50  0000 L CNN
+F 2 "MusicThingModular:DO35-7" H 2900 1400 50  0001 C CNN
+F 3 "~" H 2900 1400 50  0001 C CNN
+	1    2900 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 1150 2550 1150
+Wire Wire Line
+	2850 1150 2900 1150
+Wire Wire Line
+	2900 1250 2900 1150
+Connection ~ 2900 1150
+Wire Wire Line
+	2900 1150 2950 1150
+Wire Wire Line
+	2900 1550 2900 1600
+Wire Wire Line
+	2900 1600 3300 1600
+Connection ~ 3300 1600
+Wire Wire Line
+	3300 1600 3300 1550
+Wire Wire Line
+	2550 1600 2900 1600
+Wire Wire Line
+	2550 1250 2550 1600
+Connection ~ 2900 1600
+Text Notes 2600 1300 0    50   ~ 0
+0.5W
+$Comp
+L Device:D D5
+U 1 1 5CC0858D
+P 4800 4500
+F 0 "D5" H 4800 4716 50  0000 C CNN
+F 1 "BAT42" H 4800 4625 50  0000 C CNN
+F 2 "MusicThingModular:DO35-7" H 4800 4500 50  0001 C CNN
+F 3 "~" H 4800 4500 50  0001 C CNN
+	1    4800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L hakane:40106-pwr U3
+U 1 1 5CC08593
+P 4000 4500
+F 0 "U3" H 4000 4865 50  0000 C CNN
+F 1 "40106-pwr" H 4000 4774 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 4000 4500 60  0001 C CNN
+F 3 "" H 4000 4500 60  0001 C CNN
+	1    4000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV3
+U 1 1 5CC0859F
+P 5400 4300
+F 0 "RV3" H 5550 4450 50  0000 R CNN
+F 1 "100k" V 5400 4400 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 5400 4300 50  0001 C CNN
+F 3 "~" H 5400 4300 50  0001 C CNN
+	1    5400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4150 5400 4100
+Wire Wire Line
+	5400 4100 5050 4100
+Wire Wire Line
+	5550 4300 5600 4300
+Wire Wire Line
+	5600 4300 5600 4100
+Wire Wire Line
+	5600 4100 5400 4100
+Connection ~ 5400 4100
+$Comp
+L Device:CP C8
+U 1 1 5CC085AB
+P 5050 4300
+F 0 "C8" H 5168 4346 50  0000 L CNN
+F 1 "10u" H 5168 4255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 5088 4150 50  0001 C CNN
+F 3 "~" H 5050 4300 50  0001 C CNN
+	1    5050 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4500 3500 4500
+$Comp
+L hakane:40106-pwr U3
+U 3 1 5CC085B8
+P 8050 4500
+F 0 "U3" H 8050 4865 50  0000 C CNN
+F 1 "40106-pwr" H 8050 4774 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 8050 4500 60  0001 C CNN
+F 3 "" H 8050 4500 60  0001 C CNN
+	3    8050 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5CC085C4
+P 7300 4500
+F 0 "C12" V 7048 4500 50  0000 C CNN
+F 1 "100n" V 7139 4500 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7338 4350 50  0001 C CNN
+F 3 "~" H 7300 4500 50  0001 C CNN
+	1    7300 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5CC085CA
+P 7500 4300
+F 0 "R6" H 7350 4200 50  0000 L CNN
+F 1 "330k" V 7500 4200 50  0000 L CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 7430 4300 50  0001 C CNN
+F 3 "~" H 7500 4300 50  0001 C CNN
+	1    7500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4500 7500 4500
+Wire Wire Line
+	7500 4500 7500 4450
+Wire Wire Line
+	7500 4500 7550 4500
+Connection ~ 7500 4500
+$Comp
+L power:GND #PWR017
+U 1 1 5CC085D5
+P 8250 4950
+F 0 "#PWR017" H 8250 4700 50  0001 C CNN
+F 1 "GND" H 8255 4777 50  0000 C CNN
+F 2 "" H 8250 4950 50  0001 C CNN
+F 3 "" H 8250 4950 50  0001 C CNN
+	1    8250 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 4950 8250 4900
+$Comp
+L Device:LED D10
+U 1 1 5CC085DC
+P 8650 4700
+F 0 "D10" V 8688 4583 50  0000 R CNN
+F 1 "LED" V 8597 4583 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 8650 4700 50  0001 C CNN
+F 3 "~" H 8650 4700 50  0001 C CNN
+	1    8650 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5CC085E2
+P 8450 4900
+F 0 "R10" V 8350 4900 50  0000 C CNN
+F 1 "1k" V 8450 4900 50  0000 C CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 8380 4900 50  0001 C CNN
+F 3 "~" H 8450 4900 50  0001 C CNN
+	1    8450 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 4550 8650 4500
+Wire Wire Line
+	8650 4500 8550 4500
+Connection ~ 8650 4500
+Wire Wire Line
+	5400 4450 5400 4500
+Connection ~ 5050 4100
+Wire Wire Line
+	5050 4100 5050 4150
+Wire Wire Line
+	5050 4450 5050 4500
+Wire Wire Line
+	5050 4500 4950 4500
+Wire Wire Line
+	5600 4500 5400 4500
+Wire Wire Line
+	5400 4500 5050 4500
+Connection ~ 5400 4500
+Connection ~ 5050 4500
+Wire Wire Line
+	4650 4500 4500 4500
+Wire Wire Line
+	3450 4500 3450 3300
+Wire Wire Line
+	5050 4050 5050 4100
+$Comp
+L power:GND #PWR022
+U 1 1 5CC08603
+P 9300 4650
+F 0 "#PWR022" H 9300 4400 50  0001 C CNN
+F 1 "GND" H 9305 4477 50  0000 C CNN
+F 2 "" H 9300 4650 50  0001 C CNN
+F 3 "" H 9300 4650 50  0001 C CNN
+	1    9300 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 4650 9300 4600
+Wire Wire Line
+	9300 4600 9350 4600
+Connection ~ 3450 3300
+$Comp
+L Device:D D6
+U 1 1 5CC1199D
+P 4800 5850
+F 0 "D6" H 4800 6066 50  0000 C CNN
+F 1 "BAT42" H 4800 5975 50  0000 C CNN
+F 2 "MusicThingModular:DO35-7" H 4800 5850 50  0001 C CNN
+F 3 "~" H 4800 5850 50  0001 C CNN
+	1    4800 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L hakane:40106-pwr U3
+U 4 1 5CC119A3
+P 4000 5850
+F 0 "U3" H 4000 6215 50  0000 C CNN
+F 1 "40106-pwr" H 4000 6124 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 4000 5850 60  0001 C CNN
+F 3 "" H 4000 5850 60  0001 C CNN
+	4    4000 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV4
+U 1 1 5CC119AF
+P 5400 5650
+F 0 "RV4" H 5550 5800 50  0000 R CNN
+F 1 "100k" V 5400 5750 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 5400 5650 50  0001 C CNN
+F 3 "~" H 5400 5650 50  0001 C CNN
+	1    5400 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5500 5400 5450
+Wire Wire Line
+	5400 5450 5050 5450
+Wire Wire Line
+	5550 5650 5600 5650
+Wire Wire Line
+	5600 5650 5600 5450
+Wire Wire Line
+	5600 5450 5400 5450
+Connection ~ 5400 5450
+$Comp
+L Device:CP C9
+U 1 1 5CC119BB
+P 5050 5650
+F 0 "C9" H 5168 5696 50  0000 L CNN
+F 1 "10u" H 5168 5605 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 5088 5500 50  0001 C CNN
+F 3 "~" H 5050 5650 50  0001 C CNN
+	1    5050 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 5850 3500 5850
+$Comp
+L hakane:40106-pwr U3
+U 6 1 5CC119C8
+P 8050 5850
+F 0 "U3" H 8050 6215 50  0000 C CNN
+F 1 "40106-pwr" H 8050 6124 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 8050 5850 60  0001 C CNN
+F 3 "" H 8050 5850 60  0001 C CNN
+	6    8050 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5CC119D4
+P 7300 5850
+F 0 "C13" V 7048 5850 50  0000 C CNN
+F 1 "100n" V 7139 5850 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 7338 5700 50  0001 C CNN
+F 3 "~" H 7300 5850 50  0001 C CNN
+	1    7300 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5CC119DA
+P 7500 5650
+F 0 "R7" H 7350 5550 50  0000 L CNN
+F 1 "330k" V 7500 5550 50  0000 L CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 7430 5650 50  0001 C CNN
+F 3 "~" H 7500 5650 50  0001 C CNN
+	1    7500 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 5850 7500 5850
+Wire Wire Line
+	7500 5850 7500 5800
+Wire Wire Line
+	7500 5850 7550 5850
+Connection ~ 7500 5850
+$Comp
+L power:GND #PWR018
+U 1 1 5CC119E5
+P 8250 6300
+F 0 "#PWR018" H 8250 6050 50  0001 C CNN
+F 1 "GND" H 8255 6127 50  0000 C CNN
+F 2 "" H 8250 6300 50  0001 C CNN
+F 3 "" H 8250 6300 50  0001 C CNN
+	1    8250 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D11
+U 1 1 5CC119EC
+P 8650 6050
+F 0 "D11" V 8688 5933 50  0000 R CNN
+F 1 "LED" V 8597 5933 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 8650 6050 50  0001 C CNN
+F 3 "~" H 8650 6050 50  0001 C CNN
+	1    8650 6050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5CC119F2
+P 8450 6250
+F 0 "R11" V 8350 6250 50  0000 C CNN
+F 1 "1k" V 8450 6250 50  0000 C CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 8380 6250 50  0001 C CNN
+F 3 "~" H 8450 6250 50  0001 C CNN
+	1    8450 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 6200 8650 6250
+Wire Wire Line
+	8650 6250 8600 6250
+Wire Wire Line
+	8300 6250 8250 6250
+Wire Wire Line
+	8250 6250 8250 6300
+Wire Wire Line
+	8650 5900 8650 5850
+Wire Wire Line
+	8650 5850 8550 5850
+Connection ~ 8650 5850
+Wire Wire Line
+	5400 5800 5400 5850
+Connection ~ 5050 5450
+Wire Wire Line
+	5050 5450 5050 5500
+Wire Wire Line
+	5050 5800 5050 5850
+Wire Wire Line
+	5050 5850 4950 5850
+Wire Wire Line
+	5600 5850 5400 5850
+Wire Wire Line
+	5400 5850 5050 5850
+Connection ~ 5400 5850
+Connection ~ 5050 5850
+Wire Wire Line
+	4650 5850 4500 5850
+Wire Wire Line
+	3450 5850 3450 4500
+Wire Wire Line
+	5050 5400 5050 5450
+$Comp
+L power:GND #PWR023
+U 1 1 5CC11A13
+P 9300 6000
+F 0 "#PWR023" H 9300 5750 50  0001 C CNN
+F 1 "GND" H 9305 5827 50  0000 C CNN
+F 2 "" H 9300 6000 50  0001 C CNN
+F 3 "" H 9300 6000 50  0001 C CNN
+	1    9300 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 6000 9300 5950
+Wire Wire Line
+	9300 5950 9350 5950
+Connection ~ 3450 4500
+$Comp
+L hakane:40106-pwr U2
+U 2 1 5CC31496
+P 6100 2050
+F 0 "U2" H 6100 2415 50  0000 C CNN
+F 1 "40106-pwr" H 6100 2324 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 6100 2050 60  0001 C CNN
+F 3 "" H 6100 2050 60  0001 C CNN
+	2    6100 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L hakane:40106-pwr U2
+U 5 1 5CC3149C
+P 6100 3300
+F 0 "U2" H 6100 3665 50  0000 C CNN
+F 1 "40106-pwr" H 6100 3574 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 6100 3300 60  0001 C CNN
+F 3 "" H 6100 3300 60  0001 C CNN
+	5    6100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L hakane:40106-pwr U3
+U 2 1 5CC314A2
+P 6100 4500
+F 0 "U3" H 6100 4865 50  0000 C CNN
+F 1 "40106-pwr" H 6100 4774 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 6100 4500 60  0001 C CNN
+F 3 "" H 6100 4500 60  0001 C CNN
+	2    6100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L hakane:40106-pwr U3
+U 5 1 5CC314A8
+P 6100 5850
+F 0 "U3" H 6100 6215 50  0000 C CNN
+F 1 "40106-pwr" H 6100 6124 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 6100 5850 60  0001 C CNN
+F 3 "" H 6100 5850 60  0001 C CNN
+	5    6100 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2050 6650 2050
+Wire Wire Line
+	6600 3300 6650 3300
+Wire Wire Line
+	6600 4500 6650 4500
+Wire Wire Line
+	6600 5850 6650 5850
+$Comp
+L Device:R R16
+U 1 1 5CC5D4F5
+P 9150 5850
+F 0 "R16" V 9050 5850 50  0000 C CNN
+F 1 "330" V 9150 5850 50  0000 C CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 9080 5850 50  0001 C CNN
+F 3 "~" H 9150 5850 50  0001 C CNN
+	1    9150 5850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 2050 9350 2050
+Wire Wire Line
+	9300 3300 9350 3300
+Wire Wire Line
+	9300 4500 9350 4500
+Wire Wire Line
+	9300 5850 9350 5850
+$Comp
+L Device:R R15
+U 1 1 5CC954D9
+P 9150 4500
+F 0 "R15" V 9050 4500 50  0000 C CNN
+F 1 "330" V 9150 4500 50  0000 C CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 9080 4500 50  0001 C CNN
+F 3 "~" H 9150 4500 50  0001 C CNN
+	1    9150 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5CC9567A
+P 9150 3300
+F 0 "R14" V 9050 3300 50  0000 C CNN
+F 1 "330" V 9150 3300 50  0000 C CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 9080 3300 50  0001 C CNN
+F 3 "~" H 9150 3300 50  0001 C CNN
+	1    9150 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5CC957BA
+P 9150 2050
+F 0 "R13" V 9050 2050 50  0000 C CNN
+F 1 "330" V 9150 2050 50  0000 C CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 9080 2050 50  0001 C CNN
+F 3 "~" H 9150 2050 50  0001 C CNN
+	1    9150 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5CCCA925
+P 9150 1150
+F 0 "R12" V 9050 1150 50  0000 C CNN
+F 1 "330" V 9150 1150 50  0000 C CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 9080 1150 50  0001 C CNN
+F 3 "~" H 9150 1150 50  0001 C CNN
+	1    9150 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 1150 9300 1150
+Wire Wire Line
+	8550 1150 9000 1150
+$Comp
+L Device:LED D7
+U 1 1 5CCE4F99
+P 7100 950
+F 0 "D7" V 7138 833 50  0000 R CNN
+F 1 "LED" V 7047 833 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 7100 950 50  0001 C CNN
+F 3 "~" H 7100 950 50  0001 C CNN
+	1    7100 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5CCE4F9F
+P 7300 750
+F 0 "R3" V 7200 750 50  0000 C CNN
+F 1 "1k" V 7300 750 50  0000 C CNN
+F 2 "MusicThingModular:7MM_RESISTOR" V 7230 750 50  0001 C CNN
+F 3 "~" H 7300 750 50  0001 C CNN
+	1    7300 750 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 750  7450 750 
+Wire Wire Line
+	7150 750  7100 750 
+Wire Wire Line
+	7100 750  7100 800 
+Wire Wire Line
+	7100 1100 7100 1150
+Connection ~ 7100 1150
+Wire Wire Line
+	4500 1150 5150 1150
+Wire Wire Line
+	7500 750  7500 700 
+Wire Wire Line
+	7100 1150 7550 1150
+$Comp
+L power:GND #PWR024
+U 1 1 5CDCADB8
+P 10500 6000
+F 0 "#PWR024" H 10500 5750 50  0001 C CNN
+F 1 "GND" H 10505 5827 50  0000 C CNN
+F 2 "" H 10500 6000 50  0001 C CNN
+F 3 "" H 10500 6000 50  0001 C CNN
+	1    10500 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 6000 10500 5950
+Wire Wire Line
+	10500 5950 10550 5950
+$Comp
+L hakane:AudioJack_Mono_Switch J3
+U 1 1 5CDD2260
+P 9550 1150
+F 0 "J3" H 9300 1300 50  0000 R CNN
+F 1 "TRIG_1" H 9600 1400 50  0000 R CNN
+F 2 "kicadlib:PJ301BM" H 9550 1150 50  0001 C CNN
+F 3 "~" H 9550 1150 50  0001 C CNN
+	1    9550 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L hakane:AudioJack_Mono_Switch J4
+U 1 1 5CDDA237
+P 9550 2050
+F 0 "J4" H 9300 2200 50  0000 R CNN
+F 1 "TRIG_2" H 9600 2300 50  0000 R CNN
+F 2 "kicadlib:PJ301BM" H 9550 2050 50  0001 C CNN
+F 3 "~" H 9550 2050 50  0001 C CNN
+	1    9550 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L hakane:AudioJack_Mono_Switch J5
+U 1 1 5CDDA2DD
+P 9550 3300
+F 0 "J5" H 9300 3450 50  0000 R CNN
+F 1 "TRIG_3" H 9600 3550 50  0000 R CNN
+F 2 "kicadlib:PJ301BM" H 9550 3300 50  0001 C CNN
+F 3 "~" H 9550 3300 50  0001 C CNN
+	1    9550 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L hakane:AudioJack_Mono_Switch J6
+U 1 1 5CDDA388
+P 9550 4500
+F 0 "J6" H 9300 4650 50  0000 R CNN
+F 1 "TRIG_4" H 9600 4750 50  0000 R CNN
+F 2 "kicadlib:PJ301BM" H 9550 4500 50  0001 C CNN
+F 3 "~" H 9550 4500 50  0001 C CNN
+	1    9550 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L hakane:AudioJack_Mono_Switch J7
+U 1 1 5CDDA437
+P 9550 5850
+F 0 "J7" H 9300 6000 50  0000 R CNN
+F 1 "TRIG_5" H 9600 6100 50  0000 R CNN
+F 2 "kicadlib:PJ301BM" H 9550 5850 50  0001 C CNN
+F 3 "~" H 9550 5850 50  0001 C CNN
+	1    9550 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D12
+U 1 1 5CDDA55A
+P 9500 900
+F 0 "D12" H 9600 950 50  0000 C CNN
+F 1 "BAT42" H 9300 950 50  0000 C CNN
+F 2 "MusicThingModular:DO35-7" H 9500 900 50  0001 C CNN
+F 3 "~" H 9500 900 50  0001 C CNN
+	1    9500 900 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 1050 9300 1050
+Wire Wire Line
+	9300 1050 9300 900 
+Wire Wire Line
+	9300 900  9350 900 
+$Comp
+L Device:D D13
+U 1 1 5CDE3374
+P 9500 1800
+F 0 "D13" H 9600 1850 50  0000 C CNN
+F 1 "BAT42" H 9300 1850 50  0000 C CNN
+F 2 "MusicThingModular:DO35-7" H 9500 1800 50  0001 C CNN
+F 3 "~" H 9500 1800 50  0001 C CNN
+	1    9500 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D D14
+U 1 1 5CDE3423
+P 9500 3050
+F 0 "D14" H 9600 3100 50  0000 C CNN
+F 1 "BAT42" H 9300 3100 50  0000 C CNN
+F 2 "MusicThingModular:DO35-7" H 9500 3050 50  0001 C CNN
+F 3 "~" H 9500 3050 50  0001 C CNN
+	1    9500 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D D15
+U 1 1 5CDE351E
+P 9500 4250
+F 0 "D15" H 9600 4300 50  0000 C CNN
+F 1 "BAT42" H 9300 4300 50  0000 C CNN
+F 2 "MusicThingModular:DO35-7" H 9500 4250 50  0001 C CNN
+F 3 "~" H 9500 4250 50  0001 C CNN
+	1    9500 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D D16
+U 1 1 5CDE35D2
+P 9500 5600
+F 0 "D16" H 9600 5650 50  0000 C CNN
+F 1 "BAT42" H 9300 5650 50  0000 C CNN
+F 2 "MusicThingModular:DO35-7" H 9500 5600 50  0001 C CNN
+F 3 "~" H 9500 5600 50  0001 C CNN
+	1    9500 5600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 5750 9300 5750
+Wire Wire Line
+	9300 5750 9300 5600
+Wire Wire Line
+	9300 5600 9350 5600
+Wire Wire Line
+	9350 4400 9300 4400
+Wire Wire Line
+	9300 4400 9300 4250
+Wire Wire Line
+	9300 4250 9350 4250
+Wire Wire Line
+	9350 3200 9300 3200
+Wire Wire Line
+	9300 3200 9300 3050
+Wire Wire Line
+	9300 3050 9350 3050
+Wire Wire Line
+	9350 1950 9300 1950
+Wire Wire Line
+	9300 1950 9300 1800
+Wire Wire Line
+	9300 1800 9350 1800
+Wire Wire Line
+	10550 5850 10300 5850
+Wire Wire Line
+	10300 5850 10300 5600
+Wire Wire Line
+	10300 5600 9650 5600
+Wire Wire Line
+	10300 5600 10300 4250
+Wire Wire Line
+	10300 4250 9650 4250
+Connection ~ 10300 5600
+Wire Wire Line
+	10300 4250 10300 3050
+Wire Wire Line
+	10300 3050 9650 3050
+Connection ~ 10300 4250
+Wire Wire Line
+	10300 3050 10300 1800
+Wire Wire Line
+	10300 1800 9650 1800
+Connection ~ 10300 3050
+Wire Wire Line
+	10300 1800 10300 900 
+Wire Wire Line
+	10300 900  9650 900 
+Connection ~ 10300 1800
+$Comp
+L Device:Jumper_NC_Small JP4
+U 1 1 5CEDAAE0
+P 6750 5850
+F 0 "JP4" H 6750 6062 50  0000 C CNN
+F 1 "MONO_OUT_5" H 6750 5971 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6750 5850 50  0001 C CNN
+F 3 "~" H 6750 5850 50  0001 C CNN
+	1    6750 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP3
+U 1 1 5CEDAF0B
+P 6750 4500
+F 0 "JP3" H 6750 4712 50  0000 C CNN
+F 1 "MONO_OUT_4" H 6750 4621 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6750 4500 50  0001 C CNN
+F 3 "~" H 6750 4500 50  0001 C CNN
+	1    6750 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP2
+U 1 1 5CEDAFD5
+P 6750 3300
+F 0 "JP2" H 6750 3512 50  0000 C CNN
+F 1 "MONO_OUT_3" H 6750 3421 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6750 3300 50  0001 C CNN
+F 3 "~" H 6750 3300 50  0001 C CNN
+	1    6750 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 5CEDB30A
+P 6750 2050
+F 0 "JP1" H 6750 2262 50  0000 C CNN
+F 1 "MONO_OUT_2" H 6750 2171 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6750 2050 50  0001 C CNN
+F 3 "~" H 6750 2050 50  0001 C CNN
+	1    6750 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 1700 7500 1650
+Wire Wire Line
+	8250 2450 8300 2450
+Wire Wire Line
+	8600 2450 8650 2450
+Wire Wire Line
+	8650 2450 8650 2400
+Wire Wire Line
+	7500 2950 7500 2900
+Wire Wire Line
+	8600 3700 8650 3700
+Wire Wire Line
+	8650 3700 8650 3650
+Wire Wire Line
+	8250 3700 8300 3700
+Wire Wire Line
+	7500 4150 7500 4100
+Wire Wire Line
+	8600 4900 8650 4900
+Wire Wire Line
+	8650 4900 8650 4850
+Wire Wire Line
+	8250 4900 8300 4900
+Wire Wire Line
+	7500 5450 7500 5500
+Wire Wire Line
+	6850 2050 7150 2050
+Wire Wire Line
+	6850 3300 7150 3300
+Wire Wire Line
+	6850 4500 7150 4500
+Wire Wire Line
+	6850 5850 7150 5850
+Wire Wire Line
+	8650 2050 9000 2050
+Wire Wire Line
+	8650 3300 9000 3300
+Wire Wire Line
+	8650 4500 9000 4500
+Wire Wire Line
+	8650 5850 9000 5850
+$Comp
+L hakane:40106-pwr U1
+U 7 1 5D0AF500
+P 2950 7150
+F 0 "U1" H 2950 7515 50  0000 C CNN
+F 1 "40106-pwr" H 2950 7424 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 2950 7150 60  0001 C CNN
+F 3 "" H 2950 7150 60  0001 C CNN
+	7    2950 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L hakane:40106-pwr U2
+U 7 1 5D0AF74B
+P 3750 7150
+F 0 "U2" H 3750 7515 50  0000 C CNN
+F 1 "40106-pwr" H 3750 7424 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 3750 7150 60  0001 C CNN
+F 3 "" H 3750 7150 60  0001 C CNN
+	7    3750 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L hakane:40106-pwr U3
+U 7 1 5D0AF810
+P 4550 7150
+F 0 "U3" H 4550 7515 50  0000 C CNN
+F 1 "40106-pwr" H 4550 7424 50  0000 C CNN
+F 2 "MusicThingModular:DIL14" H 4550 7150 60  0001 C CNN
+F 3 "" H 4550 7150 60  0001 C CNN
+	7    4550 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J1
+U 1 1 5D0BB49C
+P 1400 7150
+F 0 "J1" H 1450 6525 50  0000 C CNN
+F 1 "EUROPOWER" H 1450 6616 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 1400 7150 50  0001 C CNN
+F 3 "~" H 1400 7150 50  0001 C CNN
+	1    1400 7150
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5D0BC007
+P 1050 6700
+F 0 "#PWR02" H 1050 6550 50  0001 C CNN
+F 1 "+5V" H 1065 6873 50  0000 C CNN
+F 2 "" H 1050 6700 50  0001 C CNN
+F 3 "" H 1050 6700 50  0001 C CNN
+	1    1050 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 7050 1700 7050
+Connection ~ 1200 7050
+Wire Wire Line
+	1200 7150 1200 7250
+Connection ~ 1200 7250
+Wire Wire Line
+	1200 7250 1200 7350
+Connection ~ 1200 7350
+Wire Wire Line
+	1700 7250 1200 7250
+Wire Wire Line
+	1200 7150 1700 7150
+Connection ~ 1200 7150
+Wire Wire Line
+	1700 7150 1700 7250
+Connection ~ 1700 7150
+Connection ~ 1700 7250
+Wire Wire Line
+	1700 7250 1700 7350
+Connection ~ 1700 7350
+Wire Wire Line
+	1200 7350 1700 7350
+Wire Wire Line
+	1700 7450 1200 7450
+Connection ~ 1200 7450
+Wire Wire Line
+	1200 6950 1050 6950
+Wire Wire Line
+	1050 6950 1050 6750
+Wire Wire Line
+	1200 6950 1700 6950
+Connection ~ 1200 6950
+$Comp
+L Device:CP C1
+U 1 1 5D162E9B
+P 2150 7150
+F 0 "C1" H 2268 7196 50  0000 L CNN
+F 1 "10u" H 2150 7050 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2188 7000 50  0001 C CNN
+F 3 "~" H 2150 7150 50  0001 C CNN
+	1    2150 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5D16321A
+P 1850 7150
+F 0 "D1" V 1804 7229 50  0000 L CNN
+F 1 "1N4001" V 2100 7100 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 1850 7150 50  0001 C CNN
+F 3 "~" H 1850 7150 50  0001 C CNN
+	1    1850 7150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 7350 1850 7350
+Wire Wire Line
+	1850 7350 1850 7300
+Wire Wire Line
+	1850 7350 2150 7350
+Wire Wire Line
+	2150 7350 2150 7300
+Connection ~ 1850 7350
+Wire Wire Line
+	1850 7000 1850 6950
+Wire Wire Line
+	1850 6950 1700 6950
+Connection ~ 1700 6950
+Wire Wire Line
+	2150 7000 2150 6950
+Wire Wire Line
+	2150 6950 1850 6950
+Connection ~ 1850 6950
+$Comp
+L Device:C C2
+U 1 1 5D19A747
+P 2500 7150
+F 0 "C2" H 2615 7196 50  0000 L CNN
+F 1 "100n" H 2500 7050 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 2538 7000 50  0001 C CNN
+F 3 "~" H 2500 7150 50  0001 C CNN
+	1    2500 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 7350 2150 7450
+Wire Wire Line
+	2150 7450 2500 7450
+Wire Wire Line
+	2850 7450 2850 7400
+Connection ~ 2150 7350
+Wire Wire Line
+	2150 6950 2150 6850
+Wire Wire Line
+	2150 6850 2500 6850
+Wire Wire Line
+	2850 6850 2850 6900
+Connection ~ 2150 6950
+Wire Wire Line
+	2500 7000 2500 6850
+Connection ~ 2500 6850
+Wire Wire Line
+	2500 6850 2850 6850
+Wire Wire Line
+	2500 7300 2500 7450
+Connection ~ 2500 7450
+Wire Wire Line
+	2500 7450 2850 7450
+$Comp
+L Device:C C4
+U 1 1 5D1D6E57
+P 3300 7150
+F 0 "C4" H 3415 7196 50  0000 L CNN
+F 1 "100n" H 3300 7050 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 3338 7000 50  0001 C CNN
+F 3 "~" H 3300 7150 50  0001 C CNN
+	1    3300 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5D1D704B
+P 4100 7150
+F 0 "C5" H 4215 7196 50  0000 L CNN
+F 1 "100n" H 4100 7050 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 4138 7000 50  0001 C CNN
+F 3 "~" H 4100 7150 50  0001 C CNN
+	1    4100 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6850 4100 6850
+Wire Wire Line
+	4450 6850 4450 6900
+Connection ~ 2850 6850
+Wire Wire Line
+	2850 7450 3300 7450
+Wire Wire Line
+	4450 7450 4450 7400
+Connection ~ 2850 7450
+Wire Wire Line
+	3650 7450 3650 7400
+Connection ~ 3650 7450
+Wire Wire Line
+	3650 7450 4100 7450
+Wire Wire Line
+	4100 7450 4100 7300
+Connection ~ 4100 7450
+Wire Wire Line
+	4100 7450 4450 7450
+Wire Wire Line
+	3300 7450 3300 7300
+Connection ~ 3300 7450
+Wire Wire Line
+	3300 7450 3650 7450
+Wire Wire Line
+	3300 7000 3300 6850
+Connection ~ 3300 6850
+Wire Wire Line
+	3300 6850 2850 6850
+Wire Wire Line
+	3650 6900 3650 6850
+Connection ~ 3650 6850
+Wire Wire Line
+	3650 6850 3300 6850
+Wire Wire Line
+	4100 7000 4100 6850
+Connection ~ 4100 6850
+Wire Wire Line
+	4100 6850 3650 6850
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5D28EAF9
+P 600 7000
+F 0 "TP2" H 658 7120 50  0000 L CNN
+F 1 "12V" H 658 7029 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 800 7000 50  0001 C CNN
+F 3 "~" H 800 7000 50  0001 C CNN
+	1    600  7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  7000 600  7050
+Wire Wire Line
+	600  7050 900  7050
+Connection ~ 900  7050
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5D2B3AF2
+P 800 7500
+F 0 "TP4" H 742 7527 50  0000 R CNN
+F 1 "-12V" H 742 7618 50  0000 R CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 1000 7500 50  0001 C CNN
+F 3 "~" H 1000 7500 50  0001 C CNN
+	1    800  7500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	800  7500 800  7450
+Wire Wire Line
+	800  7450 1100 7450
+Connection ~ 1100 7450
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5D2C6C18
+P 750 7300
+F 0 "TP3" H 692 7327 50  0000 R CNN
+F 1 "GND" H 692 7418 50  0000 R CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 950 7300 50  0001 C CNN
+F 3 "~" H 950 7300 50  0001 C CNN
+	1    750  7300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	750  7300 750  7250
+Wire Wire Line
+	750  7250 1050 7250
+Connection ~ 1050 7250
+$Comp
+L power:+5V #PWR09
+U 1 1 5D31466E
+P 5050 5400
+F 0 "#PWR09" H 5050 5250 50  0001 C CNN
+F 1 "+5V" H 5065 5573 50  0000 C CNN
+F 2 "" H 5050 5400 50  0001 C CNN
+F 3 "" H 5050 5400 50  0001 C CNN
+	1    5050 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR014
+U 1 1 5D314BB0
+P 7500 5450
+F 0 "#PWR014" H 7500 5300 50  0001 C CNN
+F 1 "+5V" H 7515 5623 50  0000 C CNN
+F 2 "" H 7500 5450 50  0001 C CNN
+F 3 "" H 7500 5450 50  0001 C CNN
+	1    7500 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 5D314C77
+P 7500 4100
+F 0 "#PWR013" H 7500 3950 50  0001 C CNN
+F 1 "+5V" H 7515 4273 50  0000 C CNN
+F 2 "" H 7500 4100 50  0001 C CNN
+F 3 "" H 7500 4100 50  0001 C CNN
+	1    7500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 5D314D3E
+P 5050 4050
+F 0 "#PWR08" H 5050 3900 50  0001 C CNN
+F 1 "+5V" H 5065 4223 50  0000 C CNN
+F 2 "" H 5050 4050 50  0001 C CNN
+F 3 "" H 5050 4050 50  0001 C CNN
+	1    5050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 5D314E05
+P 5050 2850
+F 0 "#PWR07" H 5050 2700 50  0001 C CNN
+F 1 "+5V" H 5065 3023 50  0000 C CNN
+F 2 "" H 5050 2850 50  0001 C CNN
+F 3 "" H 5050 2850 50  0001 C CNN
+	1    5050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR012
+U 1 1 5D314ECC
+P 7500 2900
+F 0 "#PWR012" H 7500 2750 50  0001 C CNN
+F 1 "+5V" H 7515 3073 50  0000 C CNN
+F 2 "" H 7500 2900 50  0001 C CNN
+F 3 "" H 7500 2900 50  0001 C CNN
+	1    7500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 5D314F93
+P 7500 1650
+F 0 "#PWR011" H 7500 1500 50  0001 C CNN
+F 1 "+5V" H 7515 1823 50  0000 C CNN
+F 2 "" H 7500 1650 50  0001 C CNN
+F 3 "" H 7500 1650 50  0001 C CNN
+	1    7500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 5D31505A
+P 5050 1600
+F 0 "#PWR06" H 5050 1450 50  0001 C CNN
+F 1 "+5V" H 5065 1773 50  0000 C CNN
+F 2 "" H 5050 1600 50  0001 C CNN
+F 3 "" H 5050 1600 50  0001 C CNN
+	1    5050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR010
+U 1 1 5D315121
+P 7500 700
+F 0 "#PWR010" H 7500 550 50  0001 C CNN
+F 1 "+5V" H 7515 873 50  0000 C CNN
+F 2 "" H 7500 700 50  0001 C CNN
+F 3 "" H 7500 700 50  0001 C CNN
+	1    7500 700 
+	1    0    0    -1  
+$EndComp
+Text Notes 600  4950 0    50   ~ 0
+NOTE: The serial resistor on the output is chosen to not fry the IC if the \noutput is shorted. If it works bad, either remove (or lower) it, and hope \nthe ICs can take the heat, or patch in OP amps.
+Text Notes 600  5350 0    50   ~ 0
+NOTE: The LEDs are intended to be low power LEDs, to affect the \noutput less. Adjust the resistance if needed (the higher, the less \nimpact on the output).
+NoConn ~ 1200 6850
+NoConn ~ 1200 6750
+NoConn ~ 1700 6750
+NoConn ~ 1700 6850
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5CBE76D8
+P 600 6700
+F 0 "TP1" H 658 6820 50  0000 L CNN
+F 1 "5V" H 658 6729 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 800 6700 50  0001 C CNN
+F 3 "~" H 800 6700 50  0001 C CNN
+	1    600  6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  6700 600  6750
+Wire Wire Line
+	600  6750 1050 6750
+Connection ~ 1050 6750
+Wire Wire Line
+	1050 6750 1050 6700
+Text Notes 7600 7500 0    50   ~ 0
+trigtrain\n
+Text Notes 8350 7650 0    50   ~ 0
+April 22,2019
+Text Notes 10600 7650 0    50   ~ 0
+A
+Text Notes 600  4550 0    50   ~ 0
+NOTE: It might to be possible to connect all the monstables’ diodes\nand connect them to the very first inverter. I chose completely \nseparate channels early, when it looked like the 555s input might \naffect other parts, but with the diode it should be ”isolated”. \nDon’t feel like testing that right now, having just finished the PCB\nand all, but for a potential rev B, perhaps?
+Text Notes 4300 1500 0    50   ~ 0
+WHEN BUILDING #1, don’t connect the diodes cathode side at first; \ntry hooking it up to pin 2 of the first inverter (to determine whether I \ncan skip four inverters => one entire chip can go.
+Wire Wire Line
+	5150 1150 5150 1100
+Connection ~ 5150 1150
+Wire Wire Line
+	5150 1150 7100 1150
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5CC042D6
+P 5150 1100
+F 0 "TP5" H 5208 1220 50  0000 L CNN
+F 1 "DIR_INV" H 5208 1129 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 5350 1100 50  0001 C CNN
+F 3 "~" H 5350 1100 50  0001 C CNN
+	1    5150 1100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
