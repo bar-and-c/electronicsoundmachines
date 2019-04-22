@@ -505,7 +505,7 @@ F 1 "100k" V 1350 1450 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK097_Single_Horizontal" H 1450 1450 50  0001 C CNN
 F 3 "" H 1450 1450 50  0001 C CNN
 	1    1450 1450
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text Notes 550  4750 0    60   ~ 0
 A sweep from 0-8V on the panel pot should \nresult in a voltage sweep from 155mV to -25mV, \nand a resulting filter sweep from approx min to \nmax cutoff frequency, if I read the data sheet OK. \nIt says that increasing voltage means a decrease \nin filter frequency. So, the effective input CV range\n is 0-8V (as suggested by Doepfer). Still, to \naccomodate for smaller CV ranges, I increased the \ngain a bit, so that 5V should cause the cutoff to\npeak, and added an attenuator.\nNote that values outside this range should not \ncause damage to the IC, the data sheet states \nthe max voltage on that input to be +/-6V.
@@ -518,7 +518,7 @@ F 1 "100k" V 1200 5550 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK097_Single_Horizontal" H 1300 5550 50  0001 C CNN
 F 3 "" H 1300 5550 50  0001 C CNN
 	1    1300 5550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L pro3320-rescue:R R4
@@ -665,7 +665,7 @@ F 1 "100k" V 1200 6150 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK097_Single_Horizontal" H 1300 6150 50  0001 C CNN
 F 3 "" H 1300 6150 50  0001 C CNN
 	1    1300 6150
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L pro3320-rescue:GND #PWR015
@@ -687,7 +687,7 @@ F 1 "100k" V 1350 2200 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK097_Single_Horizontal" H 1450 2200 50  0001 C CNN
 F 3 "" H 1450 2200 50  0001 C CNN
 	1    1450 2200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L pro3320-rescue:GND #PWR016
@@ -1457,7 +1457,7 @@ F 1 "100k" V 2050 900 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK097_Single_Horizontal" H 2150 900 50  0001 C CNN
 F 3 "" H 2150 900 50  0001 C CNN
 	1    2150 900 
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L pro3320-rescue:R R11
