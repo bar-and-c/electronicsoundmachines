@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 9)
+    (drawings 10)
     (tracks 305)
     (zones 0)
     (modules 70)
@@ -4699,6 +4699,9 @@
       (net 21 "Net-(D7-Pad1)"))
   )
 
+  (gr_text "all\naboard" (at 211.074 100.203 45) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.1)))
+  )
   (gr_text "Jacks: PJ301BM (from Thonk)\nPots: Song Huei 9mm vertical pot (Thonk)" (at 196.85 172.974) (layer Cmts.User) (tstamp 5CCA45C8)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
