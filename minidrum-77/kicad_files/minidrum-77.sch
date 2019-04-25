@@ -607,8 +607,6 @@ Wire Wire Line
 Wire Wire Line
 	9800 2750 10150 2750
 Wire Wire Line
-	3300 2100 3300 2750
-Wire Wire Line
 	6900 2850 6900 2950
 Wire Wire Line
 	6600 2850 6600 2950
@@ -631,19 +629,6 @@ Wire Wire Line
 	4100 2100 4100 2750
 Wire Wire Line
 	6100 2100 6100 2850
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5CAF128C
-P 1500 2100
-F 0 "TP1" H 1558 2220 50  0000 L CNN
-F 1 " " H 1558 2129 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 1700 2100 50  0001 C CNN
-F 3 "~" H 1700 2100 50  0001 C CNN
-	1    1500 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 2100 1500 2650
 Wire Wire Line
 	8350 2100 8350 2350
 Wire Wire Line
@@ -652,24 +637,10 @@ Connection ~ 8350 2350
 Wire Wire Line
 	8350 2350 8350 2850
 $Comp
-L Connector:TestPoint TP6
-U 1 1 5CB0E70E
-P 10600 2100
-F 0 "TP6" H 10658 2220 50  0000 L CNN
-F 1 " " H 10658 2129 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 10800 2100 50  0001 C CNN
-F 3 "~" H 10800 2100 50  0001 C CNN
-	1    10600 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10600 2100 10600 2250
-Connection ~ 10600 2250
-$Comp
-L Connector:TestPoint TP5
+L Connector:TestPoint TP3
 U 1 1 5CB23654
 P 8350 2100
-F 0 "TP5" H 8408 2220 50  0000 L CNN
+F 0 "TP3" H 8408 2220 50  0000 L CNN
 F 1 " " H 8408 2129 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 8550 2100 50  0001 C CNN
 F 3 "~" H 8550 2100 50  0001 C CNN
@@ -677,10 +648,10 @@ F 3 "~" H 8550 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP4
+L Connector:TestPoint TP2
 U 1 1 5CB236D5
 P 6100 2100
-F 0 "TP4" H 6158 2220 50  0000 L CNN
+F 0 "TP2" H 6158 2220 50  0000 L CNN
 F 1 " " H 6158 2129 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 6300 2100 50  0001 C CNN
 F 3 "~" H 6300 2100 50  0001 C CNN
@@ -688,25 +659,14 @@ F 3 "~" H 6300 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP3
+L Connector:TestPoint TP1
 U 1 1 5CB2375A
 P 4100 2100
-F 0 "TP3" H 4158 2220 50  0000 L CNN
+F 0 "TP1" H 4158 2220 50  0000 L CNN
 F 1 " " H 4158 2129 50  0000 L CNN
 F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 4300 2100 50  0001 C CNN
 F 3 "~" H 4300 2100 50  0001 C CNN
 	1    4100 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5CB237D7
-P 3300 2100
-F 0 "TP2" H 3358 2220 50  0000 L CNN
-F 1 " " H 3358 2129 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 3500 2100 50  0001 C CNN
-F 3 "~" H 3500 2100 50  0001 C CNN
-	1    3300 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -718,21 +678,6 @@ Wire Wire Line
 Connection ~ 9850 2950
 Wire Wire Line
 	9850 2950 9950 2950
-$Comp
-L Connector:TestPoint TP7
-U 1 1 5CA968CB
-P 7450 4200
-F 0 "TP7" H 7500 4350 50  0000 L CNN
-F 1 "DEFAULT_EXT_COIL" H 7600 4300 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 7650 4200 50  0001 C CNN
-F 3 "~" H 7650 4200 50  0001 C CNN
-	1    7450 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7450 4200 7450 4250
-Wire Wire Line
-	7450 4250 7500 4250
 Wire Wire Line
 	7350 4350 7500 4350
 Wire Wire Line
@@ -776,4 +721,5 @@ Wire Wire Line
 	6900 4450 7500 4450
 Text Notes 1350 1600 0    59   ~ 0
 NOTE: The LED will probably take a bit of the sound (amplitude, at \nleast). I included it on the PCB anyway, try with a low power LED and\na high resistor if you want a flashing LED – or just skip them if you \nwant to max the output.
+NoConn ~ 7500 4250
 $EndSCHEMATC

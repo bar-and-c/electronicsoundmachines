@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 10)
+    (drawings 11)
     (tracks 305)
     (zones 0)
     (modules 70)
@@ -4699,7 +4699,10 @@
       (net 21 "Net-(D7-Pad1)"))
   )
 
-  (gr_text "all\naboard" (at 211.074 100.203 45) (layer F.SilkS)
+  (gr_text tschak (at 226.822 95.631 90) (layer F.SilkS) (tstamp 5CC1D82E)
+    (effects (font (size 1 1) (thickness 0.1)))
+  )
+  (gr_text "boing\nboom" (at 211.074 100.203 45) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.1)))
   )
   (gr_text "Jacks: PJ301BM (from Thonk)\nPots: Song Huei 9mm vertical pot (Thonk)" (at 196.85 172.974) (layer Cmts.User) (tstamp 5CCA45C8)
@@ -4711,10 +4714,10 @@
   (gr_text "April 22, 2019\n" (at 239.141 193.04) (layer Cmts.User) (tstamp 5CCA45C0)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text trigtrain (at 200.66 189.484) (layer Cmts.User)
+  (gr_text triggerhappy (at 200.66 189.484) (layer Cmts.User)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "trigtrain, rev A\nelectronic sound machines\n(c) 2019, Håkan Eriksson\n\nuheriks@yahoo.ca" (at 206.883 116.84) (layer F.SilkS)
+  (gr_text "triggerhappy, rev A\nelectronic sound machines\n(c) 2019, Håkan Eriksson\n\nuheriks@yahoo.ca" (at 206.883 116.84) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_line (start 177.927 145.034) (end 227.838 145.034) (layer Edge.Cuts) (width 0.15))
