@@ -266,7 +266,7 @@ Text Notes 4800 6200 0    59   ~ 0
 TR-77 Rim Shot\n—————————\nC1: 0 (jumper)\nR1: NC\nC2: 4.7 nF\nD1: 1S1555 (*)\nR2: 4.7M\nR3: 100k\nR4: 47k\nC3: NC\nC4: 0 (jumper)\nC5: 27 nF\nC6: NC\nL1: 700 mH\nC7: 1 nF\nC8: NC\nC9: NC\nR5: 0 (jumper)\nC10: NC\n
 Text Notes 5700 6200 0    59   ~ 0
 TR-77 Bass Drum\n—————————\nC1: 0 (jumper)\nR1: NC\nC2: 4.7 nF\nD1: 1S1555 (*)\nR2: 4.7M\nR3: 33k\nR4: NC\nC3: 56 nF\nC4: 33 nF\nC5: 220 nF\nC6: 1 nF\nL1: 16 H (!)\nC7: 33 nF\nC8: 100 nF\nC9: NC\nR5: 10 k\nC10: 220 nF
-Text Notes 3900 6850 0    59   ~ 0
+Text Notes 3500 7150 0    59   ~ 0
 NOTE: R5 is a fixed resistor in TR-77’s BD, but a pot of\napprox. 20-50k might be useful as a variable LPF (untested).
 Wire Wire Line
 	10600 2950 10600 3950
@@ -280,12 +280,12 @@ Text Notes 8150 7650 0    50   ~ 0
 April 9, 2019
 Text Notes 10650 7650 0    50   ~ 0
 A
-Text Notes 3900 7150 0    59   ~ 0
+Text Notes 3500 7400 0    59   ~ 0
 NOTE: The coil values for the listed CR-78 voices are guessed:\nhttp://electro-music.com/forum/post-420004.html#420004
-Text Notes 3900 7500 0    59   ~ 0
+Text Notes 3500 7750 0    59   ~ 0
 (*) The diode is most likely not that important.\nI think I’ll go for a BAT-42, since it has low voltage\ndrop; I’m sure a standard 1N4148 will do as well.
-Text Notes 2100 7300 0    50   ~ 0
-Inductors at Mouser: \nC-1X    15H (Triad Magnetics)\nC-85X  1.5H (Triad Magnetics)
+Text Notes 1000 6800 0    59   ~ 0
+Inductors of such large values are hard to find. \nThe PCB is made for the following two, available \nfrom Mouser: \nC-1X    15H (Triad Magnetics)\nC-85X  1.5H (Triad Magnetics)
 NoConn ~ 10650 2750
 NoConn ~ 1250 2650
 $Comp
@@ -313,7 +313,7 @@ $EndComp
 Connection ~ 6600 2850
 Connection ~ 6900 3950
 Text Notes 7400 6350 0    59   ~ 0
-This schematic/PCB seems far more complicated than it is, simply because \nI wanted the option to build several different sounds, like a prototype.\nIf you want to build just one sound, check the table and figure out\nwhich components to leave out, and which pads on the switches that \nneeds to be shorted with jumpers (i.e., in that case, you don’t need\nthe switches).\nIf you want to change the sound somewhat, go all in with the switches \nand stuff. Note that it’s probably impossible to get two authentic \noriginal sounds, as the exact component values vary, but you can \nget one actual sound, and then experiment to get something else \nwith the switches.
+This schematic/PCB seems far more complicated than it is, simply because \nI wanted the option to build several different sounds, like a prototype.\nIf you want to build just one sound, check the table and figure out\nwhich components to leave out, and which pads on the switches that \nneeds to be shorted with jumpers (i.e., in that case, you don’t need\nthe switches).\nIf you want to change the sound somewhat, go all in with the switches \nand stuff. Note that it’s impossible to get two authentic original sounds, \nas the exact component values vary, plus that I didn’t think enough \nahead,but you can get one actual sound, and then experiment to get \nsomething else with the switches.
 Wire Wire Line
 	6600 2850 6900 2850
 $Comp
@@ -700,7 +700,7 @@ L Device:R R6
 U 1 1 5CAE3866
 P 1500 3550
 F 0 "R6" H 1600 3600 50  0000 L CNN
-F 1 " " H 1570 3505 50  0000 L CNN
+F 1 "4.7k" H 1570 3505 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1430 3550 50  0001 C CNN
 F 3 "~" H 1500 3550 50  0001 C CNN
 	1    1500 3550
@@ -720,6 +720,14 @@ $EndComp
 Wire Wire Line
 	6900 4450 7500 4450
 Text Notes 1350 1600 0    59   ~ 0
-NOTE: The LED will probably take a bit of the sound (amplitude, at \nleast). I included it on the PCB anyway, try with a low power LED and\na high resistor if you want a flashing LED – or just skip them if you \nwant to max the output.
+NOTE: The LED will probably take a bit of the sound (amplitude, at \nleast). I included it on the PCB anyway, try with a low power LED and\na high resistor if you want a flashing LED – or just skip them if you \nwant to max the output.\nAdjust R6 to your liking (and the LED’s max current).
 NoConn ~ 7500 4250
+Text Notes 3500 6900 0    59   ~ 0
+NOTE: The components listed are (pretty much) taken from the \nschematics of these machines. When building it might make sense to\nad lib a bit, for instance: C5/C6 are used in a couple of sounds to fine\ntune the resonance frequency (I guess) – another option is to choose\nvalues of greater difference, for larger sonic tweakability (if you do: put \nthe larger values on the switches). Let your ears and hearts decide.
+Text Notes 1350 1850 0    59   ~ 0
+NOTE: Should have had a switch for C3/C4, since their values differ so much.
+Text Notes 7650 1750 0    59   ~ 0
+NOTE: C9 is pretty stupid, taken out of context as it it. Its HPF \nproperties depend on what comes after. Maybe it’d be more interesting \nto turn the LPF around? Far from the original, but still. 
+Text Notes 1350 1050 0    59   ~ 0
+NOTE: C1/R1 and/or C2 might be useless. Experiment.
 $EndSCHEMATC

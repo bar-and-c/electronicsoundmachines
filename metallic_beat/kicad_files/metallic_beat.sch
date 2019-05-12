@@ -1395,4 +1395,6 @@ Wire Wire Line
 Connection ~ 5600 5000
 Wire Wire Line
 	5600 5000 5700 5000
+Text Notes 6750 4150 0    50   ~ 0
+NOTE: When building, consider this:\nC8 is 1nF in my prototype, and I \ncouldn’t see C11 at all. \nExperiment and listen.
 $EndSCHEMATC

@@ -712,7 +712,7 @@ F 3 "" H 1450 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 550  3350 0    60   ~ 0
-Normal level in should \nbe about +/-10V, but \nadding a bit more gain \nto the amp, so that weak\nsignals can have a go \n(and to see whether \nthat kind of distortion \nagrees with the VCF). 
+Normal level in should \nbe about 10V p-p, but \nadding a bit more gain \nto the amp, so that weak\nsignals can have a go \n(and to see whether \nthat kind of distortion \nagrees with the VCF). 
 $Comp
 L pro3320-rescue:R R9
 U 1 1 5B6E20E1
@@ -1001,8 +1001,6 @@ F 3 "" H 1950 5950 50  0001 C CNN
 	1    1950 5950
 	1    0    0    -1  
 $EndComp
-Text Notes 350  3350 1    60   ~ 0
-OR IS IT 10V p-p????\n-- Testable on PCB, breadboard not needed.
 Wire Wire Line
 	4700 2850 4650 2850
 Wire Wire Line
