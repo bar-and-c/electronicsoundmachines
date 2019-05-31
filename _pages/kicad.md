@@ -34,3 +34,11 @@ I have used a footprint called "Connectors:1pin", but I read that there are foot
 
 I believe it is possible to conenct the screw hole pad to a net as well. 
 
+
+## Things to learn
+
+- How to do pots. On the first PCB they were upside down, and I think it is the same on the second. This time I will "solve" it by mounting them on the backside, but it would be nice to know how to do it for real. I assume I could just flip the pots in the schematic, but since it isn't clear in the schematic which side is "up" (and sure, I suppose that depends on the application?) that strategy is bound to fail sometime (even the current strategy is better, which is that I never rotate or flip the pots upside down).
+
+- Make footprints the way I want them. E.g., I always move resistors' references and values inside the frame, to be able to pack them tighter (and also see which is which). Put that in the footprint, and in a way that always works (at this point, the references will not be visible on an assembled PCB). Put reference and value inside, very close to the edge – maybe break the edge frame, even? 
+
+- If the above succeeds, make values visible on the PCB. 

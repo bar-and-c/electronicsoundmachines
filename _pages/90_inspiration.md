@@ -93,4 +93,11 @@ Far more work, though.
 
 ---
 
+Delay
 
+Would be nice to build a digital delay, inspo here:
+<https://www.electrosmash.com/pt2399-analysis>
+(Could perhaps be used for trigger pulses as well.)
+
+
+Also, try building something with a bucket brigade delay line, especially (if possible) with a way to modulate with audio frequency, to get FM on audio in real time.

@@ -2,7 +2,7 @@
 layout: default
 title: modular
 permalink: /punkmod/
-exclude: false
+exclude: true
 ---
 
 # Malmö Punk Modular

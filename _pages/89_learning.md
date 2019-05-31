@@ -27,3 +27,13 @@ Some interesting ideas here, most notably perhaps spring reverb:
 
 A useful collection of OP-amp circuits: 
 <https://www.ti.com/ww/en/bobpease/assets/AN-31.pdf>
+
+
+# More links
+
+## Electronic parts
+
+<http://www.electrokit.se>
+<http://www.retroamplis.com/42TM018/en>
+
+
