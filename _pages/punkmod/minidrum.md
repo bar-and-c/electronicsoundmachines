@@ -29,6 +29,12 @@ Then there is one additional jack. Originally meant for making it possible to ad
 ## The potentiometer
 The bass drum circuit in TR-77 has a low pass filter on the output, I figured I'd make that adjustable. Not super useful, as it turned out.
 
+## The sound
+There is a little demo of it [here](https://youtu.be/YITYSVAJOyo).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YITYSVAJOyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+
 ## Oddities
 The intention was to make a PCB that allows for experimentation, hence all the switches and also the inclusion of a "mod area" – a part of the PCB with a lot of holes to mount any modifications. Unfortunately, there could have been a little more thinking, and experimentation, before ordering the PCB; instead it's equipped with the following oddities:
 
