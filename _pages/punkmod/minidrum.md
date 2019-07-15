@@ -1,6 +1,6 @@
 ---
 layout: default
-title: modular
+title: minidrum
 permalink: /punkmod/minidrum/
 exclude: true
 ---
