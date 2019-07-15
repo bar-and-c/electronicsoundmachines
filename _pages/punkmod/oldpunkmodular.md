@@ -1,13 +1,39 @@
 ---
 layout: default
 title: modular
-permalink: /punkmod/
+permalink: /oldpunkmod/
 exclude: true
 ---
 
 # Malmö Punk Modular
 
 The idea is to build something personal, simple and – ideally – cheap, but still useful. 
+
+
+
+
+TODO: 
+- Gör färdigt pro3320-schema. T.ex. tror jag det är fel på alla de där spänningsdelarna jag gjorde fel, och vissa saker är inte inkopplade.
+- Posta i elektronikforum varför 2 st 9V DC adaptrar inte funkar. 
+- Kanske ta det som står om minimodi och baka in? Själva minimodi är ju bara grejen att modulerna är ihopbyggda. Ta bort minimodi? 
+- Kanske ha en sida per modul? Kanske kan vara en nivå till av flikar? 
+- Försöka parsa sidor efter "oddities" (eller nån annan grej, en tag av nåt slag) för att samla alla defekter på ett ställe? Kanske en sida med allmänna defekter, som vid "byggtillfället" konkateneras med det parsade? För mycket?
+
+STORARTAD IDÉ: Börja höstens nya satsning på att bygga ett rack? Så kan jag sälja mitt sen, 1500:- snabba cash. 
+Bygg en lite större, med skruttig ström, men plats för bättre. Men bra att jag kör på skruttigt. 
+Och: med handtag, och lock.
+
+
+
+
+## Current setup
+
+
+
+
+
+
+
 
 ## Rack
 I would like to build everything, even the rack itself, but if you think that's overkill try to find a secondhand.

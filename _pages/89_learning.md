@@ -28,6 +28,8 @@ Some interesting ideas here, most notably perhaps spring reverb:
 A useful collection of OP-amp circuits: 
 <https://www.ti.com/ww/en/bobpease/assets/AN-31.pdf>
 
+For learning KiCad, I recommend the "Getting to Blinky" series. Not sure if it's updated for KiCad 5, though. Search for it on YouTube.
+
 
 # More links
 
@@ -35,5 +37,3 @@ A useful collection of OP-amp circuits:
 
 <http://www.electrokit.se>
 <http://www.retroamplis.com/42TM018/en>
-
-

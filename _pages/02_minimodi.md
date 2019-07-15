@@ -2,7 +2,7 @@
 layout: default
 title: minimodi
 permalink: /minimodi/
-exclude: false
+exclude: true
 ---
 
 

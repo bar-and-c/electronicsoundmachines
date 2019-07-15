@@ -32,8 +32,11 @@ Right click on board, select "Global Spread And Place->etc.".
 
 I have used a footprint called "Connectors:1pin", but I read that there are footprints explicitly made for mounting holes (called things like e.g. "MountingHole_3.2mm_M3_Pad"). Either way, in PcbNew, add new footprint by clicking the icon looking like an IC on the right toolbar (mouse-over text something like "Add footprints"), and enter the name. 
 
-I believe it is possible to conenct the screw hole pad to a net as well. 
+I believe it is possible to connect the screw hole pad to a net as well. 
 
+
+## Footprints suitable for Eurorack
+https://github.com/TomWhitwell/MTM-Parts-Library
 
 ## Things to learn
 
@@ -42,3 +45,11 @@ I believe it is possible to conenct the screw hole pad to a net as well.
 - Make footprints the way I want them. E.g., I always move resistors' references and values inside the frame, to be able to pack them tighter (and also see which is which). Put that in the footprint, and in a way that always works (at this point, the references will not be visible on an assembled PCB). Put reference and value inside, very close to the edge – maybe break the edge frame, even? 
 
 - If the above succeeds, make values visible on the PCB. 
+
+## TODO
+### Make a library of my own footprints (and, when applicable, matching schematic symbols), so that I always use my own.
+- Larger holes than e.g resistors etc. normally have (I get the feeliing that its much harder to desolder with those tiny holes).
+- Component values and references inside the component footprint, where applicable. Granted, having the reference under the component might be bad for when locating a component, but at least make the footprint tighter somehow (maybe put the reference _on_ the footprint border, breaking the border line).
+
+### Learn to put logo etc. on the board.
+

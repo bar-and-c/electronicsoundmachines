@@ -2,6 +2,7 @@
 layout: page
 title: pedal
 permalink: /effectpedal/
+exclude: true
 ---
 
 
