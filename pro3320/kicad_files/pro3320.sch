@@ -620,9 +620,7 @@ F 3 "" H 2400 6650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 3100 350  0    60   ~ 0
-TEST RANGE OF FREQ CV POT\nTEST RANGE OF RES CV POT\n-- Testable on PCB, no need for breadboard.\n
-Text Notes 1150 400  0    60   ~ 0
-TEST AT LEAST ONE HP/LP SWITCH? \nAND ONE SEPARATE OUTPUT?\n-- Or, assume it will be OK. If not, \njust don't mount the switches/outs.
+TEST RANGE OF FREQ CV POT\nTEST RANGE OF RES CV POT\n
 $Comp
 L pro3320-rescue:R R3
 U 1 1 5B6DD17E
@@ -1442,8 +1440,8 @@ Wire Wire Line
 Wire Wire Line
 	9300 1200 9300 1600
 Connection ~ 9300 1600
-Text Notes 350  7500 1    60   ~ 0
-TEST THIS, REALLY UNSURE. ALL THREE COMPONENTS.\nTestable on PCB, breadboard not needed.
+Text Notes 350  7750 1    60   ~ 0
+NOTE: These resistor values don’t work well at all. I suspect other\nimdedances in parallell affects the voltage dividers. Experiment!
 Text Notes 4500 2100 0    60   ~ 0
 The resonance control input is a current.\nThe ProOne has max 75uA (but I think it\nalso has to do with the input at pin 8).\nI chose 56k for a max current of 89 uA\nfor 5V in (thinking 0-5V in, as for cutoff).\n
 $Comp
@@ -1811,8 +1809,8 @@ Wire Wire Line
 Connection ~ 8150 1000
 Wire Wire Line
 	8150 1000 8800 1000
-Text Notes 1950 7550 0    50   ~ 0
-NOTE: Using 150pF for filter capacitors, like ProOne.\nApparently, this raises the base frequency one octave.
+Text Notes 7050 4950 0    59   ~ 0
+NOTE: Using 150pF for filter\ncapacitors, like on the ProOne.\nApparently, this raises the\nbase frequency one octave.
 Wire Wire Line
 	3100 6300 9500 6300
 Wire Wire Line
@@ -2130,12 +2128,12 @@ Wire Notes Line
 	11150 4200 8800 4200
 Wire Notes Line
 	8800 4200 8800 5700
-Text Notes 8050 7000 0    50   ~ 0
+Text Notes 8050 7000 0    59   ~ 0
 A VCF built on the CEM3320,based on its data sheet reference \nimplementations, and a bit of inspiration from the ProOne.\n\nRev. A in a severe prototype state.
-Text Notes 7500 7500 0    50   ~ 0
+Text Notes 7500 7500 0    59   ~ 0
 pro3320 vcf\n
-Text Notes 10650 7650 0    50   ~ 0
+Text Notes 10650 7650 0    59   ~ 0
 A
-Text Notes 8150 7650 0    50   ~ 0
+Text Notes 8150 7650 0    59   ~ 0
 April 16, 2019
 $EndSCHEMATC

@@ -89,17 +89,17 @@ ENDDEF
 # hakane:AudioJack_Mono_No_Switch
 #
 DEF hakane:AudioJack_Mono_No_Switch J 0 40 Y Y 1 F N
-F0 "J" 0 350 50 H V C CNN
-F1 "hakane:AudioJack_Mono_No_Switch" 0 250 50 H V C CNN
+F0 "J" -150 -200 50 H V C CNN
+F1 "hakane:AudioJack_Mono_No_Switch" 0 100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
+S -200 50 100 -150 0 1 0 N
 S -175 -100 -205 0 0 1 0 F
-S 100 -125 -180 175 0 1 10 f
+P 2 0 1 10 100 -100 -200 -100 N
 P 4 0 1 10 0 0 25 -25 50 0 100 0 N
-P 5 0 1 10 100 100 -100 100 -100 0 -125 -25 -150 0 N
-X ~ 1 200 100 100 L 50 50 1 1 P
-X ~ 2 200 0 100 L 50 50 1 1 P
+X ~ 1 200 0 100 L 50 50 1 1 P
+X ~ 2 200 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
