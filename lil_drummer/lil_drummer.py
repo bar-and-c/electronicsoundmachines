@@ -2,10 +2,13 @@ import board
 import digitalio
 import time
 
-# TODO: 
-# 1. Stop with long press.
-# 2. Maybe try to do changes in runtime?
-# 3. Sawtooth out. 
+# NOTE: Rewrote in lildrum.py, and classes. Keeping this file for now.
+
+# TODO:
+# 0. Clear out old events (connected to 2.)
+# 1. [DONE] Stop running with long press. (Actually, maybe not...see lildrum.py)
+# 2. Maybe try to do tempo changes in runtime? (Maybe only require two beats for a time estimate?)
+# 3. Sawtooth out.
 # 4. See notes in notepad.
 
 red_led = digitalio.DigitalInOut(board.LED_R)
@@ -34,6 +37,9 @@ class TimedEvent():
 
 	def later_than(self, other_event):
 		return self._time > other_event._time
+
+	def age(self):
+		return time.monotonic() - self._time
 
 
 class TapList(list):
@@ -82,21 +88,28 @@ def time_for_edge(pos_or_neg):
 
 
 
-
+LONG_PRESS_TIME = 3
 taps = TapList()
-tap_pressed = False
+tap_pressed = None
 counting_in = True
 running = False
 
 while True:
 	if tap_in.value and not tap_pressed:
-		tap_pressed = True
+		tap_pressed = TimedEvent()
 		taps.add()
 		print("Average tap time: %f" % taps.average_tap_time())
 		if not counting_in:
 			running = True
 	elif not tap_in.value and tap_pressed:
-		tap_pressed = False
+		tap_pressed = None
+
+	if tap_pressed:
+		if tap_pressed.age() > LONG_PRESS_TIME and not long_press:
+			long_press = True
+			print("long press")
+	else:
+		long_press = False
 
 	avg_quarter_period = taps.average_tap_time()
 	pulse_period = quarters_to_eighths(avg_quarter_period)
@@ -111,7 +124,7 @@ while True:
 			beat_count = (beat_count + 1) % 8
 		elif time_for_edge(NEGATIVE):
 			green_led.value = True
-			
+
 			#red_led.value = True
 			pulse(False)
 
