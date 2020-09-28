@@ -1,0 +1,22 @@
+BD:
+C2: 4.7 nF
+C3: 56 nF
+C4: 33 nF
+C6: 220 nF
+C7: 33 nF
+C8: 100 nF
+C10: 220 nF
+R2: 4.7M
+R3: 33k
+R5: 10 k
+D1: BAT42
+L1: 16 H
+
+Claves/RS misch-masch:
+C1: 27nF
+R1: 270k
+R4: 47k
+C5: 4.7nF (or 27nF?)
+L2: 1.5H
+C11: 250pF (or 1nF?)
+C9: 1nF

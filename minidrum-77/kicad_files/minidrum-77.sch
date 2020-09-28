@@ -730,4 +730,6 @@ Text Notes 7650 1750 0    59   ~ 0
 NOTE: C9 is pretty stupid, taken out of context as it it. Its HPF \nproperties depend on what comes after. Maybe it’d be more interesting \nto turn the LPF around? Far from the original, but still. 
 Text Notes 1350 1050 0    59   ~ 0
 NOTE: C1/R1 and/or C2 might be useless. Experiment.
+Text Notes 5300 2600 0    59   ~ 0
+My pick\nR6: 4.7k for a 2mA red LED\nC1: 22nF\nR1: 270k\nC2: 68nF\nD1: BAT42\nR2: 3.3M\nR3: 33k\nR4: 47k\nC3: 33//22 nF (~56nF)\nC4: 1nF (will evaluate, maybe larger)\nC6: 220nF (BD’s C5)\nC5: 1.5 nF\nL1: 15H\nL2: 120mH\nC11: 33nF (BD’s C7)\nC7: 1nF (TESTA 10nF)\nC8: 100nF\nC9: 10nF (SJHDFJHSDGFJHSGD)\nR5: 25k lin\nC10: 220nF
 $EndSCHEMATC

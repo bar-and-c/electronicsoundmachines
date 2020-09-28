@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/hakadm/kod/electronics/minidrum-77/kicad_files/minidrum-77.sch</source>
+    <date>Lördag 27 April 2019 20:07:41</date>
+    <tool>Eeschema (5.0.0-3-g5ebb6b6)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>minidrum-77.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C2">
+      <value> </value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BCF7A5E</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value> </value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3CD920</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value> </value>
+      <footprint>Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3CDA0B</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value> </value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3CDA68</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value> </value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3CDA97</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value> </value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3CDAE0</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value> </value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3CDB0C</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value> </value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3CDB49</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value> </value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3CDB9E</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value> </value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3CDBD0</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value> </value>
+      <footprint>kicadlib:CoilC-1X</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3CDC38</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value> </value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3CDC94</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value> </value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3CDCD5</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value> </value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3CDD1E</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value> </value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3CDD63</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value> </value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C3DAC3B</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>TRIG_IN</value>
+      <footprint>kicadlib:PJ301BM</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="hakane" part="AudioJack_Mono_Switch" description="Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5B0CA6</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>AUDIO_OUT</value>
+      <footprint>kicadlib:PJ301BM</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="hakane" part="AudioJack_Mono_Switch" description="Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5B0D0D</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value> </value>
+      <footprint>Inductor_THT:L_Radial_D10.0mm_P5.00mm_Fastron_07P</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C61E4CF</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>LPF/HPF_IN</value>
+      <footprint>kicadlib:DPDT_PUSH_SW</footprint>
+      <libsource lib="Switch" part="SW_DPDT_x2" description="Switch, dual pole double throw, separate symbols"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C6DFB0E</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>RS/C</value>
+      <footprint>kicadlib:DPDT_PUSH_SW</footprint>
+      <libsource lib="Switch" part="SW_DPDT_x2" description="Switch, dual pole double throw, separate symbols"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C6E1DC8</tstamp>
+    </comp>
+    <comp ref="SW9">
+      <value>LPF/HPF_OUT</value>
+      <footprint>kicadlib:DPDT_PUSH_SW</footprint>
+      <libsource lib="Switch" part="SW_DPDT_x2" description="Switch, dual pole double throw, separate symbols"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C6E1F57</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>EXT_COIL</value>
+      <footprint>kicadlib:PJ301BM</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="hakane" part="AudioJack_Mono_Switch" description="Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C70BB70</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>CUTOFF</value>
+      <footprint>Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_POT" description="Potentiometer"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C72DB9A</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value> </value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C76B115</tstamp>
+    </comp>
+    <comp ref="SW6">
+      <value>C11_SEL</value>
+      <footprint>kicadlib:DPDT_AS_SPST_PUSH_SW</footprint>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C76B2C8</tstamp>
+    </comp>
+    <comp ref="SW7">
+      <value>C8_SEL</value>
+      <footprint>kicadlib:DPDT_AS_SPST_PUSH_SW</footprint>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C76B326</tstamp>
+    </comp>
+    <comp ref="SW8">
+      <value>STR_OUT</value>
+      <footprint>kicadlib:DPDT_AS_SPST_PUSH_SW</footprint>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C76B3B9</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>C6_SEL</value>
+      <footprint>kicadlib:DPDT_AS_SPST_PUSH_SW</footprint>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C78BDDD</tstamp>
+    </comp>
+    <comp ref="SW4">
+      <value>COIL_1</value>
+      <footprint>kicadlib:DPDT_AS_SPST_PUSH_SW</footprint>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C79AAF7</tstamp>
+    </comp>
+    <comp ref="SW5">
+      <value>COIL_2</value>
+      <footprint>kicadlib:DPDT_AS_SPST_PUSH_SW</footprint>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C79D036</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value> </value>
+      <footprint>TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CB23654</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value> </value>
+      <footprint>TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CB236D5</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value> </value>
+      <footprint>TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CB2375A</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value> </value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CAE3866</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED_ALT</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_ALT" description="LED generic, alternativ symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CADEAA7</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D">
+      <description>Diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_ALT">
+      <description>LED generic, alternativ symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_ALT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_POT">
+      <description>Potentiometer</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_POT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_DPDT_x2">
+      <description>Switch, dual pole double throw, separate symbols</description>
+      <footprints>
+        <fp>SW*DPDT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_DPDT_x2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+        <pin num="4" name="A" type="passive"/>
+        <pin num="5" name="B" type="passive"/>
+        <pin num="6" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPST">
+      <description>Single Pole Single Throw (SPST) switch</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPST</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hakane" part="AudioJack_Mono_Switch">
+      <description>Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">AudioJack_Mono_Switch</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/Library/Application Support/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Library/Application Support/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>/Library/Application Support/kicad/library/Switch.lib</uri>
+    </library>
+    <library logical="hakane">
+      <uri>/Users/hakadm/kod/electronics/kicadlib/hakane.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="2" name="Net-(R3-Pad1)">
+      <node ref="SW2" pin="5"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="R3" pin="1"/>
+      <node ref="TP1" pin="1"/>
+    </net>
+    <net code="3" name="GND">
+      <node ref="C3" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="L1" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R6" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="L2" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="4" name="Net-(C1-Pad1)">
+      <node ref="SW1" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="SW1" pin="5"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="5" name="Net-(J2-Pad2)">
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="6" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="7" name="Net-(C1-Pad2)">
+      <node ref="C1" pin="2"/>
+      <node ref="SW1" pin="3"/>
+    </net>
+    <net code="8" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="SW1" pin="4"/>
+    </net>
+    <net code="9" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="SW1" pin="6"/>
+    </net>
+    <net code="10" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1"/>
+      <node ref="SW2" pin="1"/>
+    </net>
+    <net code="11" name="Net-(R4-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="SW2" pin="3"/>
+    </net>
+    <net code="12" name="Net-(C4-Pad2)">
+      <node ref="SW2" pin="4"/>
+      <node ref="C4" pin="2"/>
+    </net>
+    <net code="13" name="Net-(C9-Pad1)">
+      <node ref="C9" pin="1"/>
+      <node ref="SW9" pin="1"/>
+    </net>
+    <net code="14" name="Net-(C9-Pad2)">
+      <node ref="SW9" pin="4"/>
+      <node ref="C9" pin="2"/>
+    </net>
+    <net code="15" name="Net-(J3-Pad2)">
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="16" name="Net-(C10-Pad1)">
+      <node ref="SW9" pin="6"/>
+      <node ref="C10" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="17" name="Net-(R5-Pad3)">
+      <node ref="R5" pin="3"/>
+      <node ref="SW9" pin="3"/>
+    </net>
+    <net code="18" name="Net-(J2-Pad3)">
+      <node ref="SW9" pin="5"/>
+      <node ref="J2" pin="3"/>
+      <node ref="SW8" pin="2"/>
+    </net>
+    <net code="19" name="Net-(C4-Pad1)">
+      <node ref="J3" pin="3"/>
+      <node ref="TP2" pin="1"/>
+      <node ref="SW6" pin="1"/>
+      <node ref="C7" pin="2"/>
+      <node ref="SW2" pin="6"/>
+      <node ref="SW3" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="SW4" pin="2"/>
+      <node ref="SW5" pin="2"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="20" name="Net-(C11-Pad2)">
+      <node ref="SW6" pin="2"/>
+      <node ref="C11" pin="2"/>
+    </net>
+    <net code="21" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1"/>
+      <node ref="SW7" pin="2"/>
+    </net>
+    <net code="22" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1"/>
+      <node ref="SW3" pin="1"/>
+    </net>
+    <net code="23" name="Net-(L1-Pad1)">
+      <node ref="SW4" pin="1"/>
+      <node ref="L1" pin="1"/>
+    </net>
+    <net code="24" name="Net-(L2-Pad1)">
+      <node ref="SW5" pin="1"/>
+      <node ref="L2" pin="1"/>
+    </net>
+    <net code="25" name="Net-(D2-Pad2)">
+      <node ref="SW1" pin="2"/>
+      <node ref="J1" pin="3"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="26" name="Net-(C11-Pad1)">
+      <node ref="C7" pin="1"/>
+      <node ref="TP3" pin="1"/>
+      <node ref="C11" pin="1"/>
+      <node ref="SW8" pin="1"/>
+      <node ref="SW7" pin="1"/>
+      <node ref="SW9" pin="2"/>
+    </net>
+    <net code="27" name="Net-(D2-Pad1)">
+      <node ref="R6" pin="1"/>
+      <node ref="D2" pin="1"/>
+    </net>
+  </nets>
+</export>
