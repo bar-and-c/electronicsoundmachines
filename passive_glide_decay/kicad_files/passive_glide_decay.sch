@@ -1,0 +1,154 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L hakane:AudioJack_Mono_No_Switch J1
+U 1 1 5CFADBF9
+P 1900 2300
+F 0 "J1" H 1600 2300 50  0000 C CNN
+F 1 "IN" H 1600 2200 50  0000 C CNN
+F 2 "" H 1900 2300 50  0001 C CNN
+F 3 "~" H 1900 2300 50  0001 C CNN
+	1    1900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5CFAE274
+P 3600 2500
+F 0 "C1" H 3715 2546 50  0000 L CNN
+F 1 "22uF" H 3715 2455 50  0000 L CNN
+F 2 "" H 3638 2350 50  0001 C CNN
+F 3 "~" H 3600 2500 50  0001 C CNN
+	1    3600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5CFAE32D
+P 3250 2300
+F 0 "RV1" V 3136 2300 50  0000 C CNN
+F 1 "25k" V 3045 2300 50  0000 C CNN
+F 2 "" H 3250 2300 50  0001 C CNN
+F 3 "~" H 3250 2300 50  0001 C CNN
+	1    3250 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L hakane:AudioJack_Mono_No_Switch J2
+U 1 1 5CFAE3B0
+P 4400 2300
+F 0 "J2" H 4167 2301 50  0000 R CNN
+F 1 "OUT" H 4167 2210 50  0000 R CNN
+F 2 "" H 4400 2300 50  0001 C CNN
+F 3 "~" H 4400 2300 50  0001 C CNN
+	1    4400 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5CFAE47D
+P 3700 3300
+F 0 "#PWR01" H 3700 3050 50  0001 C CNN
+F 1 "GND" H 3705 3127 50  0000 C CNN
+F 2 "" H 3700 3300 50  0001 C CNN
+F 3 "" H 3700 3300 50  0001 C CNN
+	1    3700 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3300 3700 3250
+Wire Wire Line
+	3700 3250 4150 3250
+Wire Wire Line
+	4150 3250 4150 2400
+Wire Wire Line
+	4150 2400 4200 2400
+Wire Wire Line
+	3700 3250 2550 3250
+Wire Wire Line
+	2150 3250 2150 2400
+Wire Wire Line
+	2150 2400 2100 2400
+Connection ~ 3700 3250
+Wire Wire Line
+	2100 2300 2250 2300
+Wire Wire Line
+	3000 2300 3050 2300
+Wire Wire Line
+	3400 2300 3600 2300
+Wire Wire Line
+	3600 2350 3600 2300
+Connection ~ 3600 2300
+Wire Wire Line
+	3600 2300 4200 2300
+Wire Wire Line
+	3250 2150 3250 2100
+Wire Wire Line
+	3250 2100 3050 2100
+Wire Wire Line
+	3050 2100 3050 2300
+Connection ~ 3050 2300
+Wire Wire Line
+	3050 2300 3100 2300
+Wire Wire Line
+	2250 2300 2250 3150
+Connection ~ 2250 2300
+Wire Wire Line
+	2250 2300 2450 2300
+Wire Wire Line
+	3700 3250 3700 3100
+Connection ~ 2550 3250
+Wire Wire Line
+	2550 3250 2150 3250
+Text Notes 2250 1700 0    50   ~ 0
+TODO: \n- Add 2PDT switch\n- Check pot orientation (R should get larger when turning cw)\n\nQ: Should there be a LED?
+$Comp
+L Switch:SW_DPDT_x2 SW1
+U 1 1 5CFBB3E8
+P 2800 2300
+F 0 "SW1" H 2800 2585 50  0000 C CNN
+F 1 "DECAY_GLIDE" H 2800 2494 50  0000 C CNN
+F 2 "" H 2800 2300 50  0001 C CNN
+F 3 "" H 2800 2300 50  0001 C CNN
+	1    2800 2300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 2300 2450 2200
+Wire Wire Line
+	2450 2200 2600 2200
+Wire Wire Line
+	2550 2400 2600 2400
+Wire Wire Line
+	2550 2400 2550 3250
+$Comp
+L Switch:SW_DPDT_x2 SW1
+U 2 1 5CFBC562
+P 3600 2900
+F 0 "SW1" V 3554 3048 50  0000 L CNN
+F 1 "DECAY_GLIDE" V 3645 3048 50  0000 L CNN
+F 2 "" H 3600 2900 50  0001 C CNN
+F 3 "" H 3600 2900 50  0001 C CNN
+	2    3600 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 2700 3600 2650
+Wire Wire Line
+	3500 3150 3500 3100
+Wire Wire Line
+	2250 3150 3500 3150
+$EndSCHEMATC
