@@ -32,12 +32,6 @@ K audio jack receptacle mono headphones phone TS connector
 F ~
 $ENDCMP
 #
-$CMP AudioJack_No_Switch
-D Audio Jack, 2 Poles (Mono / TS), Switched Pole (Normalling)
-K audio jack receptacle mono headphones phone TS connector
-F ~
-$ENDCMP
-#
 $CMP CEM3340
 D CEM3340 VCO IC
 $ENDCMP
